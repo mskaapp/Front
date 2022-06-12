@@ -1,5 +1,6 @@
 body {
-    background-image: url("https://39975211.servicio-online.net/wp-content/uploads/2022/05/register_background.png")
+
+    background-image: url("https://39975211.servicio-online.net/wp-content/uploads/2022/05/register_background.png");
 }
 
 .card {
@@ -7,4 +8,5 @@ body {
     /* width: 50%; */
     margin-top: 8%;
     margin-left: 27%;
+
 }
