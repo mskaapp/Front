@@ -12,9 +12,9 @@
 </head>
 
 <body>
-    <div class="login-wrapper">
-        <div class="card">
-            <div class="card-body">
+    <aside class="login-wrapper">
+        <aside class="card w-50">
+            <aside class="card-body">
                 <form class="form-signin" (ngSubmit)="onSubmit(signInForm)" #signInForm="ngForm">
                     <h1 class="h3 mb-3 font-weight-normal">Iniciar sesión</h1>
 
@@ -28,16 +28,16 @@
                     <br>
                     <a class="registro" href="#">¿Neófito? ¡Regístrate ya!</a>
                     <br><br>
-                    <div class="alert alert-danger" role="alert" *ngIf="isFormValid">
+                    <aside class="alert alert-danger" role="alert" *ngIf="isFormValid">
                         Porfavor, rellena los campos
-                    </div>
-                    <div class="alert alert-danger" role="alert" *ngIf="areCredentialsInvalid">
+                    </aside>
+                    <aside class="alert alert-danger" role="alert" *ngIf="areCredentialsInvalid">
                         Usuario o password incorrectos
-                    </div>
+                    </aside>
                 </form>
-            </div>
-        </div>
-    </div>
+            </aside>
+        </aside>
+    </aside>
     <!--Fin Cajita incio-->
 </body>
 
