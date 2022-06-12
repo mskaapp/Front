@@ -1,0 +1,29 @@
+<!--Cajita incio-->
+<div class="login-wrapper">
+  <div class="card">
+      <div class="card-body">
+          <form class="form-signin" (ngSubmit)="onSubmit(signInForm)" #signInForm="ngForm">
+              <h1 class="h3 mb-3 font-weight-normal">Iniciar sesión</h1>
+
+              <label for="inputlogin" class="sr-only">Email </label>
+              <input type="text" id="inputLogin" class="form-control" name="login" placeholder="Em@il" ngModel
+                  required autofocus>
+
+              <label for="inputPassword" class="sr-only">Password</label>
+              <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password"
+                  autocomplete="on" ngModel required>
+
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Entra</button>
+
+              <div class="alert alert-danger" role="alert" *ngIf="isFormValid">
+                  Porfavor, rellena los campos
+              </div>
+              <div class="alert alert-danger" role="alert" *ngIf="areCredentialsInvalid">
+                  Usuario o password incorrectos
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+  <!--Fin Cajita incio-->
+
