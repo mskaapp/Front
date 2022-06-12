@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  equipo = ' Team 1 ';
+  proyecto = ' MSKA - My Skill Around ';
+  integrantes = ' David Dalmau, Ixabel Justo, Josep Oriol López, Octavio Bernal ';
+
+  constructor() {
+   }
 
   ngOnInit(): void {
   }
