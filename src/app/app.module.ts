@@ -17,7 +17,9 @@ import { RegisterRecruiterComponent } from './register-recruiter/register-recrui
 import { RegisterTecnicComponent } from './register-tecnic/register-tecnic.component';
 import { WorksComponent } from './works/works.component';
 import { ConfigPageComponent } from './config-page/config-page.component';
+import { CalendarComponent } from './calendar/calendar.component';
 
+import { FullCalendarModule } from 'primeng/fullcalendar';
 
 @NgModule({
   declarations: [
@@ -33,12 +35,15 @@ import { ConfigPageComponent } from './config-page/config-page.component';
     RegisterRecruiterComponent,
     RegisterTecnicComponent,
     WorksComponent,
-    ConfigPageComponent
-  ],
+    ConfigPageComponent,
+    CalendarComponent,
+
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    FullCalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

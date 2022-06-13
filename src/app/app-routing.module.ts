@@ -5,6 +5,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 import { AboutComponent } from './about/about.component';
+import { CalendarComponent } from './calendar/calendar.component';
 
 import { AuthGuard } from './guards/auth.guard';
 
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: '', component: LoginComponent},
   {path: 'navbar', component: NavbarComponent,canActivate : [AuthGuard]},
   {path: 'main', component: MainComponent, canActivate : [AuthGuard]},
-  {path: 'about', component: AboutComponent, canActivate : [AuthGuard]}
+  {path: 'about', component: AboutComponent, canActivate : [AuthGuard]},
+  {path: 'calendar', component: CalendarComponent, canActivate : [AuthGuard]}
 ];
 
 @NgModule({
