@@ -1,1 +1,56 @@
-<p>profile-recruiter works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="profile-recruiter.component.css">
+    <title>Profile Recruiter</title>
+</head>
+
+<body>
+    <aside class="container">
+        <!-- aside que va a ir a la izquierda de todo -->
+        <aside class="row">
+            <aside class="col">
+                <!-- Imagen del astronauta -->
+                <img class="img-responsive" id="imgProfileRImagesrc" src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/reclutador.png">
+                <br><br>
+                <!-- Botón Website clicable -->
+                <button class="btn btn-warning" type="button" id="btnProfileRExp" name="btnProfileRExp">WEBSITE</button>
+                <br><br>
+                <!-- Desplegable para escoger tipo de reclutador -->
+                <select id="dplProfileRKind" name="dplProfileRKind">
+                    <option value="1" selected disabled>Tipo de reclutador</option>
+                    <option value="empresa">Empresa</option>
+                    <option value="autonomo">Autónomo</option>
+                    <option value="particular">Particular</option>
+                 </select>
+            </aside>
+            <aside class="col">
+                <!-- ESTO VA A SER UN COMPONENTE QUE SE REPITE -->
+                <label class="mt-2" id="txtProfileRExp" name="txtProfileRExp">Experiencia</label>
+                <br>
+                <label class="mt-2" id="txtProfileRLevel" name="txtProfileRLevel">Nivel</label>
+                <!-- HASTA AQUÍ -->
+            </aside>
+            <aside class="col">
+
+                <!-- Imagen de perfil -->
+                <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/reclutador.png" class='imgRedonda' />
+
+                <img class="img camara" src='https://39975211.servicio-online.net/wp-content/uploads/2022/06/camara.png' id="camara " />
+                <aside id="botonesEspecificos ">
+                    <a href="http://www.google.com "><img class="img w-25 " src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/reclutador.png" id="btnAstronauta " alt="Astronauta " /></a>
+                    <a href="http://www.google.com " class="disabled "><img class="img w-25 " src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/tecnico.png" id="btnCohete " alt="Cohete " /></a>
+                </aside>
+            </aside>
+
+        </aside>
+    </aside>
+</body>
+
+</html>
