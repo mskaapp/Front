@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSKA - About Us</title>
-</head>
-
-<body>
     <h2>¡Bienvenid@ a {{ proyecto }}!</h2>
     <p>Éste es un proyecto del {{ equipo }}, compuesto por {{integrantes}}, al que le hemos dedicado tiempo, ilusión y sobre todo muchísimo cariño. Por ello, esperamos que lo disfrutes y que pueda ayudarte en tu desarrollo profesional por el camino de la
         informática.
@@ -18,9 +8,15 @@
     <p>Sobre todo, hemos intentado hacer algo diferente. Nos hemos comprometido con romper con "lo de siempre", y además le hemos dado en algunas partes (como los bandages) ese toquecito de humor que nos caracteriza en el {{equipo}}.</p>
     <p>Por todo ello, de parte de los cuatro, queremos agradecerte que estés aquí.</p>
     <p>Y ahora... ¡A disfrutar de la experiencia! :)</p>
-
-</body>
-
-</html>
-
+    <!-- Fotos grupo-->
+    <!--TODO Cambiar height a responsive-->
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <img class="img-responsive mr-2" height="300" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/oriol-lopez.png">
+        <img class="img-responsive mr-2" height="300" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/ixabel-justo.png">
+        <img class="img-responsive mr-2" height="300" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/david-dalmau.png">
+        <img class="img-responsive mr-2" height="300" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/octavio-bernal.png">
+      </div>
+    </div>
+    <!--Fin fotos-->
 <router-outlet></router-outlet>
