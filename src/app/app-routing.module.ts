@@ -30,7 +30,7 @@ const routes: Routes = [
   {path: 'about',             component: AboutComponent,              canActivate : [AuthGuard]},
   {path: 'calendar',          component: CalendarComponent,           canActivate : [AuthGuard]},
   {path: 'profile',           component: ProfileComponent,            canActivate : [AuthGuard]},
-  {path: 'registerRecruiter', component: ProfilerecruiterComponent,   canActivate : [AuthGuard]},
+  {path: 'profilerecruiter',  component: ProfilerecruiterComponent,   canActivate : [AuthGuard]},
   {path: 'registerRecruiter', component: RegisterRecruiterComponent,  canActivate : [AuthGuard]},
   {path: 'registerTecnic',    component: RegisterTecnicComponent,     canActivate : [AuthGuard]},
   {path: 'works',             component: WorksComponent,              canActivate : [AuthGuard]},
