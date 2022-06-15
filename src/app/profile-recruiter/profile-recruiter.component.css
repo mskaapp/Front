@@ -37,6 +37,19 @@
 
 /* Desplegable tipo de reclutador */
 
-#dplProfileRKind {
-    margin-top: -900px;
+#asideDplProfileRKind {
+    margin-top: -40%;
+    margin-left: -7%;
+}
+
+
+/* Información de experiencia, nivel, etc */
+
+#asideInfoUsuario {
+    margin-left: -8%;
+    margin-top: 5%;
+}
+
+#botonesEspecificos {
+    margin-left: 25%;
 }
