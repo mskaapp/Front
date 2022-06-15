@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { AuthenticationService } from './services/authentification.service';
+import { TokenStorageService } from './services/token-storage.service';
 
 @Component({
   selector: 'app-root',
@@ -10,12 +10,30 @@ import { AuthenticationService } from './services/authentification.service';
 export class AppComponent {
   title = 'My Skill Around';
 
-  constructor(public authenticationService: AuthenticationService) { }
+  private roles: string [] = [];
 
-  //Logout
-  logout() {
-    this.authenticationService.logout();
-    //navigate to the login
-    //this.router.navigate('')
-  }
+  isLogedIn = false;
+  showUserBoard = false;
+  username?: string;
+
+  constructor(public TokenStorageService: TokenStorageService) { }
+
+  ngOnInit(): void{
+    this.isLogedIn = !! this.TokenStorageService.getToken();
+
+    if(this.isLogedIn){
+      const USER = this.TokenStorageService.getUser();
+      this.roles = USER.roles;
+
+      this.showUserBoard = this.roles.includes('ROLE_ADMIN');
+      // this.showModeratorBoard = this.roles.includes('ROLE_MODERATOR');
+      this.username = USER.username;
+
+    }
+}
+
+logout(): void{
+  this.TokenStorageService.signOut();
+  window.location.reload();
+}
 }

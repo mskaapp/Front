@@ -8,6 +8,7 @@ import { SignInData } from '../models/signInData';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
 export class LoginComponent implements OnInit {
 
   isFormValid = false;

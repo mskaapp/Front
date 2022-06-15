@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 @Injectable({
   providedIn: 'root'
 })
+
 export class AuthenticationService {
 
   //Fake user, only for testing

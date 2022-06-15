@@ -6,7 +6,6 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 import { RegisterComponent } from './register/register.component';
 import { AboutComponent } from './about/about.component';
@@ -22,11 +21,14 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { FullCalendarModule } from 'primeng/fullcalendar';
 import { ProfilerecruiterComponent } from './profilerecruiter/profilerecruiter.component';
 
+import { BoardUserComponent } from './board-user/board-user.component';
+import { LoginComponent } from './login/login.component';
+import { HttpClientModule } from '@angular/common/http'
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    LoginComponent,
     MainComponent,
     RegisterComponent,
     AboutComponent,
@@ -39,15 +41,20 @@ import { ProfilerecruiterComponent } from './profilerecruiter/profilerecruiter.c
     ConfigPageComponent,
     CalendarComponent,
     ProfilerecruiterComponent,
-
+    BoardUserComponent,
+    LoginComponent
    ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    FullCalendarModule
+    FullCalendarModule,
+    HttpClientModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
