@@ -9,8 +9,8 @@ import { CalendarComponent }            from './calendar/calendar.component';
 import { ProfileComponent }             from './profile/profile.component';
 import { ProfilerecruiterComponent }    from './profilerecruiter/profilerecruiter.component';
 //Borrar
-//import { ProfileRecruiterComponent }    from './profile-recruiter/profile-recruiter.component';
-//import { ProfileTecnicComponent }       from './profile-tecnic/profile-tecnic.component';
+import { ProfileRecruiterComponent }    from './profile-recruiter/profile-recruiter.component';
+import { ProfileTecnicComponent }       from './profile-tecnic/profile-tecnic.component';
 //Up Borrar
 import { RegisterComponent }            from './register/register.component';
 import { RegisterRecruiterComponent }   from './register-recruiter/register-recruiter.component';
@@ -37,8 +37,8 @@ const routes: Routes = [
   {path: 'registerTecnic',    component: RegisterTecnicComponent,     canActivate : [AuthGuard]},
   {path: 'works',             component: WorksComponent,              canActivate : [AuthGuard]},
   //Borrar down
-  //{path: 'profileRecruiter',  component: ProfileRecruiterComponent,   canActivate : [AuthGuard]},
-  //{path: 'profileTecnic',     component: ProfileTecnicComponent,      canActivate : [AuthGuard]},
+  {path: 'profileRecruiter',  component: ProfileRecruiterComponent,   canActivate : [AuthGuard]},
+  {path: 'profileTecnic',     component: ProfileTecnicComponent,      canActivate : [AuthGuard]},
 ];
 
 @NgModule({
