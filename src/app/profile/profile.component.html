@@ -1,54 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSKA - Perfil de Usuario</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="profile.component.css">
-</head>
-
-<body>
     <aside class="container">
         <!-- aside que va a ir a la izquierda de todo -->
         <aside class="row">
             <aside class="col">
                 <h1>PERFIL</h1>
                 <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
                 <br>
                 <label for="apellidos">Apellidos</label>
+                <input type="text" class="form-control" placeholder="Apellidos" aria-label="Username" aria-describedby="basic-addon1">
                 <br>
                 <label for="fechaDeNacimiento">Fecha de nacimiento</label>
                 <br>
-                <label for=" email ">Email</label>
+                <input type ="date">
+                <br>
                 <br>
                 <label for="userName">Nombre de Usuario</label>
+                <input type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
+                <br><br>
+                <button class="boton">Guardar</button>
                 <br><br>
                 <h2>Redes</h2>
-                <label for="nombre">Instagram</label>
+                <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_instagram.png" height="30" alt="Instagram">
+                <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_linkedin.png" height="30" alt="Linkedin">
                 <br>
-                <label for="apellidos">LinkedIn</label>
                 <br>
             </aside>
             <aside class="col ">
-
                 <!-- Imagen de perfil -->
-                <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/reclutador.png" class='imgRedonda' />
+                <img src="https://www.ecured.cu/images/5/5a/Julio%2Biglesias1.jpg" class='imgRedonda' />
 
                 <!-- Dibujito de la cámara  -->
-                <img class="img camara" src='https://39975211.servicio-online.net/wp-content/uploads/2022/06/camara.png' id="camara " />
+                <img class="img camara" src='https://39975211.servicio-online.net/wp-content/uploads/2022/06/camara.png' id="camara "/>
                 <aside id="botonesEspecificos ">
-                    <a href="http://www.google.com "><img class="img w-25 " src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/reclutador.png" id="btnAstronauta " alt="Astronauta " /></a>
-                    <a href="http://www.google.com " class="disabled "><img class="img w-25 " src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/tecnico.png" id="btnCohete " alt="Cohete " /></a>
+                  <!-- Enterprise -->
+                  <!--TODO: if profile not exist register, do funtion-->
+                    <a routerLink="../profilerecruiter" href="#"><img class="img w-25 " src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/reclutador.png" id="btnAstronauta " alt="Astronauta " /></a>
+                  <!-- Tecnic -->
+                    <!--TODO: if profile not exist register, do funtion-->
+                    <a routerLink="../calendar"  href="#" class="disabled"><img class="img w-25 " src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/tecnico.png" id="btnCohete " alt="Cohete " /></a>
                 </aside>
             </aside>
-
         </aside>
     </aside>
-
-</body>
-
-</html>
+    <!-- <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/edit.png" height="30"> -->

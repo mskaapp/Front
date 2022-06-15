@@ -20,6 +20,7 @@ import { ConfigPageComponent } from './config-page/config-page.component';
 import { CalendarComponent } from './calendar/calendar.component';
 
 import { FullCalendarModule } from 'primeng/fullcalendar';
+import { ProfilerecruiterComponent } from './profilerecruiter/profilerecruiter.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { FullCalendarModule } from 'primeng/fullcalendar';
     WorksComponent,
     ConfigPageComponent,
     CalendarComponent,
+    ProfilerecruiterComponent,
 
    ],
   imports: [
