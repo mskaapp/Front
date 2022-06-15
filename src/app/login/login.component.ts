@@ -16,6 +16,8 @@ export class LoginComponent implements OnInit {
   constructor(private authenticationService: AuthenticationService) { }
 
   ngOnInit() {
+
+
   }
 
   onSubmit(signInForm: NgForm) {
@@ -36,5 +38,9 @@ export class LoginComponent implements OnInit {
       this.isFormValid = false;
       this.areCredentialsInvalid = true;
     }
+  }
+  private setUserPass(usuario: string, password:string){
+    localStorage.setItem('user',usuario);
+    localStorage.setItem('password', password);
   }
 }

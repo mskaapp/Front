@@ -1,8 +1,37 @@
-body {
-    background-image: url("https://39975211.servicio-online.net/wp-content/uploads/2022/05/register_background.png");
+.container{
+    /*background-image: url("https://39975211.servicio-online.net/wp-content/uploads/2022/05/register_background.png");*/
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 auto;
 }
 
 .card {
-    margin-top: 8%;
-    margin-left: 27%;
+    margin-top: 30%;
+}
+.img_logo {
+  width: 40%;
+  height: 50%;
+  animation: scale_translate 0.7s linear forwards;
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  z-index: 1;
+}
+.redTriangle{
+  width: 40%;
+  height: 50%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+}
+.blueTriangle{
+
+  position: absolute;
+  right: 0%;
+  z-index: -1;
 }

@@ -39,7 +39,7 @@ body {
 }
 
 .idImagen {
-    background-image: url("paper.gif");
+    /*background-image: url("paper.gif");*/
     position: absolute;
     top: 0;
     left: 0;
