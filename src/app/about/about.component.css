@@ -5,12 +5,41 @@
 .fotos{
   transform: translate(3em,0);
 }
-.animate.pop {
-  animation-name: animate-pop;
+#fotoEntrance1{
+  z-index: -1;
+  animation: scale_translate1 0.7s linear forwards;
+  position: relative;
 }
-.delay-1 {
-  animation-delay: 0.6s;
-  }
+#fotoEntrance2{
+  z-index: -1;
+  animation: scale_translate2 0.7s linear forwards;
+  position: relative;
+}
+#fotoEntrance3{
+  z-index: -1;
+  animation: scale_translate3 0.7s linear forwards;
+  position: relative;
+}
+#fotoEntrance4{
+  z-index: -1;
+  animation: scale_translate4 0.7s linear forwards;
+  position: relative;
+}
+.nombre{
+  margin-top: -15%;
+  padding-left: 40%;
+  z-index: 1;
+  font-family: 'Road Rage', cursive;
+  font-size: 60px;
+  color: #21A8F0;
+
+}
+.titulo{
+  font-family: 'Road Rage', cursive;
+  font-size: 60px;
+  color: #F92423;
+}
+
 @keyframes animate-pop {
   0% {
     opacity: 0;
@@ -19,5 +48,61 @@
   100% {
     opacity: 1;
     transform: scale(1, 1);
+  }
+}
+@keyframes scale_translate1 {
+  0% {
+      transform: translate(-100%, -80%) scale(0);
+  }
+  34% {
+      transform: translate(-67%, -60%) scale(0.3);
+  }
+  67% {
+      transform: translate(-34%, -40%) scale(0.6);
+  }
+  100% {
+      transform: translate(0%, 0%) scale(1);
+  }
+}
+@keyframes scale_translate2 {
+  0% {
+      transform: translate(70%, -80%) scale(0);
+  }
+  34% {
+      transform: translate(47%, -60%) scale(0.3);
+  }
+  67% {
+      transform: translate(20%, -40%) scale(0.6);
+  }
+  100% {
+      transform: translate(0%, 0%) scale(1);
+  }
+}
+@keyframes scale_translate3 {
+  0% {
+      transform: translate(-100%, 80%) scale(0);
+  }
+  34% {
+      transform: translate(-67%, 60%) scale(0.3);
+  }
+  67% {
+      transform: translate(-34%, 40%) scale(0.6);
+  }
+  100% {
+      transform: translate(0%, 0%) scale(1);
+  }
+}
+@keyframes scale_translate4 {
+  0% {
+      transform: translate(100%, 80%) scale(0);
+  }
+  34% {
+      transform: translate(67%, 60%) scale(0.3);
+  }
+  67% {
+      transform: translate(34%, 40%) scale(0.6);
+  }
+  100% {
+      transform: translate(0%, 0%) scale(1);
   }
 }
