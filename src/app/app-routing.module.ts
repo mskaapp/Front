@@ -22,8 +22,10 @@ import { AuthGuard }                    from './guards/auth.guard';
 //if its with canActivate : [AuthGuard], means that only can access if the user its logged in
 const routes: Routes = [
   //Out of security
-  {path: '', component: LoginComponent},
-  {path: 'register', component: RegisterComponent},
+  {path: '',                  component: LoginComponent},
+  {path: 'register',          component: RegisterComponent},
+  //Duplicated for the function of cancel register
+  {path: 'login',             component: LoginComponent},
   //Inside Security
   {path: 'navbar',            component: NavbarComponent,             canActivate : [AuthGuard]},
   {path: 'main',              component: MainComponent,               canActivate : [AuthGuard]},

@@ -1,3 +1,8 @@
+body {
+    margin: 3%;
+}
+
+
 /* Imagen de perfil */
 
 .imgRedonda {
@@ -15,4 +20,29 @@
     float: right;
     position: relative;
     margin-top: -110px;
+}
+
+
+/* Imagen del cohete de la izquierda de todo */
+
+#imgProfileTImagesrc {
+    width: 800px;
+    position: inherit;
+    z-index: -9999;
+    margin-left: -150px;
+}
+
+#botonesEspecificos {
+    padding-left: 15%;
+}
+
+#btnGit,
+#btnLinkedin,
+#btnPinterest {
+    width: 50px;
+}
+
+#botonesRedes {
+    margin-left: -100px;
+    display: block;
 }

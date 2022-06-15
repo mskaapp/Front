@@ -37,7 +37,9 @@
 
 /* Desplegable tipo de reclutador */
 
+
 #asideDplProfileRKind {
+    margin-top: -900px;
     margin-top: -40%;
     margin-left: -7%;
 }
