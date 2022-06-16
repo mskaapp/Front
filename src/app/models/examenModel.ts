@@ -1,4 +1,4 @@
-export class comentarioTrabajoModel{
+export class examenModel{
   private id: number;
   private nombre: string;
   private tipo: string;

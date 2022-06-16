@@ -1,4 +1,4 @@
-export class comentarioTrabajoModel{
+export class mensajeModel{
   private id: number;
   private mensaje: string;
   private fecha_mensaje: Date;

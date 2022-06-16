@@ -1,4 +1,4 @@
-export class comentarioTrabajoModel{
+export class entrevistaModel{
   private id: number;
   private fecha_entrevista: Date;
   private duracion: number;
