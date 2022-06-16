@@ -18,11 +18,12 @@ export class usuarioModel {
   private num_trabajos: number;
   private num_valoraciones: number;
   private uri_foto: any;
-
+  private fk_id_tecnico: number;
+  private fk_id_reclutador:number;
 
   constructor(id: number, nombre: string, apellidos: string, email: string, nombre_usuario: any, contraseña: any, poblacion: string, pais: string, cp: number,
     fecha_registro: Date, fecha_nacimiento: Date, movil: number, instagram: any, linkedin: any, num_entrevista: number, num_mensajes: number,
-    num_trabajos: number, num_valoraciones: number, uri_foto: any) {
+    num_trabajos: number, num_valoraciones: number, uri_foto: any, fk_id_tecnico:number, fk_id_reclutador:number) {
       this.id = id;
       this.nombre = nombre;
       this.apellidos = apellidos;
@@ -42,6 +43,8 @@ export class usuarioModel {
       this.num_trabajos = num_trabajos;
       this.num_valoraciones = num_valoraciones;
       this.uri_foto = uri_foto;
+      this.fk_id_tecnico = fk_id_tecnico;
+      this.fk_id_reclutador = fk_id_reclutador;
 
   }
 
@@ -119,5 +122,13 @@ export class usuarioModel {
 
   getUri_foto(): any {
     return this.uri_foto;
+  }
+
+  getFk_id_reclutador(): number{
+    return this.fk_id_reclutador;
+  }
+
+  getFk_id_tecnico(): number{
+    return this.fk_id_tecnico;
   }
 }
