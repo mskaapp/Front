@@ -1,4 +1,4 @@
-export class poseeModel{
+export class postUsuarioModel{
   private id: number;
   private retweet: number;
   private likes: number;

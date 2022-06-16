@@ -1,4 +1,4 @@
-export class poseeModel{
+export class skillModel{
   private id: number;
   private tipo: string;
   private validado: boolean;
