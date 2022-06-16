@@ -1,4 +1,4 @@
-export class usuarioModel {
+export class reclutadorModel {
   private id: number;
   private experiencia: number;
   private nivel: number;
