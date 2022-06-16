@@ -27,7 +27,7 @@
                         <aside class="card-body">
                             <h5 class="card-title">El metaverso</h5>
                             <p class="card-text">El futuro de internet ahora depende del metaverso. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores natus labore culpa beatae, suscipit deleniti blanditiis eius impedit, assumenda unde</p>
-                            <span class="hide" id="hideText">
+                            <span class="hide" id="hideText" [(ngModel)]="hideText">
                             <p> consequuntur rerum error iste incidunt optio tempore ipsum. Quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum harum dolor illo. Doloribus recusandae earum, ratione tempora natus obcaecati minima commodi neque
                                 harum quasi quisquam cupiditate optio! Tempore, quasi totam.
                             </p>
@@ -36,7 +36,7 @@
                     </aside>
 
                 </aside>
-                <button class="btn btnSeguirLeyendo btn-warning" id="btnHideText">Seguir leyendo...</button>
+                <button class="btn btnSeguirLeyendo btn-warning" id="btnHideText" [(ngModel)]="btnHideText" (click)="toggleText()">Seguir leyendo...</button>
 
                 <!--Fin Card-->
                 <!--Card-->
