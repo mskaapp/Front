@@ -7,6 +7,7 @@ import { MainComponent }                from './main/main.component';
 import { AboutComponent }               from './about/about.component';
 import { CalendarComponent }            from './calendar/calendar.component';
 import { ProfileComponent }             from './profile/profile.component';
+import { UserSearchComponent }          from './user-search/user-search.component';
 import { ProfilerecruiterComponent }    from './profilerecruiter/profilerecruiter.component';
 //Borrar
 import { ProfileRecruiterComponent }    from './profile-recruiter/profile-recruiter.component';
@@ -18,6 +19,7 @@ import { RegisterTecnicComponent }      from './register-tecnic/register-tecnic.
 import { WorksComponent }               from './works/works.component';
 
 import { AuthGuard }                    from './guards/auth.guard';
+import { Component } from '@fullcalendar/core';
 
 //if its with canActivate : [AuthGuard], means that only can access if the user its logged in
 const routes: Routes = [
@@ -29,6 +31,7 @@ const routes: Routes = [
   //Inside Security
   {path: 'navbar',            component: NavbarComponent,             canActivate : [AuthGuard]},
   {path: 'main',              component: MainComponent,               canActivate : [AuthGuard]},
+  {path: 'user-search',        component: UserSearchComponent,         canActivate : [AuthGuard]},
   {path: 'about',             component: AboutComponent,              canActivate : [AuthGuard]},
   {path: 'calendar',          component: CalendarComponent,           canActivate : [AuthGuard]},
   {path: 'profile',           component: ProfileComponent,            canActivate : [AuthGuard]},
