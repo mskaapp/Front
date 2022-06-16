@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="profiletecnic.component.css">
+    <title>Profile Tecnic</title>
+
+</head>
+
+<body>
+
+    <aside class="container">
+        <!-- aside que va a ir a la izquierda de todo -->
+        <aside class="row">
+            <aside class="col">
+                <!-- Imagen del astronauta -->
+                <img class="img-responsive w-100" id="imgProfileTImagesrc" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/tecnic.png">
+            </aside>
+            <aside class="row" id="botonesRedes">
+                <a href="https://github.com/" target="_blank"><img id="btnGit" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_github.png" alt="Github"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img id="btnLinkedin" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_linkedin.png" alt="Linkedin"></a>
+                <a href="https://www.pinterest.com" target="_blank"><img id="btnPinterest" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_pinterest.png" alt="Pinterest"></a>
+
+                <aside class="col">
+                    <!-- ESTO VA A SER UN COMPONENTE QUE SE REPITE -->
+                    <label class="mt-2" id="txtProfileRExp" name="txtProfileRExp">Experiencia</label>
+                    <br>
+                    <label class="mt-2" id="txtProfileRLevel" name="txtProfileRLevel">Nivel</label>
+                    <!-- HASTA AQUÍ -->
+                </aside>
+                <aside class="col">
+                    <!-- Imagen de perfil -->
+                    <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/reclutador.png" class='imgRedonda' />
+
+                    <img class="img camara" src='https://39975211.servicio-online.net/wp-content/uploads/2022/06/camara.png' id="camara " />
+                    <aside id="botonesEspecificos">
+                        <a routerLink="../profilerecruiter" href="#"><img class="img w-50 " src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/reclutador.png" id="btnAstronauta " alt="Astronauta " /></a>
+                        <a class="disabled"><img class="img w-25" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/tecnic_h.png" id="btnCohete " alt="Cohete " /></a>
+                    </aside>
+                </aside>
+
+            </aside>
+            <aside class="row" id="botonesRedes">
+                <a href="www.github.com" target="_blank"><img id="btnGit" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_github.png" alt="Github"></a>
+                <a href="www.linkedin.com/in/" target="_blank"><img id="btnLinkedin" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_linkedin.png" alt="Linkedin"></a>
+                <a href="www.pinterest.com" target="_blank"><img id="btnPinterest" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_pinterest.png" alt="Pinterest"></a>
+            </aside>
+        </aside>
+    </aside>
+</body>
+
+</html>
