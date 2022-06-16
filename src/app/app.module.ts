@@ -11,7 +11,7 @@ import { MainComponent } from './main/main.component';
 import { RegisterComponent } from './register/register.component';
 import { AboutComponent } from './about/about.component';
 import { ProfileComponent } from './profile/profile.component';
-import { ProfileTecnicComponent } from './profile-tecnic/profile-tecnic.component';
+import { ProfileTecnicComponent } from './profiletecnic/profiletecnic.component';
 import { ProfileRecruiterComponent } from './profile-recruiter/profile-recruiter.component';
 import { RegisterRecruiterComponent } from './register-recruiter/register-recruiter.component';
 import { RegisterTecnicComponent } from './register-tecnic/register-tecnic.component';
