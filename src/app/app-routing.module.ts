@@ -10,7 +10,7 @@ import { ProfileComponent }             from './profile/profile.component';
 import { ProfilerecruiterComponent }    from './profilerecruiter/profilerecruiter.component';
 //Borrar
 import { ProfileRecruiterComponent }    from './profile-recruiter/profile-recruiter.component';
-import { ProfileTecnicComponent }       from './profile-tecnic/profile-tecnic.component';
+import { ProfileTecnicComponent }       from './profiletecnic/profiletecnic.component';
 //Up Borrar
 import { RegisterComponent }            from './register/register.component';
 import { RegisterRecruiterComponent }   from './register-recruiter/register-recruiter.component';
