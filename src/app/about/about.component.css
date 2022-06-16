@@ -39,6 +39,14 @@
   font-size: 60px;
   color: #F92423;
 }
+.dialogo{
+  border: 2px solid red;
+  border-radius: 25px;
+}
+.iconos{
+  border: 2px solid black;
+  border-radius: 25px;
+}
 
 @keyframes animate-pop {
   0% {

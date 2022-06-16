@@ -23,12 +23,11 @@ export class LoginComponent implements OnInit {
     console.log("Estatus check"+localStorage.getItem('checked'));
     //LocalStorage cant storage booleans, the string must be parsed
     if(localStorage.getItem('checked')=='true'){
-      //Setting checkbox checked
+      //Setting checkbox checked and values from localStorage
       this.chRememberMe   = true;
       this.tfUser         = localStorage.getItem('user');
       this.tfPassword     = localStorage.getItem('password');
 
-      //TODO: ser values of textfield from localstorage
     }else{
       //Setting checkbox unchecked
       this.chRememberMe = false;
@@ -37,8 +36,6 @@ export class LoginComponent implements OnInit {
 
 
   onSubmit(signInForm: NgForm) {
-    //console.log(signInForm.value);
-    //console.log(signInForm.valid);
     if (!signInForm.valid) {
       this.isFormValid = true;
       this.areCredentialsInvalid = false;
