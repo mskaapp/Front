@@ -46,6 +46,12 @@
 .iconos{
   border: 2px solid black;
   border-radius: 25px;
+  margin-right: 1%;
+  margin-top: -5%;
+}
+.divIconos{
+
+  z-index: 1;
 }
 
 @keyframes animate-pop {
