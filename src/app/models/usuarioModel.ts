@@ -20,10 +20,17 @@ export class usuarioModel {
   private uri_foto: any;
   private fk_id_tecnico: number;
   private fk_id_reclutador:number;
+  private id_mensaje: number;
+  private id_entrevista: number;
+  private id_trabajo: number;
+  private id_comentarioTrabajo: number;
+  private id_postUsuario: number;
+  private id_valoracion: number;
 
   constructor(id: number, nombre: string, apellidos: string, email: string, nombre_usuario: any, contraseña: any, poblacion: string, pais: string, cp: number,
     fecha_registro: Date, fecha_nacimiento: Date, movil: number, instagram: any, linkedin: any, num_entrevista: number, num_mensajes: number,
-    num_trabajos: number, num_valoraciones: number, uri_foto: any, fk_id_tecnico:number, fk_id_reclutador:number) {
+    num_trabajos: number, num_valoraciones: number, uri_foto: any, fk_id_tecnico:number, fk_id_reclutador:number, id_mensaje: number, id_entrevista: number,
+    id_trabajo: number, id_comentarioTrabajo: number, id_postUsuario: number, id_valoracion: number) {
       this.id = id;
       this.nombre = nombre;
       this.apellidos = apellidos;
@@ -45,6 +52,12 @@ export class usuarioModel {
       this.uri_foto = uri_foto;
       this.fk_id_tecnico = fk_id_tecnico;
       this.fk_id_reclutador = fk_id_reclutador;
+      this.id_mensaje = id_mensaje;
+      this.id_entrevista = id_entrevista;
+      this.id_trabajo = id_trabajo;
+      this.id_comentarioTrabajo = id_comentarioTrabajo;
+      this.id_postUsuario = id_postUsuario;
+      this.id_valoracion = id_valoracion;
 
   }
 
@@ -130,5 +143,29 @@ export class usuarioModel {
 
   getFk_id_tecnico(): number{
     return this.fk_id_tecnico;
+  }
+
+  getId_mensaje(): number {
+    return this.id_mensaje;
+  }
+
+  getId_entrevista(): number {
+    return this.id_entrevista;
+  }
+
+  getId_trabajo(): number {
+    return this.id_trabajo;
+  }
+
+  getId_comentarioTrabajo(): number {
+    return this.id_comentarioTrabajo;
+  }
+
+  getId_postUsuario(): number {
+    return this.id_postUsuario;
+  }
+
+  getId_valoracion(): number {
+    return this.id_valoracion;
   }
 }

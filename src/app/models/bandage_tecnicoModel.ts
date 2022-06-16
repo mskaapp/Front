@@ -4,13 +4,15 @@ export class bandage_tecnicoModel{
   private tipo: string;
   private descripcion: string;
   private cantidadExp: number;
+  private id_obtieneT: number;
 
-  constructor(id:number, nombre: string, tipo: string, descripcion: string, cantidadExp: number){
+  constructor(id:number, nombre: string, tipo: string, descripcion: string, cantidadExp: number, id_obtieneT: number){
     this.id = id;
     this.nombre = nombre;
     this.tipo = tipo;
     this.descripcion = descripcion;
     this.cantidadExp = cantidadExp;
+    this.id_obtieneT = id_obtieneT;
 
   }
 
@@ -32,5 +34,9 @@ export class bandage_tecnicoModel{
 
   getCantidadExp(): number {
     return this.cantidadExp;
+  }
+
+  getId_obtieneT(): number {
+    return this.id_obtieneT;
   }
 }

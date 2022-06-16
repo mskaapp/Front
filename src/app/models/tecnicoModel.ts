@@ -7,9 +7,11 @@ export class tecnicoModel {
   private trabajo_en_curso: number;
   private trabajos_finalizados: number;
   private tipo_tecnico: string;
+  private id_usuario: number;
+  private id_obtieneT: number;
 
   constructor(id: number, experiencia: number, nivel: number, github: string, pinterest: string, trabajo_en_curso: number,
-    trabajos_finalizados: number, tipo_tecnico: string){
+    trabajos_finalizados: number, tipo_tecnico: string, id_usuario: number, id_obtieneT: number){
       this.id = id;
       this.experiencia = experiencia;
       this.nivel = nivel;
@@ -18,6 +20,8 @@ export class tecnicoModel {
       this.trabajo_en_curso = trabajo_en_curso;
       this.trabajos_finalizados = trabajos_finalizados;
       this.tipo_tecnico = tipo_tecnico;
+      this.id_usuario = id_usuario;
+      this.id_obtieneT = id_obtieneT;
 
   }
 
@@ -51,5 +55,13 @@ export class tecnicoModel {
 
   getTipo_tecnico(): string{
     return this.tipo_tecnico;
+  }
+
+  getId_usuario(): number {
+    return this.id_usuario;
+  }
+
+  getId_obtieneT(): number {
+    return this.id_obtieneT;
   }
 }
