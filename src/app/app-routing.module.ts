@@ -4,8 +4,8 @@ import { RouterModule, Routes }         from '@angular/router';
 import { NavbarComponent }              from './navbar/navbar.component';
 import { LoginComponent }               from './login/login.component';
 import { MainComponent }                from './main/main.component';
-import { AboutComponent }               from './about/about.component';
-import { CalendarComponent }            from './calendar/calendar.component';
+import { AboutComponent }               from './html/about/about.component';
+import { CalendarComponent }            from './html/calendar/calendar.component';
 import { ProfileComponent }             from './profile/profile.component';
 import { UserSearchComponent }          from './user-public-profile/user-search/user-search.component';
 import { ProfilerecruiterComponent }    from './profilerecruiter/profilerecruiter.component';
@@ -22,7 +22,7 @@ import { RegisterTecnicComponent }      from './register-tecnic/register-tecnic.
 import { WorksComponent }               from './works/works.component';
 
 import { AuthGuard }                    from './guards/auth.guard';
-import { Component } from '@fullcalendar/core';
+
 
 //if its with canActivate : [AuthGuard], means that only can access if the user its logged in
 const routes: Routes = [
