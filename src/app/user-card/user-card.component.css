@@ -1,0 +1,15 @@
+.fullCard:hover #colIcons{
+  visibility: visible;
+  opacity: 1;
+  transition-duration: 2s;
+}
+.socialIconCol{
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 10px;
+  padding: 0%;
+}
+#colIcons{
+  opacity: 0;
+  visibility: hidden;
+}
