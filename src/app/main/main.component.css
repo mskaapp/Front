@@ -3,7 +3,15 @@ body {
 }
 
 .inputInspirate {
-    width: 235px;
+    width: 220px;
+    height: 35px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.btnPost {
+    margin-left: 10px;
+    width: 60px;
 }
 
 .card {
@@ -18,7 +26,7 @@ body {
     font-weight: bold;
 }
 
-.btnSeguirLeyendo:hover {
+.btn:hover {
     background-color: rgb(70, 124, 224);
     border: solid 3px #333;
     color: white;
