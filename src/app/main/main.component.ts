@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css'],
 })
 export class MainComponent implements OnInit {
-  hideText;
-  btnHideText;
+  hideText: any;
+  btnHideText: any;
 
   constructor() {}
 

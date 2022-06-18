@@ -10,11 +10,11 @@ import { SignInData } from '../models/signInData';
 })
 export class LoginComponent implements OnInit {
 
-  isFormValid = false;
-  areCredentialsInvalid = false;
-  chRememberMe!:  boolean;
-  tfUser!:        string;
-  tfPassword!:     string;
+  isFormValid             = false;
+  areCredentialsInvalid   = false;
+  chRememberMe!:boolean;
+  tfUser:string           ="";
+  tfPassword:string       ="";
 
   constructor(private authenticationService: AuthenticationService) { }
 
