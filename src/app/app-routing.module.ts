@@ -9,6 +9,7 @@ import { CalendarComponent }            from './calendar/calendar.component';
 import { ProfileComponent }             from './profile/profile.component';
 import { UserSearchComponent }          from './user-search/user-search.component';
 import { ProfilerecruiterComponent }    from './profilerecruiter/profilerecruiter.component';
+import { UserPublicProfileComponent }   from './user-public-profile/user-public-profile.component';
 //Borrar
 import { ProfileRecruiterComponent }    from './profile-recruiter/profile-recruiter.component';
 import { ProfileTecnicComponent }       from './profiletecnic/profiletecnic.component';
@@ -24,24 +25,25 @@ import { Component } from '@fullcalendar/core';
 //if its with canActivate : [AuthGuard], means that only can access if the user its logged in
 const routes: Routes = [
   //Out of security
-  {path: '',                  component: LoginComponent},
-  {path: 'register',          component: RegisterComponent},
+  {path: '',                    component: LoginComponent},
+  {path: 'register',            component: RegisterComponent},
   //Duplicated for the function of cancel register
-  {path: 'login',             component: LoginComponent},
+  {path: 'login',               component: LoginComponent},
   //Inside Security
-  {path: 'navbar',            component: NavbarComponent,             canActivate : [AuthGuard]},
-  {path: 'main',              component: MainComponent,               canActivate : [AuthGuard]},
-  {path: 'user-search',        component: UserSearchComponent,         canActivate : [AuthGuard]},
-  {path: 'about',             component: AboutComponent,              canActivate : [AuthGuard]},
-  {path: 'calendar',          component: CalendarComponent,           canActivate : [AuthGuard]},
-  {path: 'profile',           component: ProfileComponent,            canActivate : [AuthGuard]},
-  {path: 'profilerecruiter',  component: ProfilerecruiterComponent,   canActivate : [AuthGuard]},
-  {path: 'registerRecruiter', component: RegisterRecruiterComponent,  canActivate : [AuthGuard]},
-  {path: 'registerTecnic',    component: RegisterTecnicComponent,     canActivate : [AuthGuard]},
-  {path: 'works',             component: WorksComponent,              canActivate : [AuthGuard]},
+  {path: 'navbar',              component: NavbarComponent,             canActivate : [AuthGuard]},
+  {path: 'main',                component: MainComponent,               canActivate : [AuthGuard]},
+  {path: 'user-search',         component: UserSearchComponent,         canActivate : [AuthGuard]},
+  {path: 'about',               component: AboutComponent,              canActivate : [AuthGuard]},
+  {path: 'calendar',            component: CalendarComponent,           canActivate : [AuthGuard]},
+  {path: 'profile',             component: ProfileComponent,            canActivate : [AuthGuard]},
+  {path: 'profilerecruiter',    component: ProfilerecruiterComponent,   canActivate : [AuthGuard]},
+  {path: 'registerRecruiter',   component: RegisterRecruiterComponent,  canActivate : [AuthGuard]},
+  {path: 'registerTecnic',      component: RegisterTecnicComponent,     canActivate : [AuthGuard]},
+  {path: 'works',               component: WorksComponent,              canActivate : [AuthGuard]},
+  {path: 'user-public-profile',   component: UserPublicProfileComponent,  canActivate : [AuthGuard]},
   //Borrar down
-  {path: 'profileRecruiter',  component: ProfileRecruiterComponent,   canActivate : [AuthGuard]},
-  {path: 'profileTecnic',     component: ProfileTecnicComponent,      canActivate : [AuthGuard]},
+  {path: 'profileRecruiter',    component: ProfileRecruiterComponent,   canActivate : [AuthGuard]},
+  {path: 'profileTecnic',       component: ProfileTecnicComponent,      canActivate : [AuthGuard]},
 ];
 
 @NgModule({
