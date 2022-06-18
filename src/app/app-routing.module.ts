@@ -7,9 +7,11 @@ import { MainComponent }                from './main/main.component';
 import { AboutComponent }               from './about/about.component';
 import { CalendarComponent }            from './calendar/calendar.component';
 import { ProfileComponent }             from './profile/profile.component';
-import { UserSearchComponent }          from './user-search/user-search.component';
+import { UserSearchComponent }          from './user-public-profile/user-search/user-search.component';
 import { ProfilerecruiterComponent }    from './profilerecruiter/profilerecruiter.component';
 import { UserPublicProfileComponent }   from './user-public-profile/user-public-profile.component';
+//Cards
+import { UserCardComponent }            from './user-card/user-card.component';
 //Borrar
 import { ProfileRecruiterComponent }    from './profile-recruiter/profile-recruiter.component';
 import { ProfileTecnicComponent }       from './profiletecnic/profiletecnic.component';
@@ -40,7 +42,8 @@ const routes: Routes = [
   {path: 'registerRecruiter',   component: RegisterRecruiterComponent,  canActivate : [AuthGuard]},
   {path: 'registerTecnic',      component: RegisterTecnicComponent,     canActivate : [AuthGuard]},
   {path: 'works',               component: WorksComponent,              canActivate : [AuthGuard]},
-  {path: 'user-public-profile',   component: UserPublicProfileComponent,  canActivate : [AuthGuard]},
+  {path: 'user-public-profile', component: UserPublicProfileComponent,  canActivate : [AuthGuard]},
+  {path: 'user-card',           component: UserCardComponent,           canActivate : [AuthGuard]},
   //Borrar down
   {path: 'profileRecruiter',    component: ProfileRecruiterComponent,   canActivate : [AuthGuard]},
   {path: 'profileTecnic',       component: ProfileTecnicComponent,      canActivate : [AuthGuard]},

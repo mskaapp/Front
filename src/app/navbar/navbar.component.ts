@@ -10,7 +10,7 @@ export class NavbarComponent implements OnInit {
 
   //Injecting authentification to navBar
   constructor(public authenticationService: AuthenticationService) {
-
+        //console.log("autentificacion: "+ authenticationService.getIsAuthenticated)
   }
 
   ngOnInit(): void {

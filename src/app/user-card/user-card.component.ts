@@ -7,7 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserCardComponent implements OnInit {
 
-  constructor() { }
+  txtUserCardUserName!:         string;
+  uriUserCardPhoto!:            string;
+  linkUserCardGithub!:          string;
+  linkUserCardLinkedin!:        string;
+  linkUserCardPinterest!:       string;
+  linkUserCardAppStore!:        string;
+  linkUserCardInstagram!:       string;
+
+  //TODO: BUILD THE CONSTRUCTOR
+  constructor() {
+
+  }
 
   ngOnInit(): void {
   }

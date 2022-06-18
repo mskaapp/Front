@@ -21,7 +21,7 @@ import { CalendarComponent } from './calendar/calendar.component';
 
 import { FullCalendarModule } from 'primeng/fullcalendar';
 import { ProfilerecruiterComponent } from './profilerecruiter/profilerecruiter.component';
-import { UserSearchComponent } from './user-search/user-search.component';
+import { UserSearchComponent } from './user-public-profile/user-search/user-search.component';
 import { UserPublicProfileComponent } from './user-public-profile/user-public-profile.component';
 import { UserCardComponent } from './user-card/user-card.component';
 
