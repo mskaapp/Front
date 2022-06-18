@@ -40,7 +40,7 @@ const routes: Routes = [
   {path: 'registerRecruiter',   component: RegisterRecruiterComponent,  canActivate : [AuthGuard]},
   {path: 'registerTecnic',      component: RegisterTecnicComponent,     canActivate : [AuthGuard]},
   {path: 'works',               component: WorksComponent,              canActivate : [AuthGuard]},
-  {path: 'user-public-profile', component: WorksComponent,              canActivate : [AuthGuard]},
+  {path: 'user-public-profile',   component: UserPublicProfileComponent,  canActivate : [AuthGuard]},
   //Borrar down
   {path: 'profileRecruiter',    component: ProfileRecruiterComponent,   canActivate : [AuthGuard]},
   {path: 'profileTecnic',       component: ProfileTecnicComponent,      canActivate : [AuthGuard]},
