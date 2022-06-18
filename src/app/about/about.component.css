@@ -1,124 +1,138 @@
 .fotos:hover {
-  transform:scale(1.2);
-  transition-duration: 0.5s;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
 }
-.fotos{
-  transform: translate(3em,0);
-}
-#fotoEntrance1{
-  z-index: -1;
-  animation: scale_translate1 0.7s linear forwards;
-  position: relative;
-}
-#fotoEntrance2{
-  z-index: -1;
-  animation: scale_translate2 0.7s linear forwards;
-  position: relative;
-}
-#fotoEntrance3{
-  z-index: -1;
-  animation: scale_translate3 0.7s linear forwards;
-  position: relative;
-}
-#fotoEntrance4{
-  z-index: -1;
-  animation: scale_translate4 0.7s linear forwards;
-  position: relative;
-}
-.nombre{
-  margin-top: -15%;
-  padding-left: 40%;
-  z-index: 1;
-  font-family: 'Road Rage', cursive;
-  font-size: 60px;
-  color: #21A8F0;
 
+.fotos {
+    transform: translate(3em, 0);
 }
-.titulo{
-  font-family: 'Road Rage', cursive;
-  font-size: 60px;
-  color: #F92423;
+
+#fotoEntrance1 {
+    z-index: -1;
+    animation: scale_translate1 0.7s linear forwards;
+    position: relative;
 }
-.dialogo{
-  border: 2px solid red;
-  border-radius: 25px;
+
+#fotoEntrance2 {
+    z-index: -1;
+    animation: scale_translate2 0.7s linear forwards;
+    position: relative;
 }
-.iconos{
-  border: 2px solid black;
-  border-radius: 25px;
-  margin-right: 1%;
-  margin-top: -5%;
+
+#fotoEntrance3 {
+    z-index: -1;
+    animation: scale_translate3 0.7s linear forwards;
+    position: relative;
 }
-.divIconos{
-  z-index: 1;
+
+#fotoEntrance4 {
+    z-index: -1;
+    animation: scale_translate4 0.7s linear forwards;
+    position: relative;
+}
+
+.nombre {
+    margin-top: -15%;
+    padding-left: 40%;
+    z-index: 1;
+    font-family: 'Road Rage', cursive;
+    font-size: 60px;
+    color: #21A8F0;
+    text-decoration: none;
+}
+
+.titulo {
+    font-family: 'Road Rage', cursive;
+    font-size: 60px;
+    color: #F92423;
+}
+
+.dialogo {
+    border: 2px solid red;
+    border-radius: 25px;
+}
+
+.iconos {
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-right: 1%;
+    margin-top: -5%;
+}
+
+.divIconos {
+    z-index: 1;
 }
 .enlace{
   text-decoration: none;
 }
 
 @keyframes animate-pop {
-  0% {
-    opacity: 0;
-    transform: scale(0.5, 0.5);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1, 1);
-  }
+    0% {
+        opacity: 0;
+        transform: scale(0.5, 0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
 }
+
 @keyframes scale_translate1 {
-  0% {
-      transform: translate(-100%, -80%) scale(0);
-  }
-  34% {
-      transform: translate(-67%, -60%) scale(0.3);
-  }
-  67% {
-      transform: translate(-34%, -40%) scale(0.6);
-  }
-  100% {
-      transform: translate(0%, 0%) scale(1);
-  }
+    0% {
+        transform: translate(-100%, -80%) scale(0);
+    }
+    34% {
+        transform: translate(-67%, -60%) scale(0.3);
+    }
+    67% {
+        transform: translate(-34%, -40%) scale(0.6);
+    }
+    100% {
+        transform: translate(0%, 0%) scale(1);
+    }
 }
+
 @keyframes scale_translate2 {
-  0% {
-      transform: translate(70%, -80%) scale(0);
-  }
-  34% {
-      transform: translate(47%, -60%) scale(0.3);
-  }
-  67% {
-      transform: translate(20%, -40%) scale(0.6);
-  }
-  100% {
-      transform: translate(0%, 0%) scale(1);
-  }
+    0% {
+        transform: translate(70%, -80%) scale(0);
+    }
+    34% {
+        transform: translate(47%, -60%) scale(0.3);
+    }
+    67% {
+        transform: translate(20%, -40%) scale(0.6);
+    }
+    100% {
+        transform: translate(0%, 0%) scale(1);
+    }
 }
+
 @keyframes scale_translate3 {
-  0% {
-      transform: translate(-100%, 80%) scale(0);
-  }
-  34% {
-      transform: translate(-67%, 60%) scale(0.3);
-  }
-  67% {
-      transform: translate(-34%, 40%) scale(0.6);
-  }
-  100% {
-      transform: translate(0%, 0%) scale(1);
-  }
+    0% {
+        transform: translate(-100%, 80%) scale(0);
+    }
+    34% {
+        transform: translate(-67%, 60%) scale(0.3);
+    }
+    67% {
+        transform: translate(-34%, 40%) scale(0.6);
+    }
+    100% {
+        transform: translate(0%, 0%) scale(1);
+    }
 }
+
 @keyframes scale_translate4 {
-  0% {
-      transform: translate(100%, 80%) scale(0);
-  }
-  34% {
-      transform: translate(67%, 60%) scale(0.3);
-  }
-  67% {
-      transform: translate(34%, 40%) scale(0.6);
-  }
-  100% {
-      transform: translate(0%, 0%) scale(1);
-  }
+    0% {
+        transform: translate(100%, 80%) scale(0);
+    }
+    34% {
+        transform: translate(67%, 60%) scale(0.3);
+    }
+    67% {
+        transform: translate(34%, 40%) scale(0.6);
+    }
+    100% {
+        transform: translate(0%, 0%) scale(1);
+    }
 }
