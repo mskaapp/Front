@@ -62,9 +62,6 @@
 .divIconos {
     z-index: 1;
 }
-.enlace{
-  text-decoration: none;
-}
 
 @keyframes animate-pop {
     0% {

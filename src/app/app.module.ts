@@ -11,7 +11,7 @@ import { MainComponent } from './main/main.component';
 import { RegisterComponent } from './register/register.component';
 import { AboutComponent } from './html/about/about.component';
 import { ProfileComponent } from './profile/profile.component';
-import { ProfileTecnicComponent } from './profiletecnic/profiletecnic.component';
+import { ProfileTecnicComponent } from './profile-tecnic/profile-tecnic.component';
 import { ProfileRecruiterComponent } from './profile-recruiter/profile-recruiter.component';
 import { RegisterRecruiterComponent } from './register-recruiter/register-recruiter.component';
 import { RegisterTecnicComponent } from './register-tecnic/register-tecnic.component';
@@ -21,9 +21,6 @@ import { CalendarComponent } from './html/calendar/calendar.component';
 
 import { FullCalendarModule } from 'primeng/fullcalendar';
 import { ProfilerecruiterComponent } from './profilerecruiter/profilerecruiter.component';
-import { UserSearchComponent } from './user-public-profile/user-search/user-search.component';
-import { UserPublicProfileComponent } from './user-public-profile/user-public-profile.component';
-import { UserCardComponent } from './user-card/user-card.component';
 
 @NgModule({
   declarations: [
@@ -42,9 +39,6 @@ import { UserCardComponent } from './user-card/user-card.component';
     ConfigPageComponent,
     CalendarComponent,
     ProfilerecruiterComponent,
-    UserSearchComponent,
-    UserPublicProfileComponent,
-    UserCardComponent,
 
    ],
   imports: [

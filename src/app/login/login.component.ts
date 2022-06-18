@@ -10,26 +10,31 @@ import { SignInData } from '../models/signInData';
 })
 export class LoginComponent implements OnInit {
 
-  isFormValid             = false;
-  areCredentialsInvalid   = false;
-  chRememberMe!:boolean;
-  tfUser:string           ="";
-  tfPassword:string       ="";
+  isFormValid = false;
+  areCredentialsInvalid = false;
+  chRememberMe!:  boolean;
+  tfUser!:        string;
+  tfPassword!:     string;
 
   constructor(private authenticationService: AuthenticationService) { }
 
   ngOnInit() {
+    console.log("Estatus check local"+localStorage.getItem('checked'));
+    console.log("Estatus check"+localStorage.getItem('checked'));
     //LocalStorage cant storage booleans, the string must be parsed
     if(localStorage.getItem('checked')=='true'){
       //Setting checkbox checked and values from localStorage
       this.chRememberMe   = true;
       this.tfUser         = localStorage.getItem('user');
       this.tfPassword     = localStorage.getItem('password');
+
     }else{
       //Setting checkbox unchecked
       this.chRememberMe = false;
     }
   }
+
+
   onSubmit(signInForm: NgForm) {
     if (!signInForm.valid) {
       this.isFormValid = true;
@@ -37,7 +42,9 @@ export class LoginComponent implements OnInit {
       return;
     }
     this.checkCredentials(signInForm);
+
   }
+
   private checkCredentials(signInForm: NgForm) {
     const signInData = new SignInData(signInForm.value.login, signInForm.value.password);
     if (!this.authenticationService.authenticate(signInData)) {
@@ -57,5 +64,6 @@ export class LoginComponent implements OnInit {
       localStorage.setItem('user', '' );
       localStorage.setItem('password', '');
     }
+    console.log("changed");
   }
 }
