@@ -44,7 +44,6 @@ const routes: Routes = [
   {path: 'works',               component: WorksComponent,              canActivate : [AuthGuard]},
   {path: 'user-public-profile', component: UserPublicProfileComponent,  canActivate : [AuthGuard]},
   {path: 'user-card',           component: UserCardComponent,           canActivate : [AuthGuard]},
-
   //Borrar down
   {path: 'profileRecruiter',    component: ProfileRecruiterComponent,   canActivate : [AuthGuard]},
   {path: 'profileTecnic',       component: ProfileTecnicComponent,      canActivate : [AuthGuard]},
