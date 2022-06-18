@@ -22,7 +22,7 @@ import { RegisterTecnicComponent }      from './register-tecnic/register-tecnic.
 import { WorksComponent }               from './works/works.component';
 
 import { AuthGuard }                    from './guards/auth.guard';
-import { Component } from '@fullcalendar/core';
+
 
 //if its with canActivate : [AuthGuard], means that only can access if the user its logged in
 const routes: Routes = [

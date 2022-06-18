@@ -1,21 +1,16 @@
 <!-- Navbar -->
 <!-- If user is not authentificated, the navbar its hided-->
 <!--<nav class="navbar navbar-expand-lg navbar-light colorBackGround" *ngIf="authenticationService.isAuthenticated">-->
-<nav class="navbar navbar-expand-lg navbar-light colorBackGround">
+<nav class="navbar navbar-expand-lg navbar-light colorBackGround" *ngIf="authenticationService.isAuthenticated">
     <!-- Container wrapper -->
-    <aside class="container-fluid">
-        <!-- Toggle button -->
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
-        <aside class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="container-fluid">
             <!-- Navbar-brand User Photo-->
             <a class="navbar-brand mt-2 mt-lg-0" href="#">
-                <aside class="dropdown">
+                <div class="dropdown">
                     <a routerLink="../profile" class="d-flex align-items-center" id="NavBarPhoto" aria-expanded="false">
                         <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/user_nophoto.png" class="rounded-circle" height="60" alt="User photo" />
                     </a>
-                </aside>
+                  </div>
             </a>
             <!-- Right Elements -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -59,7 +54,7 @@
                 </li>
             </ul>
             <!-- Cierre del aside collapse-navbar -->
-        </aside>
+    </div>
         <!-- Cierre del aside container -->
-    </aside>
+
 </nav>
