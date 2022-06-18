@@ -17,10 +17,4 @@ export class MainComponent implements OnInit {
     this.hideText.classList.toggle('show');
   }
 
-  //Logout
-  logout() {
-    this.authenticationService.logout();
-    //navigate to the login
-    //this.router.navigate('')
-  }
 }
