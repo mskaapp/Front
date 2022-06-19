@@ -1,0 +1,49 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet" type="text/css">
+<div class= "row d-inline-flex ml-1 fullCard">
+  <!--Columna 1 foto, botones etc... #cardBody-->
+
+  <div class ="col-6">
+    <div class="card-deck">
+      <div style="width: 20rem">
+          <!-- Carta -->
+        <div class="card text-center rounded m-2 " >
+            <div>
+              <!--Imagen {{user.image}}-->
+              <img src="https://es.marketscreener.com/mods_a/graph/resize.php?w=250&h=150&f=/images/barons/jose-oriol_bosch-par.jpg" class="card-img-top" alt="User Photo">
+            </div>
+            <div class="text-center">
+              <!--Nombre {{user.name}}-->
+              <h5 class="card-title">{{txtUserCardUserName}}</h5>
+            </div>
+            <div class="col-md-12 text-center">
+              <!--Boton-->
+              <a href="#" class="btn btn-warning m-2 col-10">PERFIL</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!--Social icons .socialIconCol #colIcons-->
+  <!--TODO HIDE IF LINK NULL-->
+  <div class ="col-2 socialIconCol align-items-center" id="colIcons">
+    <div class="row">
+        <a class="socialIcon" href="{{linkUserCardGithub}}" target="_blank"><i class="fa fa-github"></i></a>
+    </div>
+    <div class="row">
+        <a class="link iconB" href="{{linkUserCardLinkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a>
+    </div>
+    <div class="row">
+        <a class="link iconB" href="{{linkUserCardPinterest}}" target="_blank"><i class="fa fa-pinterest "></i></a>
+    </div>
+    <div class="row">
+        <a class="link iconB" href="{{linkUserCardAppStore}}" target="_blank"><i class="fa fa-apple"></i></a>
+    </div>
+    <div class="row">
+        <a class="link iconB" href="{{linkUserCardPlayStore}}" target="_blank"><i class="fa fa-google"></i></a>
+    </div>
+    <div class="row">
+        <a class="link iconB" href="{{linkUserCardInstagram}}" target="_blank"><i class="fa fa-instagram"></i></a>
+    </div>
+  <!--End Social icons-->
+  </div>

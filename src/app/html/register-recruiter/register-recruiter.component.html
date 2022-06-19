@@ -1,0 +1,30 @@
+<body class="bodySystemLogin" style="margin-top: 50px;">
+
+    <aside class="container" style="margin-top: 50px;">
+
+        <!--Caja con Registro-->
+        <aside class="row col-4" id="cajitaRegistro">
+            <form method="POST" action="index.php?control=ControlLogin&operacio=login">
+                <br>
+                <h2> Registro de Recruiter</h2>
+
+                <label>Web</label>
+                <input type="text" name="webReclutador" class="form-control">
+
+                <label>Tipo de Reclutador</label>
+                <br>
+                <select>
+                        <option selected disabled>Tipo de reclutador</option>
+                        <option>Autónomo</option>
+                        <option>Empresa</option>
+                        <option>Técnico</option>
+                    </select>
+                <br><br>
+
+                <button type="button" class="btn btn-primary">¡Registra mi perfil reclutador!</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
+                <br>
+                <br>
+            </form>
+        </aside>
+    </aside>
