@@ -21,6 +21,9 @@ import { CalendarComponent } from './html/calendar/calendar.component';
 
 import { FullCalendarModule } from 'primeng/fullcalendar';
 import { ProfilerecruiterComponent } from './profilerecruiter/profilerecruiter.component';
+import { UserSearchComponent } from './user-search/user-search.component';
+import { UserCardComponent } from './user-card/user-card.component';
+import { UserPublicProfileComponent } from './user-public-profile/user-public-profile.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +42,9 @@ import { ProfilerecruiterComponent } from './profilerecruiter/profilerecruiter.c
     ConfigPageComponent,
     CalendarComponent,
     ProfilerecruiterComponent,
+    UserSearchComponent,
+    UserCardComponent,
+    UserPublicProfileComponent,
 
    ],
   imports: [

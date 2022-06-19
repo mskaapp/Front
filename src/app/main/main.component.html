@@ -1,20 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSKA - Página Principal</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="main.component.css">
-</head>
-
-<body>
-    <aside class="container">
+    <!-- Schema para posicionamiento -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "My Skill Around",
+            "url": "https://main.d1nt2bha3gqz0z.amplifyapp.com/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://main.d1nt2bha3gqz0z.amplifyapp.com/{search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+    <aside class="container pt-4">
         <input type="text" class="inputInspirate input" placeholder=" ¿A qué esperas? ¡Inspírate!" />
-        <button class="btn btnPost btn-warning" id="btnPost">Postear</button>
+        <button class="btn btnPost btn-warning" id="btnPost">Post</button>
         <br><br>
         <aside class="row">
             <aside class="col">
@@ -26,15 +27,17 @@
                         </aside>
                         <aside class="card-body">
                             <h5 class="card-title">El metaverso</h5>
-                            <p class="card-text">El futuro de internet ahora depende del metaverso. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores natus labore culpa beatae, suscipit deleniti blanditiis eius impedit, assumenda unde consequuntur rerum
-                                error iste incidunt optio tempore ipsum. Quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum harum dolor illo. Doloribus recusandae earum, ratione tempora natus obcaecati minima commodi neque harum quasi
-                                quisquam cupiditate optio! Tempore, quasi totam.
+                            <p class="card-text">El futuro de internet ahora depende del metaverso. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores natus labore culpa beatae, suscipit deleniti blanditiis eius impedit, assumenda unde</p>
+                            <!--<span class="hide" id="hideText" [(ngModel)]="hideText">-->
+                            <p> consequuntur rerum error iste incidunt optio tempore ipsum. Quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum harum dolor illo. Doloribus recusandae earum, ratione tempora natus obcaecati minima commodi neque
+                                harum quasi quisquam cupiditate optio! Tempore, quasi totam.
                             </p>
+                          <!--</span>-->
                         </aside>
                     </aside>
 
                 </aside>
-                <button class="btn btnSeguirLeyendo w-50 btn-warning">Seguir leyendo...</button>
+                <!--<button class="btn btnSeguirLeyendo btn-warning" id="btnHideText" [(ngModel)]="btnHideText" (click)="toggleText()">Seguir leyendo...</button>-->
 
                 <!--Fin Card-->
                 <!--Card-->
@@ -50,7 +53,7 @@
                         </aside>
                     </aside>
                 </aside>
-                <button class="btn btnSeguirLeyendo w-50 btn-warning">Seguir leyendo...</button>
+                <button class="btn btnSeguirLeyendo btn-warning">Seguir leyendo...</button>
                 <br><br>
                 <!--Fin Card-->
             </aside>
@@ -75,7 +78,3 @@
             </ul>
         </nav>
     </aside>
-
-</body>
-
-</html>
