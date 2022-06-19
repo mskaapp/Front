@@ -1,0 +1,47 @@
+body {
+  background-image: url("https://39975211.servicio-online.net/wp-content/uploads/2022/05/register_background.png");
+}
+
+.inputInspirate {
+  width: 220px;
+  height: 35px;
+  margin-left: 15px;
+  border-radius: 5px;
+}
+
+.btnPost {
+  margin-left: 10px;
+  width: 60px;
+}
+
+.card {
+  height: 245px;
+  overflow: hidden;
+}
+
+.btnSeguirLeyendo {
+  width: 290px;
+  margin-left: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: rgb(70, 124, 224);
+  border: solid 3px #333;
+  color: white;
+}
+
+
+/* Para ocultar la parte del post que no será visible */
+
+.hide {
+  display: none;
+}
+
+
+/* Para mostrar el contenido del post */
+
+.show {
+  display: block;
+}
