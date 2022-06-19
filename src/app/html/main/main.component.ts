@@ -9,6 +9,8 @@ export class MainComponent implements OnInit {
 
   constructor() {}
 
+  // pageActual: number = 1;
+
   ngOnInit(): void {}
 
 }

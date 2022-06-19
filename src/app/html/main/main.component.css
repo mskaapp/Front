@@ -45,3 +45,7 @@ body {
 .show {
     display: block;
 }
+
+.pagination {
+    margin-left: 3%;
+}

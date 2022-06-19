@@ -72,22 +72,46 @@
 
             </aside>
         </aside>
-        <nav aria-label="...">
-            <ul class="pagination">
-                <li class="page-item disabled">
-                    <span class="page-link">Previous</span>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active" aria-current="page">
-                    <span class="page-link">2</span>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                </li>
-            </ul>
-        </nav>
+
+        <!-- Tabla de prueba, para ver la paginación -->
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Título</th>
+                    <th scope="col">Autor</th>
+                    <th scope="col">Idioma</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí habría que llamar a la base de datos, pero como no hay, dejo comentado el ejemplo  -->
+                <!-- <tr *ngFor="let book of books; index as i | paginate: {itemsPerPage: 7, currentPage: pageActual}">
+                        <th scope="row">{{i+1}}</th>
+                        <td> {{book.titulo}} </td>
+                        <td> {{book.autor}} </td>
+                        <td> {{book.idioma}} </td> -->
+
+                <tr>
+                    <td>Título 1</td>
+                    <td>Autor 1</td>
+                    <td>Idioma 1</td>
+                    <td>
+                        <!-- <button class="btn btn-primary " (click)="onPreUpdateBook(book) " data-toggle="modal " data-target="#modalBook ">Update</button> -->
+                        <button class="btn btn-primary " data-toggle="modal " data-target="#modalBook ">Update</button>
+                    </td>
+                    <td>
+                        <!-- <a href="/admin/list-books " class="btn btn-danger " (click)="onDeleteBook(book.id) ">Delete</a> -->
+                        <a href="/admin/list-books " class="btn btn-danger ">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- <pagination-controls (pageChange)="pageActual = $event"></pagination-controls> -->
+
     </aside>
+
+    <!-- <app-modal></app-modal> -->
+
 </body>
 
 </html>
