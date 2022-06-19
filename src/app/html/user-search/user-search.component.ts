@@ -9,6 +9,8 @@ export class UserSearchComponent implements OnInit {
   //Example to send info to the child as a single propierty
   //Should recive and array of objects
   txtUserCardUserName:         string='uri';
+  //Example who to pass a link
+  linkTest: string='https:www.google.com';
   constructor() { }
   ngOnInit(): void {
   }

@@ -13,7 +13,9 @@ export class UserCardComponent implements OnInit {
   @Input() linkUserCardLinkedin!:        string;
   @Input() linkUserCardPinterest!:       string;
   @Input() linkUserCardAppStore!:        string;
+  @Input() linkUserCardPlayStore!:       string;
   @Input() linkUserCardInstagram!:       string;
+
 
   //TODO: BUILD THE CONSTRUCTOR
   constructor() { }
