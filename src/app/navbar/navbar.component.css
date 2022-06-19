@@ -1,9 +1,12 @@
-.colorBackGround{
-  background-color: #F92423;
+.colorBackGround {
+    background-color: #F92423;
 }
-.navbar{
-  height: 70px;
+
+.navbar {
+    height: 70px;
+    box-shadow: 0 6px 4px -2px #333;
 }
-hr{
-  border: 1px solid #FEFF00;
+
+hr {
+    border: 1px solid #FEFF00;
 }
