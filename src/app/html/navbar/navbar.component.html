@@ -2,12 +2,12 @@
 <!-- If user is not authentificated, the navbar its hided-->
 <nav class="navbar navbar-expand-lg navbar-light colorBackGround" *ngIf="authenticationService.isAuthenticated">
     <!-- Container wrapper -->
-    <div class="container-fluid">
+    <aside class="container-fluid">
         <!-- Toggle button -->
         <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <aside class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Navbar-brand User Photo-->
             <a class="navbar-brand mt-2 mt-lg-0" href="#">
                 <div class="dropdown">
@@ -38,29 +38,23 @@
                 </li>
                 <!--Calendario -->
                 <li class="nav-item">
-                  <a routerLink="../calendar" class="nav-link"><img height="30" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/calendar.png" alt="About us"></a>
+                    <a routerLink="../calendar" class="nav-link"><img height="30" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/calendar.png" alt="About us"></a>
                 </li>
                 <!-- Botón para about us -->
                 <li class="nav-item">
-                  <a routerLink="../about" class="nav-link"><img height="30" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/about.png" alt="About us"></a>
+                    <a routerLink="../about" class="nav-link"><img height="30" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/about.png" alt="About us"></a>
                 </li>
-               <!-- Config -->
-               <li class="nav-item">
-                <a routerLink="../profile" class="nav-link"><img height="30" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/config.png" alt="Config"></a>
+                <!-- Config -->
+                <li class="nav-item">
+                    <a routerLink="../profile" class="nav-link"><img height="30" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/config.png" alt="Config"></a>
                 </li>
                 <!-- LogOut-->
                 <li class="nav-item">
-                  <a class="nav-link"><img (click)="logout()" height="30" src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/logout.png" alt="Logout"></a>
+                    <a class="nav-link"><img (click)="logout()" height="30" src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/logout.png" alt="Logout"></a>
                 </li>
             </ul>
-<<<<<<< HEAD:src/app/navbar/navbar.component.html
             <!-- Cierre del aside collapse-navbar -->
         </aside>
         <!-- Cierre del aside container -->
     </aside>
 </nav>
-=======
-        </div>
-        <!--</nav>-->
-
->>>>>>> 8b74c5c0670300f9a2bf3c2b97a3e5635c58b619:src/app/html/navbar/navbar.component.html
