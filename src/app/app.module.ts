@@ -25,6 +25,7 @@ import { UserSearchComponent } from './html/user-search/user-search.component';
 import { UserCardComponent } from './html/user-search/user-card/user-card.component';
 import { UserPublicProfileComponent } from './html/user-public-profile/user-public-profile.component';
 import { WorkComponent } from './work/work.component';
+import { WorkCardComponent } from './work-card/work-card.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { WorkComponent } from './work/work.component';
     UserCardComponent,
     UserPublicProfileComponent,
     WorkComponent,
+    WorkCardComponent,
 
    ],
   imports: [
