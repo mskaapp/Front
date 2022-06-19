@@ -1,0 +1,44 @@
+<aside class="container">
+    <!--LOGO-->
+    <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/mska_logo_main.png" class="img_logo img-fluid" alt="MSKA_LOGO">
+    <!--Red Triangle-->
+    <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/redt.png" class="redTriangle img-fluid" alt="redTriangle">
+    <!--Blue Triangle-->
+    <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/bluet.png" class="blueTriangle img-fluid" alt="blueTriangle">
+
+
+    <aside class="row">
+        <aside class="col-12">
+            <aside class="login-wrapper">
+                <aside class="card w-50">
+                    <aside class="card-body">
+                        <form class="form-signin" (ngSubmit)="onSubmit(signInForm)" #signInForm="ngForm">
+                            <h1 class="h3 mb-3 font-weight-normal">Iniciar sesión</h1>
+                            <!-- Email TextField-->
+                            <label for="inputlogin" class="sr-only">Email </label>
+                            <input type="text" [(ngModel)]="tfUser" id="inputLogin" class="form-control mb-3" name="login" placeholder="Introduce tu em@il" ngModel required autofocus>
+                            <!-- Password TextField-->
+                            <label for="inputPassword" class="sr-only">Password</label>
+                            <input type="password" [(ngModel)]="tfPassword" id="inputPassword" class="form-control" name="password" placeholder="Introduce tu contraseña" autocomplete="on" ngModel required>
+
+                            <button class="btn btn-primary btn-block mt-4 mb-2" type="submit">Entra</button>
+                            <br>
+                            <a routerLink="../register" class="registro" href="#">¿Neófito? ¡Regístrate ya!</a>
+                            <br><br>
+                            <!--Remember me-->
+                            <input [(ngModel)]="chRememberMe" (change)="changestatusRemember()" [checked]="chRememberMe" type="checkbox" id="remember_me" name="_remember_me" />
+                            <label for="remember_me">&nbsp;Recuerdame</label> <br>
+                            <aside class="alert alert-danger" role="alert" *ngIf="isFormValid">
+                                Porfavor, rellena los campos
+                            </aside>
+                            <aside class="alert alert-danger" role="alert" *ngIf="areCredentialsInvalid">
+                                Usuario o password incorrectos
+                            </aside>
+                        </form>
+                    </aside>
+                </aside>
+            </aside>
+        </aside>
+    </aside>
+
+</aside>
