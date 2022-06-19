@@ -16,6 +16,8 @@ import { RegisterRecruiterComponent }   from './html/register-recruiter/register
 import { RegisterTecnicComponent }      from './html/register-tecnic/register-tecnic.component';
 import { WorksComponent }               from './html/works/works.component';
 import { UserPublicProfileComponent }   from './html/user-public-profile/user-public-profile.component';
+import { WorkComponent }                from './html/work/work.component';
+import { UserCardComponent }            from './html/user-search/user-card/user-card.component';
 
 //Security
 import { AuthGuard }                    from './guards/auth.guard';
@@ -41,6 +43,8 @@ const routes: Routes = [
   {path: 'profileRecruiter',    component: ProfileRecruiterComponent,   canActivate : [AuthGuard]},
   {path: 'profileTecnic',       component: ProfileTecnicComponent,      canActivate : [AuthGuard]},
   {path: 'user-public-profile', component: UserPublicProfileComponent,  canActivate : [AuthGuard]},
+  {path: 'work',                component: WorkComponent,               canActivate : [AuthGuard]},
+  {path: 'user-card',           component: UserCardComponent,           canActivate : [AuthGuard]},
 ];
 
 @NgModule({

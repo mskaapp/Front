@@ -24,6 +24,7 @@ import { ProfilerecruiterComponent } from './html/profilerecruiter/profilerecrui
 import { UserSearchComponent } from './html/user-search/user-search.component';
 import { UserCardComponent } from './html/user-search/user-card/user-card.component';
 import { UserPublicProfileComponent } from './html/user-public-profile/user-public-profile.component';
+import { WorkComponent } from './work/work.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { UserPublicProfileComponent } from './html/user-public-profile/user-publ
     UserSearchComponent,
     UserCardComponent,
     UserPublicProfileComponent,
+    WorkComponent,
 
    ],
   imports: [
