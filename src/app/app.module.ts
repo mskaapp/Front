@@ -22,7 +22,7 @@ import { CalendarComponent } from './html/calendar/calendar.component';
 import { FullCalendarModule } from 'primeng/fullcalendar';
 import { ProfilerecruiterComponent } from './html/profilerecruiter/profilerecruiter.component';
 import { UserSearchComponent } from './html/user-search/user-search.component';
-import { UserCardComponent } from './html/user-card/user-card.component';
+import { UserCardComponent } from './html/user-search/user-card/user-card.component';
 import { UserPublicProfileComponent } from './html/user-public-profile/user-public-profile.component';
 
 @NgModule({
