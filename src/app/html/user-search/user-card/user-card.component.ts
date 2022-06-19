@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class UserCardComponent implements OnInit {
   //Retrieving info from Parent
-  @Input() txtUserCardUserName!:         string;
+  @Input() txtUserCardUserName:          string;
   @Input() uriUserCardPhoto!:            string;
   @Input() linkUserCardGithub!:          string;
   @Input() linkUserCardLinkedin!:        string;
