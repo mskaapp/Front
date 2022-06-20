@@ -20,9 +20,6 @@ import { WorkCardComponent }            from './html/works/work-card/work-card.c
 import { WorkComponent }                from './html/work/work.component';
 import { UserPublicProfileComponent }   from './html/user-public-profile/user-public-profile.component';
 
-
-
-
 //Security
 import { AuthGuard }                    from './guards/auth.guard';
 
