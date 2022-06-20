@@ -22,8 +22,6 @@
 }
 
 .img_logo {
-    /* width: 40%;
-    height: 50%; */
     animation: scale_translate 0.7s linear forwards;
     position: absolute;
     top: 13%;
