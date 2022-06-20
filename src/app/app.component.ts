@@ -17,7 +17,7 @@ export class AppComponent {
   constructor(private usuarioService: UsuarioService) {
     console.log('El componente se a creado')
     this.usuarioService.login(this.username, this.password);
-    this.usuarioService.getUsers().subscribe(response => console.log(response));
+    this.usuarioService.findAllUsers().subscribe(response => console.log(response));
   }
 
 
