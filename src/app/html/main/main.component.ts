@@ -6,15 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css'],
 })
 export class MainComponent implements OnInit {
-  hideText: any;
-  btnHideText: any;
 
   constructor() {}
 
-  ngOnInit(): void {}
+  // pageActual: number = 1;
 
-  toggleText() {
-    this.hideText.classList.toggle('show');
-  }
+  ngOnInit(): void {}
 
 }

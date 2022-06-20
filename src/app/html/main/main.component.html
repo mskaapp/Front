@@ -1,4 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSKA - Principal</title>
     <!-- Schema para posicionamiento -->
     <script type="application/ld+json">
         {
@@ -13,55 +20,47 @@
             }
         }
     </script>
+</head>
+
+<body>
+
     <aside class="container pt-4">
         <input type="text" class="inputInspirate input" placeholder=" ¿A qué esperas? ¡Inspírate!" />
         <button class="btn btnPost btn-warning" id="btnPost">Post</button>
         <br><br>
-        <aside class="row">
-            <aside class="col">
-                <!--Card-->
-                <aside class="col-7 aside_test1 w-50">
-                    <aside class="card">
-                        <aside class="card-header">
-                            Uri
-                        </aside>
-                        <aside class="card-body">
-                            <h5 class="card-title">El metaverso</h5>
-                            <p class="card-text">El futuro de internet ahora depende del metaverso. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolores natus labore culpa beatae, suscipit deleniti blanditiis eius impedit, assumenda unde</p>
-                            <!--<span class="hide" id="hideText" [(ngModel)]="hideText">-->
-                            <p> consequuntur rerum error iste incidunt optio tempore ipsum. Quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum harum dolor illo. Doloribus recusandae earum, ratione tempora natus obcaecati minima commodi neque
-                                harum quasi quisquam cupiditate optio! Tempore, quasi totam.
-                            </p>
-                          <!--</span>-->
-                        </aside>
-                    </aside>
 
-                </aside>
-                <!--<button class="btn btnSeguirLeyendo btn-warning" id="btnHideText" [(ngModel)]="btnHideText" (click)="toggleText()">Seguir leyendo...</button>-->
+        <!-- Tabla de prueba, para ver la paginación -->
+        <table class="table table-hover w-25">
+            <thead>
+                <tr>
+                    <th scope="col">Las Mariposas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí habría que llamar a la base de datos, pero como no hay, dejo comentado el ejemplo  -->
+                <!-- <tr *ngFor="let book of books; index as i | paginate: {itemsPerPage: 7, currentPage: pageActual}">
+                        <th scope="row">{{i+1}}</th>
+                        <td> {{book.titulo}} </td>
+                        <td> {{book.autor}} </td>
+                        <td> {{book.idioma}} </td> -->
 
-                <!--Fin Card-->
-                <!--Card-->
-                <aside class="col-7 aside_test1 mt-2 w-50">
-                    <aside class="card">
-                        <aside class="card-header">
-                            Uri2
-                        </aside>
-                        <aside class="card-body">
-                            <h5 class="card-title">El metaverso2</h5>
-                            <p class="card-text">2El futuro de internet ahora depende del metaverso. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae blanditiis in, magnam nulla harum suscipit tempora magni, temporibus doloremque neque beatae! Vero illo
-                                fugiat perspiciatis quidem? Sunt labore assumenda ad!</p>
-                        </aside>
-                    </aside>
-                </aside>
-                <button class="btn btnSeguirLeyendo btn-warning">Seguir leyendo...</button>
-                <br><br>
-                <!--Fin Card-->
-            </aside>
+                <tr>
+                    <td>Las mariposas de colores... Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores earum ex accusamus mollitia quis provident tempore? Cum commodi a qui? Ratione, ab consequuntur! Laborum consectetur optio, tenetur nobis
+                        corporis at.
+                    </td>
+                    <!-- <td> -->
+                    <!-- <button class="btn btn-primary " (click)="onPreUpdateBook(book) " data-toggle="modal " data-target="#modalBook ">Update</button> -->
+                    <!-- </td> -->
+                    <!-- <td> -->
+                    <!-- <a href="/admin/list-books " class="btn btn-danger " (click)="onDeleteBook(book.id) ">Delete</a> -->
+                    <!-- </td> -->
+                </tr>
+                <tr>
+                    <button class="btn btnSeguirLeyendo btn-warning w-100">Seguir leyendo...</button>
+                </tr>
+            </tbody>
+        </table>
 
-            <aside class="col-5 aside_test2">
-
-            </aside>
-        </aside>
         <nav aria-label="...">
             <ul class="pagination">
                 <li class="page-item disabled">
@@ -77,4 +76,12 @@
                 </li>
             </ul>
         </nav>
+        <!-- <pagination-controls (pageChange)="pageActual = $event"></pagination-controls> -->
+
     </aside>
+
+    <!-- <app-modal></app-modal> -->
+
+</body>
+
+</html>

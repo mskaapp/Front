@@ -15,5 +15,4 @@ export class UserSearchComponent implements OnInit {
   constructor() { }
   ngOnInit(): void {
   }
-
 }
