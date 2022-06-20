@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UsuarioService } from './services/usuario.service';
 
 import { AuthenticationService } from './services/authentification.service';
 
@@ -8,14 +9,21 @@ import { AuthenticationService } from './services/authentification.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  username = 'admin1';
+  password = 'password';
+
   title = 'My Skill Around';
 
-  constructor(public authenticationService: AuthenticationService) { }
-
-  //Logout
-  logout() {
-    this.authenticationService.logout();
-    //navigate to the login
-    //this.router.navigate('')
+  constructor(private usuarioService: UsuarioService) {
+    console.log('El componente se a creado')
+    this.usuarioService.login(this.username, this.password);
+    this.usuarioService.getUsers().subscribe(response => console.log(response));
   }
-}
+
+
+   ngOnInit(): void{
+    console.log('El componente se ha inicializado');
+
+   }
+
+  }

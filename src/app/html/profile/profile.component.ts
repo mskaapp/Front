@@ -10,6 +10,10 @@ export class ProfileComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log('Hola');
+    console.log(sessionStorage.getItem('auth_token'));
+    console.log('chao');
+
   }
 
 }

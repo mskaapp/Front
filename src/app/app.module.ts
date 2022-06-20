@@ -27,6 +27,8 @@ import { UserPublicProfileComponent } from './html/user-public-profile/user-publ
 import { WorkCardComponent } from './html/works/work-card/work-card.component';
 import { WorkComponent } from './html/work/work.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 //Externals
 //import { NgxPaginationModule } from 'ngx-pagination';
 
@@ -59,6 +61,7 @@ import { WorkComponent } from './html/work/work.component';
     AppRoutingModule,
     FormsModule,
     FullCalendarModule,
+    HttpClientModule
     //NgxPaginationModule
   ],
   providers: [],
