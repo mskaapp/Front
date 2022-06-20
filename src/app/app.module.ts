@@ -28,7 +28,7 @@ import { WorkCardComponent } from './html/works/work-card/work-card.component';
 import { WorkComponent } from './html/work/work.component';
 
 //Externals
-import { NgxPaginationModule } from 'ngx-pagination';
+//import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -59,7 +59,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     AppRoutingModule,
     FormsModule,
     FullCalendarModule,
-    NgxPaginationModule
+    //NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
