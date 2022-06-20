@@ -21,9 +21,6 @@ import { WorkComponent }                from './html/work/work.component';
 import { UserPublicProfileComponent }   from './html/user-public-profile/user-public-profile.component';
 import { InterviewsComponent }          from './interviews/interviews.component';
 
-
-
-
 //Security
 import { AuthGuard }                    from './guards/auth.guard';
 
