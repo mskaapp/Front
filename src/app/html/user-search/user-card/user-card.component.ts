@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { tecnicoModel } from 'src/app/models/tecnicoModel';
+import { usuarioModel } from 'src/app/models/usuarioModel';
 
 @Component({
   selector: 'app-user-card',
@@ -7,17 +9,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class UserCardComponent implements OnInit {
   //Retrieving info from Parent
-  @Input() txtUserCardUserName:          string;
-  @Input() uriUserCardPhoto!:            string;
-  @Input() linkUserCardGithub!:          string;
-  @Input() linkUserCardLinkedin!:        string;
-  @Input() linkUserCardPinterest!:       string;
-  @Input() linkUserCardAppStore!:        string;
-  @Input() linkUserCardPlayStore!:       string;
-  @Input() linkUserCardInstagram!:       string;
+  @Input() userCardTecnic:  tecnicoModel;
 
-
-  //TODO: BUILD THE CONSTRUCTOR
   constructor() { }
 
   ngOnInit(): void {

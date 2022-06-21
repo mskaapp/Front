@@ -14,7 +14,7 @@
             </div>
             <div class="text-center">
               <!--Nombre {{user.name}}-->
-              <h5 class="card-title">{{txtUserCardUserName}}</h5>
+              <h5 class="card-title">{{userCardTecnic.getId}}</h5>
             </div>
             <div class="col-md-12 text-center">
               <!--Boton-->
@@ -28,15 +28,15 @@
   <!--TODO HIDE IF LINK NULL-->
   <div class ="col-2 socialIconCol align-items-center" id="colIcons">
     <div class="row">
-        <a class="socialIcon" href="{{linkUserCardGithub}}" target="_blank"><i class="fa fa-github"></i></a>
+        <a class="socialIcon" href="{{userCardTecnic.getGithub}}" target="_blank"><i class="fa fa-github"></i></a>
     </div>
+    <!--<div class="row">
+        <a class="link iconB" href="{{}}" target="_blank"><i class="fa fa-linkedin"></i></a>
+    </div>-->
     <div class="row">
-        <a class="link iconB" href="{{linkUserCardLinkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a class="link iconB" href="{{userCardTecnic.getPinterest}}" target="_blank"><i class="fa fa-pinterest "></i></a>
     </div>
-    <div class="row">
-        <a class="link iconB" href="{{linkUserCardPinterest}}" target="_blank"><i class="fa fa-pinterest "></i></a>
-    </div>
-    <div class="row">
+    <!--<div class="row">
         <a class="link iconB" href="{{linkUserCardAppStore}}" target="_blank"><i class="fa fa-apple"></i></a>
     </div>
     <div class="row">
@@ -44,6 +44,6 @@
     </div>
     <div class="row">
         <a class="link iconB" href="{{linkUserCardInstagram}}" target="_blank"><i class="fa fa-instagram"></i></a>
-    </div>
+    </div>-->
   <!--End Social icons-->
   </div>
