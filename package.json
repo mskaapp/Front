@@ -22,6 +22,7 @@
     "@fullcalendar/daygrid": "^4.4.2",
     "@fullcalendar/interaction": "^4.4.2",
     "@fullcalendar/timegrid": "^4.4.2",
+    "angular-disable-browser-back-button": "^1.0.2",
     "ngx-pagination": "^6.0.1",
     "primeicons": "^5.0.0",
     "primeng": "^13.4.1",
