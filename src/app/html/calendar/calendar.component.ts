@@ -5,6 +5,7 @@ import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
 //Para el formato espanyol
 import esLocale from '@fullcalendar/core/locales/es';
+import { trabajoModel } from 'src/app/models/trabajoModel';
 
 @Component({
   selector: 'app-calendar',
@@ -12,6 +13,10 @@ import esLocale from '@fullcalendar/core/locales/es';
   styleUrls: ['./calendar.component.css']
 })
 export class CalendarComponent implements OnInit {
+
+  //Array Trabajos
+  arrayCalendarTrabajos!: trabajoModel[];
+
 
   public events!: any[];
   public options : any;
@@ -34,7 +39,7 @@ export class CalendarComponent implements OnInit {
     }
     //Insert Date from database
     //Evento de muestra
-    //TODO: Borrar
+    //TODO: Sustituir por el array recibido de trabajos
     this.events =[
       {
         title: "Sprint 1",
