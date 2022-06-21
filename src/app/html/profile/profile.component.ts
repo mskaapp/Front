@@ -12,21 +12,13 @@ export class ProfileComponent implements OnInit {
   fechaDeNacimiento: any;
   userName: any;
 
-<<<<<<< HEAD
-  usuario!: usuarioModel;
+  //TODO: funcion de guardar datos
+
+  ProfileUser!: usuarioModel;
 
   constructor() {}
 
   ngOnInit(): void {}
 
-  botonesEdicion(): void {
-=======
-  //TODO: funcion de guardar datos
-
-  ProfileUser!: usuarioModel;
-
-  constructor() { }
->>>>>>> cb7d0210eea983f11b9458b0a0c92e4c5769948d
-
-  }
+  botonesEdicion(): void {}
 }
