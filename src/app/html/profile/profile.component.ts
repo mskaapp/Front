@@ -3,13 +3,21 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css']
+  styleUrls: ['./profile.component.css'],
 })
 export class ProfileComponent implements OnInit {
+  nombre: any;
+  apellidos: any;
+  fechaDeNacimiento: any;
+  userName: any;
 
-  constructor() { }
+  usuario!: usuarioModel;
 
-  ngOnInit(): void {
+  constructor() {}
+
+  ngOnInit(): void {}
+
+  botonesEdicion(): void {
+
   }
-
 }

@@ -5,20 +5,20 @@
             <h1>PERFIL</h1>
             <hr>
             <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" name="nombre" id="nombre" class="form-control" disabled placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
             <br>
             <label for="apellidos">Apellidos</label>
-            <input type="text" class="form-control" placeholder="Apellidos" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" name="apellidos" id="apellidos" class="form-control" disabled placeholder="Apellidos" aria-label="Username" aria-describedby="basic-addon1">
             <br>
             <label for="fechaDeNacimiento">Fecha de nacimiento</label>
             <br>
-            <input type="date">
+            <input type="date" name="fechaDeNacimiento" id="fechaDeNacimiento" disabled>
             <br>
             <br>
             <label for="userName">Nombre de Usuario</label>
-            <input type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" name="userName" id="userName" class="form-control" disabled placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
             <br><br>
-            <button class="boton">Guardar</button>
+            <button class="boton" (click)="botonesEdicion()">Editar</button>
             <br><br>
             <h2>Redes</h2>
             <hr>
@@ -40,7 +40,7 @@
             <aside id="botonesEspecificos ">
                 <!-- Enterprise -->
                 <!--TODO: if profile not exist register, do funtion-->
-                <a routerLink="../profilerecruiter" href="#"><img class="img w-25 " src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/reclutador.png" id="btnAstronauta " alt="Astronauta " /></a>
+                <a routerLink="../profilerecruiter" href="#"><img class="img w-25" src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/reclutador.png" id="btnAstronauta " alt="Astronauta " /></a>
                 <!-- Tecnic -->
                 <!--TODO: if profile not exist register, do funtion-->
                 <a routerLink="../calendar" href="#" class="disabled"><img class="img w-25 " src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/tecnico.png" id="btnCohete " alt="Cohete " /></a>
