@@ -1,0 +1,17 @@
+footer {
+    display: block;
+    margin-left: -85%;
+}
+
+#bandage1 {
+    width: 50px;
+}
+
+#bandage2 {
+    margin-top: 7px;
+    width: 60px;
+}
+
+#bandage3 {
+    width: 35px;
+}
