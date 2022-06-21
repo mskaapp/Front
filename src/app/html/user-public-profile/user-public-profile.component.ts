@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { usuarioModel } from 'src/app/models/usuarioModel';
 
 @Component({
   selector: 'app-user-public-profile',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-public-profile.component.css']
 })
 export class UserPublicProfileComponent implements OnInit {
+
+  userPProfileUser!: usuarioModel;
 
   constructor() { }
 

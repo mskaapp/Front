@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { usuarioModel } from 'src/app/models/usuarioModel';
 
 @Component({
   selector: 'app-profile',
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
+
+  //TODO: funcion de guardar datos
+
+  ProfileUser!: usuarioModel;
 
   constructor() { }
 
