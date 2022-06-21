@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { UsuarioService } from './services/usuario.service';
 
 import { AuthenticationService } from './services/authentification.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -23,7 +24,7 @@ export class AppComponent {
 
    ngOnInit(): void{
     console.log('El componente se ha inicializado');
-
+    console.log(localStorage.getItem('auth_token'));
    }
 
   }
