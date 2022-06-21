@@ -5,19 +5,21 @@
             <h1>PERFIL</h1>
             <hr>
             <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="ProfileUser.nombre" ngModel>
             <br>
             <label for="apellidos">Apellidos</label>
-            <input type="text" class="form-control" placeholder="Apellidos" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" class="form-control" placeholder="Apellidos" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="ProfileUser.apellidos" ngModel>
             <br>
             <label for="fechaDeNacimiento">Fecha de nacimiento</label>
+            <h3>{{ProfileUser.fecha_nacimiento}}"</h3>
             <br>
             <input type="date">
             <br>
             <br>
             <label for="userName">Nombre de Usuario</label>
-            <input type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="ProfileUser.nombre_usuario" ngModel>
             <br><br>
+            <!--TODO: Funcion de guardar-->
             <button class="boton">Guardar</button>
             <br><br>
             <h2>Redes</h2>
