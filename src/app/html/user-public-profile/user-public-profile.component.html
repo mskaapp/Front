@@ -6,20 +6,18 @@
           <h1>PERFIL</h1>
           <hr>
           <label for="nombre">Nombre</label>
-          <h3>"Nombre Real"</h3>
+          <h3>"Nombre Real"{{userPProfileUser.getNombre}}</h3>
           <br>
           <label for="apellidos">Apellidos</label>
-          <h3>"Apellidos Reales"</h3>
+          <h3>"Apellidos Reales"{{userPProfileUser.getApellidos}}</h3>
           <br>
           <br>
           <label for="userName">Nombre de Usuario</label>
-          <h3>"UserName Real"</h3>
+          <h3>"UserName Real"{{userPProfileUser.getNombre_usuario}}</h3>
           <br>
           <label for="userName">Trabajos realizados</label>
-          <h3>"10"</h3>
+          <h3>"10"{{userPProfileUser.getNum_trabajos}}</h3>
           <br>
-          <label for="userName">Trabajos en curso</label>
-          <h3>"2"</h3>
           <br>
           <h2>Redes</h2>
           <hr>
@@ -34,9 +32,10 @@
       </aside>
       <aside class="col ">
           <!-- Imagen de perfil -->
-
           <img src="https://www.ecured.cu/images/5/5a/Julio%2Biglesias1.jpg" class='imgRedonda' />
       </aside>
+      <button>Solicitar Trabajo</button>
+      <button>Solicitar Entrevista</button>
   </aside>
 </aside>
 <!-- <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/edit.png" height="30"> -->

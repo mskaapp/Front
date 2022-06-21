@@ -5,20 +5,36 @@
             <h1>PERFIL</h1>
             <hr>
             <label for="nombre">Nombre</label>
+<<<<<<< HEAD
             <input type="text" name="nombre" id="nombre" class="form-control" disabled placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
             <br>
             <label for="apellidos">Apellidos</label>
             <input type="text" name="apellidos" id="apellidos" class="form-control" disabled placeholder="Apellidos" aria-label="Username" aria-describedby="basic-addon1">
+=======
+
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="ProfileUser.nombre" ngModel>
+            <br>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" class="form-control" placeholder="Apellidos" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="ProfileUser.apellidos" ngModel>
+>>>>>>> cb7d0210eea983f11b9458b0a0c92e4c5769948d
             <br>
             <label for="fechaDeNacimiento">Fecha de nacimiento</label>
+            <h3>{{ProfileUser.fecha_nacimiento}}"</h3>
             <br>
             <input type="date" name="fechaDeNacimiento" id="fechaDeNacimiento" disabled>
             <br>
             <br>
             <label for="userName">Nombre de Usuario</label>
+<<<<<<< HEAD
             <input type="text" name="userName" id="userName" class="form-control" disabled placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
             <br><br>
             <button class="boton" (click)="botonesEdicion()">Editar</button>
+=======
+            <input type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="ProfileUser.nombre_usuario" ngModel>
+            <br><br>
+            <!--TODO: Funcion de guardar-->
+            <button class="boton">Guardar</button>
+>>>>>>> cb7d0210eea983f11b9458b0a0c92e4c5769948d
             <br><br>
             <h2>Redes</h2>
             <hr>
@@ -49,5 +65,6 @@
             </aside>
         </aside>
     </aside>
+
 </aside>
 <!-- <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/edit.png" height="30"> -->

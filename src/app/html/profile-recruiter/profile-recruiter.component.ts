@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { reclutadorModel } from 'src/app/models/reclutadorModel';
 
 @Component({
   selector: 'app-profile-recruiter',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile-recruiter.component.css']
 })
 export class ProfileRecruiterComponent implements OnInit {
+
+  profilerecruiterProfileR!: reclutadorModel;
 
   constructor() { }
 
