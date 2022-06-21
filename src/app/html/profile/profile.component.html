@@ -22,8 +22,30 @@
 
             <input type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="ProfileUser.nombre_usuario" ngModel>
             <br><br>
-            <!--TODO: Funcion de guardar-->
-            <button class="boton">Guardar</button>
+            <!--TODO: Funcion de editar-->
+
+            <div [ngStyle]="{'visibility':btnEditar?'visible':'hidden'}"> Editar </div>
+            <button class="boton" (click)="btnEditFunction()">Editar</button>
+
+            <div [style.visibility]="btnGuardar ? 'visible' : 'hidden'">Guardar</div>
+            <button class="btn btn-success" (click)="div2Function()">Guardar</button>
+
+            <div [style.visibility]="'hidden'">Cancelar</div>
+            <button class="btn btn-danger" (click)="div3Function()">Cancelar</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <br><br>
             <h2>Redes</h2>
@@ -40,7 +62,7 @@
         <aside class="col ">
             <!-- Imagen de perfil -->
 
-            <img src="https://www.ecured.cu/images/5/5a/Julio%2Biglesias1.jpg" class='imgRedonda' />
+            <img src="" class='imgRedonda' />
             <!-- Dibujito de la cámara  -->
             <img class="img camara" src='https://39975211.servicio-online.net/wp-content/uploads/2022/06/camara.png' id="camara " />
             <aside id="botonesEspecificos ">
