@@ -12,9 +12,9 @@ export class ProfileComponent implements OnInit {
   fechaDeNacimiento: any;
   userName: any;
 
-  btnEditar: boolean = true;
-  btnGuardar: boolean = true;
-  btnCancelar: boolean = true;
+  bolBtnEditar: boolean = true;
+  bolBtnGuadar: boolean = false;
+  bolBtnCancelar: boolean = false;
 
   //TODO: funcion de guardar datos
 
@@ -22,25 +22,21 @@ export class ProfileComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+  }
 
   botonesEdicion(): void {}
 
-  btnEditFunction() {
-    this.btnEditar = true;
-    this.btnGuardar = false;
-    this.btnCancelar = false;
+  showGuardarCancelar() {
+    this.bolBtnEditar   = false;
+    this.bolBtnGuadar   = true;
+    this.bolBtnCancelar = true;
   }
 
-  div2Function() {
-    this.btnGuardar = true;
-    this.btnEditar = false;
-    this.btnCancelar = false;
-  }
-
-  div3Function() {
-    this.btnCancelar = true;
-    this.btnGuardar = false;
-    this.btnEditar = false;
+  hideGuardarCancelar() {
+    this.bolBtnEditar   = true;
+    this.bolBtnGuadar   = false;
+    this.bolBtnCancelar = false;
   }
 }
