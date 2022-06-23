@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { tecnicoModel } from 'src/app/models/tecnicoModel';
 
 @Component({
   selector: 'app-profile-tecnic',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile-tecnic.component.css']
 })
 export class ProfileTecnicComponent implements OnInit {
+
+  profileTecnicProfileT!: tecnicoModel;
 
   constructor() { }
 

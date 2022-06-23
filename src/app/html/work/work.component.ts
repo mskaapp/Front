@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { trabajoModel } from 'src/app/models/trabajoModel';
 
 @Component({
   selector: 'app-work',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./work.component.css']
 })
 export class WorkComponent implements OnInit {
+
+  workTrabajo!: trabajoModel;
 
   constructor() { }
 

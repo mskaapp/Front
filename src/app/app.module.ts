@@ -26,9 +26,12 @@ import { UserCardComponent } from './html/user-search/user-card/user-card.compon
 import { UserPublicProfileComponent } from './html/user-public-profile/user-public-profile.component';
 import { WorkCardComponent } from './html/works/work-card/work-card.component';
 import { WorkComponent } from './html/work/work.component';
+import { InterviewsComponent } from './interviews/interviews.component';
 
-//Externals
+//EXTERNALS
 //import { NgxPaginationModule } from 'ngx-pagination';
+//
+import { BackButtonDisableModule } from 'angular-disable-browser-back-button';
 
 @NgModule({
   declarations: [
@@ -52,6 +55,7 @@ import { WorkComponent } from './html/work/work.component';
     UserPublicProfileComponent,
     WorkComponent,
     WorkCardComponent,
+    InterviewsComponent,
 
    ],
   imports: [
@@ -59,6 +63,9 @@ import { WorkComponent } from './html/work/work.component';
     AppRoutingModule,
     FormsModule,
     FullCalendarModule,
+    BackButtonDisableModule.forRoot({
+      preserveScrollPosition: true
+    })
     //NgxPaginationModule
   ],
   providers: [],
