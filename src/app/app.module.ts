@@ -28,7 +28,7 @@ import { WorkCardComponent } from './html/works/work-card/work-card.component';
 import { WorkComponent } from './html/work/work.component';
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { AuthInterceptor } from './services/auth.interceptor';
+import { AuthInterceptor, authInterceptorProviders } from './services/auth.interceptor';
 
 //Externals
 //import { NgxPaginationModule } from 'ngx-pagination';
@@ -65,11 +65,7 @@ import { AuthInterceptor } from './services/auth.interceptor';
     HttpClientModule
     //NgxPaginationModule
   ],
-  providers: [{
-    provide: HTTP_INTERCEPTORS,
-    useClass: AuthInterceptor,
-    multi: true
-  }],
+  providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
