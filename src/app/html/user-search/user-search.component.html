@@ -1,0 +1,28 @@
+<div class="container mt-3">
+  <!--Form Search-->
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <form>
+          <div class="form-group">
+            <label for="Buscar">Buscar Usuarios</label>
+            <input type="text" class="form-control" id="tfBuscarNombre" placeholder="nombre">
+          </div>
+          <button type="submit" class="btn btn-primary">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--Show Results-->
+  <div class="row">
+    <div class="col">
+      <p>Resultado de la búsqueda</p>
+      <!--Adding card to View-->
+      <!--<app-user-card
+      [txtUserCardUserName]="txtUserCardUserName"
+      ></app-user-card>-->
+      <app-user-card [userCardTecnic]="userSearchTecnic"></app-user-card>
+      <a routerLink="../user-public-profile"><button>Usuario Test</button></a>
+    </div>
+  </div>
+</div>

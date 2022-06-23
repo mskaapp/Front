@@ -1,0 +1,76 @@
+body {
+    background-image: url("https://39975211.servicio-online.net/wp-content/uploads/2022/05/register_background.png");
+}
+
+
+/* Imagen de perfil */
+
+.imgRedonda {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    border: 10px solid #666;
+}
+
+
+/* Botón de la cámara de fotos para cambiar la foto de perfil */
+
+.camara {
+    width: 100px;
+    float: right;
+    position: relative;
+    margin-top: -110px;
+}
+
+.redTriangle {
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -9999;
+}
+
+.blueTriangle {
+    position: absolute;
+    right: 0%;
+    z-index: -1;
+}
+
+
+/* Imagen del astronauta de la izquierda de todo */
+
+#imgProfileRImagesrc {
+    width: 800px;
+    position: inherit;
+    z-index: -9999;
+    margin-left: -300px;
+}
+
+
+/* Botón website */
+
+#btnProfileRExp {
+    margin-top: -90%;
+}
+
+
+/* Desplegable tipo de reclutador */
+
+#asideDplProfileRKind {
+    margin-top: -900px;
+    margin-top: -40%;
+    margin-left: -7%;
+}
+
+
+/* Información de experiencia, nivel, etc */
+
+#asideInfoUsuario {
+    margin-left: -8%;
+    margin-top: 5%;
+}
+
+#botonesEspecificos {
+    margin-left: 25%;
+}

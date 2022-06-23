@@ -1,0 +1,38 @@
+<div class="container" style="margin-top: 50px;">
+  <!--Caja con Registro-->
+  <div class="row col-4" id="cajitaRegistro"  >
+      <form method="POST" action="index.php?control=ControlLogin&operacio=login">
+          <br>
+          <h2> Registro </h2>
+          <div class="row">
+              <div class="col">
+                  <label>Nombre</label>
+                  <input type="text" name="nombre" class="form-control">
+              </div>
+              <div class="col">
+                  <label>Apellidos</label>
+                  <input type="text" name="apellidos" class="form-control">
+              </div>
+          </div>
+          <div>
+              <label>Nombre Usuario</label>
+              <input type="text" name="nombre_usuario" class="form-control">
+          </div>
+          <div>
+              <label>Email</label>
+              <input type="text" name="email" class="form-control">
+              <br>
+          </div>
+          <div>
+              <label>Fecha de nacimiento</label>
+              <input type ="date" name="fechaNacimiento">
+          </div>
+          <div>
+              <button type="button" class="btn btn-warning">¡Regístrame!</button>
+              <a routerLink="../login" href="#"><button type="button" class="btn btn-danger">Cancelar</button></a>
+              <br>
+              <br>
+          </div>
+    </form>
+  <!--Fin Caja con Registro-->
+</div>
