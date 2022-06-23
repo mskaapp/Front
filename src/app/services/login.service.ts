@@ -49,7 +49,7 @@ export class LoginService {
     console.log(data);
     this.user = data;
     this.user$.next(this.user);
-    return this.http.post(`${baseUrl}/login`, data);
+    return this.http.post(`${baseUrl}`, data);
   }
 
   getByName(name: string): Observable<any> {
