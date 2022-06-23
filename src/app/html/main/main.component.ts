@@ -6,11 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css'],
 })
 export class MainComponent implements OnInit {
-
   constructor() {}
 
+  screenWidth = screen.width;
+  screenHeight = screen.height;
+
   // pageActual: number = 1;
+  screenSize() {
+    console.log(this.screenHeight);
+  }
 
-  ngOnInit(): void {}
-
+  ngOnInit(): void {
+    this.screenSize();
+  }
 }
