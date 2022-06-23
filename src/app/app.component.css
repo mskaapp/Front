@@ -10,17 +10,19 @@ body {
 }
 
 .stykyNavBar {
-  position: fixed;
-  width: 100%;
-  transition: 0.2s linear;
-  top: 0px;
-  z-index: 10;
+    position: fixed;
+    width: 100%;
+    transition: 0.2s linear;
+    top: 0px;
+    z-index: 10;
 }
+
 .contenido {
-  position: static;
-  transition: 0.2s linear;
-  top: -50px;
+    position: static;
+    transition: 0.2s linear;
+    top: -50px;
 }
+
 
 /*___________________________GENERAL_________________________________________*/
 
