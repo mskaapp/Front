@@ -14,12 +14,36 @@ export interface User {
 })
 export class LoginService {
 
+  token: any = 'token inicial';
+  submitted = false;
   private user: any;
   private user$: Subject<any>; // Subject que emite información a componentes
 
   constructor(private http: HttpClient) {
     this.user$ = new Subject();
   }
+
+  ngOnInit(): void {
+      const data = {
+        username: 'admin1',
+        password: 'password',
+      };
+
+      this.signup(data)
+        .subscribe(
+          response => {
+            this.token = response;
+            this.submitted = true;
+            console.log(response);
+            window.sessionStorage.setItem("auth-token", this.token.token);
+            window.sessionStorage.setItem("auth-username", 'admin1');
+          },
+          error => {
+            console.log(error);
+          });
+
+    }
+
 
   signup(data: any) {
     console.log(data);

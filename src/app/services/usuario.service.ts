@@ -20,22 +20,33 @@ export class UsuarioService {
     this.headers.append("Authorization", "Bearer"+ sessionStorage.getItem("token"));*/
   }
 
-  public login(username: string, password: string) {
+  /*public login(username: string, password: string) {
     this.http.post(LOGIN_URI,{username: username,password: password})
     .subscribe((resp: any) => {this.router.navigate(['profile']);
     const sesion = sessionStorage.setItem('auth_token', resp.token);
     console.log(resp.token);
     return sesion;
-  });
-}
+  });*/
+
 
   listarUsuarios(){
-    sessionStorage.getItem('auth_token');
     return this.http.get('https://myskillaround-spring-testing.herokuapp.com/api/usuario');
   }
 
-  getAll(): Observable<any>{
-    return this.http.get(USUARIO_URI);
+  getById(id: string) {
+    return this.http.get(`https://myskillaround-spring-testing.herokuapp.com/api/usuario/${id}`);
+  }
+
+  add(data: any) {
+    return this.http.post(`https://myskillaround-spring-testing.herokuapp.com/api/usuario`, data);
+  }
+
+  delete(id: any) {
+    return this.http.delete(`${USUARIO_URI}/${id}`);
+  }
+
+  update(id: any, data: any) {
+    return this.http.put(`${USUARIO_URI}/${id}`, data);
   }
 
 }
