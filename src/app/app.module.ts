@@ -27,7 +27,8 @@ import { UserPublicProfileComponent } from './html/user-public-profile/user-publ
 import { WorkCardComponent } from './html/works/work-card/work-card.component';
 import { WorkComponent } from './html/work/work.component';
 
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthInterceptor } from './services/auth.interceptor';
 
 //Externals
 //import { NgxPaginationModule } from 'ngx-pagination';
@@ -64,7 +65,11 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule
     //NgxPaginationModule
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: AuthInterceptor,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

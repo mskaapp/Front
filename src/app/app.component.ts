@@ -18,12 +18,13 @@ export class AppComponent {
   constructor(private usuarioService: UsuarioService) {
     console.log('El componente se a creado')
     this.usuarioService.login(this.username, this.password);
-    this.usuarioService.findAllUsers().subscribe(response => console.log(response));
+    this.usuarioService.listarUsuarios().subscribe(response => console.log(response));
   }
 
 
    ngOnInit(): void{
     console.log('El componente se ha inicializado');
+    // No llega el token
     console.log(localStorage.getItem('auth_token'));
    }
 

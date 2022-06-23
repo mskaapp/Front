@@ -48,4 +48,6 @@ export class AuthenticationService {
   getIsAuthenticated(): boolean {
     return this.isAuthenticated;
   }
+
+  ///////////////////////////////////////////////////////////////////////////////////
 }
