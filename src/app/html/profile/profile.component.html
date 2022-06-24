@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.component.css">
     <title>Document</title>
 </head>
 
@@ -14,7 +15,7 @@
         <!-- aside que va a ir a la izquierda de todo -->
         <aside class="row">
             <aside class="col">
-                <h1 class="texto">PERFIL</h1>
+                <h1 class="texto mt-4">PERFIL</h1>
                 <hr>
                 <label class="texto text-light" for="nombre" class="text-light">Nombre</label>
 
@@ -40,8 +41,8 @@
                 <br><br>
                 <!--TODO: Funcion de editar-->
                 <button *ngIf="bolBtnEditar == true" class="boton" (click)="showGuardarCancelar()">Editar</button>
-                <button *ngIf="bolBtnGuadar == true" class="btn btn-success" (click)="hideGuardarCancelar()">Guardar</button>
-                <button *ngIf="bolBtnCancelar == true" class="btn btn-danger" (click)="hideGuardarCancelar()">Cancelar</button>
+                <button *ngIf="bolBtnGuadar == true" class="btnGuardar" (click)="hideGuardarCancelar()">Guardar</button>
+                <button *ngIf="bolBtnCancelar == true" class="btnCancelar" (click)="hideGuardarCancelar()">Cancelar</button>
 
                 <br><br>
                 <h2>Redes</h2>
@@ -61,13 +62,13 @@
                 <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/david.png" class='imgRedonda' />
                 <!-- Dibujito de la cámara  -->
                 <img class="img camara" src='https://39975211.servicio-online.net/wp-content/uploads/2022/06/camara.png' id="camara " />
-                <aside id="botonesEspecificos ">
+                <aside class="botonesEspecificos ">
                     <!-- Enterprise -->
                     <!--TODO: if profile not exist register, do funtion-->
-                    <a routerLink="../profilerecruiter" href="#"><img class="img w-25" src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/reclutador.png" id="btnAstronauta " alt="Astronauta " /></a>
+                    <a routerLink="../profilerecruiter" href="#"><img class="img btnAstronauta w-25" src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/reclutador.png" alt="Astronauta " /></a>
                     <!-- Tecnic -->
                     <!--TODO: if profile not exist register, do funtion-->
-                    <a routerLink="../calendar" href="#" class="disabled"><img class="img w-25 " src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/tecnico.png" id="btnCohete " alt="Cohete " /></a>
+                    <a routerLink="../calendar" href="#" class="disabled"><img class="img btnCohete w-25 " src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/tecnico.png" alt="Cohete " /></a>
                     <a routerLink="../register-tecnic" href="#"><button class="boton">Crear Tecnico provisional</button></a>
                     <a routerLink="../register-recruiter" href="#"><button class="boton">Crear Recruiter provisional</button></a>
                 </aside>
