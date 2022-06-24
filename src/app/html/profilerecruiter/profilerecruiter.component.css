@@ -16,10 +16,11 @@ body {
 /* Botón de la cámara de fotos para cambiar la foto de perfil */
 
 .camara {
-    width: 70px;
+    width: 50px;
     float: right;
-    position: relative;
-    margin-top: -110px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -40px;
 }
 
 
@@ -30,6 +31,23 @@ body {
     position: inherit;
     z-index: 9;
     margin-left: -300px;
+    margin-top: -5%;
+}
+
+.btnCohete {
+    width: 110px;
+    margin-right: -40px;
+    margin-top: -80px;
+}
+
+.btnAstronauta {
+    width: 120px;
+    padding-top: -60px;
+}
+
+.columnaCentral {
+    margin-left: -140px;
+    color: whitesmoke;
 }
 
 
@@ -37,4 +55,9 @@ body {
 
 #btnProfileRExp {
     margin-top: -500px;
+}
+
+#botonesEspecificos {
+    padding-top: 20px;
+    margin-left: 50px;
 }
