@@ -45,7 +45,7 @@ export class ProfileComponent implements OnInit {
 
   getUserById(){
     //TODO: capture the id from field html and sustitute for 1
-    this.httpClient.get<any>('http://localhost:8080/api/usuario/1').subscribe(
+    this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/usuario/1').subscribe(
       response =>{
         console.log(response);
         this.usuario=response;

@@ -19,7 +19,7 @@ export class WorkComponent implements OnInit {
   getWorks(){
     //TODO: get idRecruiter from sessionStorage and inject it in the sentence
     //TODO: capture the idrecruiter from usuario and substitute 1 for the id
-    this.httpClient.get<any>('http://localhost:8080/api/reclutador/1').subscribe(
+    this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/trabajo/1').subscribe(
       response =>{
         console.log(response);
         this.workTrabajo=response;
