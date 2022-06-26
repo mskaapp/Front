@@ -23,8 +23,7 @@ export class LoginComponent implements OnInit {
   constructor(private authenticationService: AuthenticationService, private httpClient: HttpClient) { }
 
   ngOnInit() {
-    console.log("Estatus check local"+localStorage.getItem('checked'));
-    console.log("Estatus check"+localStorage.getItem('checked'));
+    this.getUserById();
     //LocalStorage cant storage booleans, the string must be parsed
     if(localStorage.getItem('checked')=='true'){
       //Setting checkbox checked and values from localStorage
@@ -71,7 +70,7 @@ export class LoginComponent implements OnInit {
   }
   getUserById(){
     //TODO: capture the id from field html and sustitute for 1
-    this.httpClient.get<any>('http://localhost:8080/api/usuario/1').subscribe(
+    this.httpClient.get<any>('http://localhost:8080/api/usuario/').subscribe(
       response =>{
         console.log(response);
         this.usuario=response;
