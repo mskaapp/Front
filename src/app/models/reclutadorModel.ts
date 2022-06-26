@@ -1,11 +1,11 @@
 export class reclutadorModel {
-  private id: number;
-  private experiencia: number;
-  private nivel: number;
-  private web: string;
-  private tipo_reclutador: string;
-  private id_usuario: number;
-  private id_obtieneR: number;
+  public id: number;
+  public experiencia: number;
+  public nivel: number;
+  public web: string;
+  public tipo_reclutador: string;
+  public id_usuario: number;
+  public id_obtieneR: number;
 
   constructor(id: number, experiencia: number, nivel: number, web: string, tipo_reclutador: string, id_usuario: number, id_obtieneR: number){
       this.id = id;

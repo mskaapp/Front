@@ -1,7 +1,7 @@
 export class poseeModel{
-  private id: number;
-  private fk_id_skill: number;
-  private fk_id_trabajo: number;
+  public id: number;
+  public fk_id_skill: number;
+  public fk_id_trabajo: number;
 
   constructor(id: number, fk_id_skill: number, fk_id_trabajo: number){
     this.id = id;

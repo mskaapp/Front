@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { AuthenticationService } from '../../services/authentification.service';
 import { SignInData } from '../../models/signInData';
+import { HttpClient } from '@angular/common/http';
+import { response } from 'express';
+import { usuarioModel } from 'src/app/models/usuarioModel';
 
 @Component({
   selector: 'app-login',
@@ -12,11 +15,12 @@ export class LoginComponent implements OnInit {
 
   isFormValid = false;
   areCredentialsInvalid = false;
-  chRememberMe!:  boolean;
-  tfUser!:        string;
-  tfPassword!:     string;
+  chRememberMe!:    boolean;
+  tfUser!:          string;
+  tfPassword!:      string;
+  usuario!:         usuarioModel;
 
-  constructor(private authenticationService: AuthenticationService) { }
+  constructor(private authenticationService: AuthenticationService, private httpClient: HttpClient) { }
 
   ngOnInit() {
     console.log("Estatus check local"+localStorage.getItem('checked'));
@@ -34,7 +38,7 @@ export class LoginComponent implements OnInit {
     }
   }
 
-
+  //TODO: Save user id on sessionStorage to use during all session
   onSubmit(signInForm: NgForm) {
     if (!signInForm.valid) {
       this.isFormValid = true;
@@ -64,6 +68,14 @@ export class LoginComponent implements OnInit {
       localStorage.setItem('user', '' );
       localStorage.setItem('password', '');
     }
-    console.log("changed");
+  }
+  getUserById(){
+    //TODO: capture the id from field html and sustitute for 1
+    this.httpClient.get<any>('http://localhost:8080/api/usuario/1').subscribe(
+      response =>{
+        console.log(response);
+        this.usuario=response;
+      }
+    );
   }
 }

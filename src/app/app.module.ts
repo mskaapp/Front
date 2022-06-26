@@ -32,6 +32,7 @@ import { InterviewsComponent } from './interviews/interviews.component';
 //import { NgxPaginationModule } from 'ngx-pagination';
 //
 import { BackButtonDisableModule } from 'angular-disable-browser-back-button';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -63,6 +64,7 @@ import { BackButtonDisableModule } from 'angular-disable-browser-back-button';
     AppRoutingModule,
     FormsModule,
     FullCalendarModule,
+    HttpClientModule,
     BackButtonDisableModule.forRoot({
       preserveScrollPosition: true
     })

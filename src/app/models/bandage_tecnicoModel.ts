@@ -1,10 +1,10 @@
 export class bandage_tecnicoModel{
-  private id: number;
-  private nombre: string;
-  private tipo: string;
-  private descripcion: string;
-  private cantidadExp: number;
-  private id_obtieneT: number;
+  public id: number;
+  public nombre: string;
+  public tipo: string;
+  public descripcion: string;
+  public cantidadExp: number;
+  public id_obtieneT: number;
 
   constructor(id:number, nombre: string, tipo: string, descripcion: string, cantidadExp: number, id_obtieneT: number){
     this.id = id;

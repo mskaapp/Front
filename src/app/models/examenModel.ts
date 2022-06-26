@@ -1,10 +1,10 @@
 export class examenModel{
-  private id: number;
-  private nombre: string;
-  private tipo: string;
-  private descripcion: string;
-  private cantidad_exp: number;
-  private fk_id_skill: number;
+  public id: number;
+  public nombre: string;
+  public tipo: string;
+  public descripcion: string;
+  public cantidad_exp: number;
+  public fk_id_skill: number;
 
   constructor(id: number, nombre: string, tipo: string, descripcion: string, cantidad_exp: number, fk_id_skill: number){
     this.id = id;
