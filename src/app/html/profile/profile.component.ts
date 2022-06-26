@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { usuarioModel } from 'src/app/models/usuarioModel';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-profile',
@@ -12,6 +13,8 @@ export class ProfileComponent implements OnInit {
   fechaDeNacimiento: any;
   userName: any;
 
+  usuario!:     usuarioModel;
+
   bolBtnEditar: boolean = true;
   bolBtnGuadar: boolean = false;
   bolBtnCancelar: boolean = false;
@@ -20,7 +23,7 @@ export class ProfileComponent implements OnInit {
 
   ProfileUser!: usuarioModel;
 
-  constructor() {}
+  constructor(private httpClient: HttpClient) {}
 
   ngOnInit(): void {
 
@@ -38,5 +41,15 @@ export class ProfileComponent implements OnInit {
     this.bolBtnEditar   = true;
     this.bolBtnGuadar   = false;
     this.bolBtnCancelar = false;
+  }
+
+  getUserById(){
+    //TODO: capture the id from field html and sustitute for 1
+    this.httpClient.get<any>('http://localhost:8080/api/usuario/1').subscribe(
+      response =>{
+        console.log(response);
+        this.usuario=response;
+      }
+    );
   }
 }

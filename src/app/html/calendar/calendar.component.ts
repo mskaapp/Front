@@ -6,6 +6,7 @@ import interactionPlugin from '@fullcalendar/interaction';
 //Para el formato espanyol
 import esLocale from '@fullcalendar/core/locales/es';
 import { trabajoModel } from 'src/app/models/trabajoModel';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-calendar',
@@ -21,7 +22,7 @@ export class CalendarComponent implements OnInit {
   public events!: any[];
   public options : any;
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
 
@@ -54,6 +55,14 @@ export class CalendarComponent implements OnInit {
       }
     ]
   }
-
+  getTrabajos(){
+    //TODO: using the user id capture all works
+  this.httpClient.get<any>('http://localhost:8080/api/trabajo').subscribe(
+    response =>{
+      console.log(response);
+      this.arrayCalendarTrabajos=response;
+    }
+  );
+  }
 }
 

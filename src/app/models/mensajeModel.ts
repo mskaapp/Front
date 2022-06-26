@@ -1,9 +1,9 @@
 export class mensajeModel{
-  private id: number;
-  private mensaje: string;
-  private fecha_mensaje: Date;
-  private fk_id_emisor: number;
-  private fk_id_receptor: number;
+  public id: number;
+  public mensaje: string;
+  public fecha_mensaje: Date;
+  public fk_id_emisor: number;
+  public fk_id_receptor: number;
 
   constructor(id: number, mensaje: string, fecha_mensaje: Date, fk_id_emisor: number, fk_id_receptor: number){
     this.id = id;

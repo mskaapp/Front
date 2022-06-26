@@ -1,7 +1,7 @@
 export class obtieneRModel{
-  private id: number;
-  private fk_id_reclutador: number;
-  private fk_id_bandage_reclutador: number;
+  public id: number;
+  public fk_id_reclutador: number;
+  public fk_id_bandage_reclutador: number;
 
   constructor(id: number, fk_id_reclutador: number, fk_id_bandage_reclutador: number){
     this.id = id;

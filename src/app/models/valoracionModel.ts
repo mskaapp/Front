@@ -1,10 +1,10 @@
 export class valoracionModel{
-  private id: number;
-  private estrellas: number;
-  private comentario: string;
-  private reclutador: string;
-  private tecnico: string;
-  private fk_id_usuario: number;
+  public id: number;
+  public estrellas: number;
+  public comentario: string;
+  public reclutador: string;
+  public tecnico: string;
+  public fk_id_usuario: number;
 
   constructor(id: number, estrellas: number, comentario: string, reclutador: string, tecnico: string, fk_id_usuario: number){
     this.id = id;

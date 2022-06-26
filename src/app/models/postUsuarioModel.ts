@@ -1,11 +1,11 @@
 export class postUsuarioModel{
-  private id: number;
-  private retweet: number;
-  private likes: number;
-  private fecha_post: Date;
-  private link: string;
-  private url_foto: any;
-  private fk_id_usuario: number;
+  public id: number;
+  public retweet: number;
+  public likes: number;
+  public fecha_post: Date;
+  public link: string;
+  public url_foto: any;
+  public fk_id_usuario: number;
 
   constructor(id: number, retweet: number, likes: number, fecha_post: Date, link: string, url_foto: any, fk_id_usuario: number){
     this.id = id;
