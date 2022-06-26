@@ -57,7 +57,7 @@ export class CalendarComponent implements OnInit {
   }
   getTrabajos(){
     //TODO: using the user id capture all works
-  this.httpClient.get<any>('http://localhost:8080/api/trabajo').subscribe(
+  this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/trabajo').subscribe(
     response =>{
       console.log(response);
       this.arrayCalendarTrabajos=response;
