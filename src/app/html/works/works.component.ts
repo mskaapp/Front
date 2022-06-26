@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trabajoModel } from 'src/app/models/trabajoModel';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-works',
@@ -13,7 +14,7 @@ export class WorksComponent implements OnInit {
   //Array of UserWorks
   arrayWorksTrabajos!:  trabajoModel[];
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
   }

@@ -1,10 +1,10 @@
 export class bandage_reclutadorModel{
-  private id: number;
-  private nombre: string;
-  private tipo: string;
-  private descripcion: string;
-  private cantidadExp: number;
-  private id_obtieneR: number;
+  public id: number;
+  public nombre: string;
+  public tipo: string;
+  public descripcion: string;
+  public cantidadExp: number;
+  public id_obtieneR: number;
 
   constructor(id:number, nombre: string, tipo: string, descripcion: string, cantidadExp: number, id_obtieneR: number){
     this.id = id;

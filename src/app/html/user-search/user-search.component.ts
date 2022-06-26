@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { tecnicoModel } from 'src/app/models/tecnicoModel';
 import { usuarioModel } from 'src/app/models/usuarioModel';
 import { UserCardComponent } from './user-card/user-card.component';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-user-search',
@@ -19,16 +20,19 @@ export class UserSearchComponent implements OnInit {
   txtUserCardUserName:         string='uri';
   //Example who to pass a link
   linkTest: string='https:www.google.com';
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
   ngOnInit(): void {
-    this.recorrerUsuarios();
-  }
-  //TODO: recorrer usuarios y comprobar si es técnico y agregar a array de técnicos
-  recorrerUsuarios(){
-      /*for(let i of arrayTest){
-        if(i.fkTecnic!=null){
 
-        }
-      }*/
   }
+      //TODO: capture photo of user id
+      getTecnics(){
+        //TODO: capture the id from field html and sustitute for 1
+        this.httpClient.get<any>('http://localhost:8080/api/tecnico/').subscribe(
+          response =>{
+            console.log(response);
+            this.arrayUserSearchUser=response;
+          }
+        );
+      }
+      get
 }
