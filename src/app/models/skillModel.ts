@@ -1,11 +1,11 @@
 export class skillModel{
-  private id: number;
-  private tipo: string;
-  private validado: boolean;
-  private descripcion: string;
-  private cantidad_exp: number;
-  private id_posee: number;
-  private id_examen: number;
+  public id: number;
+  public tipo: string;
+  public validado: boolean;
+  public descripcion: string;
+  public cantidad_exp: number;
+  public id_posee: number;
+  public id_examen: number;
 
   constructor(id: number, tipo: string, validado: boolean, descripcion: string, cantidad_exp: number, id_posee: number, id_examen: number){
     this.id = id;

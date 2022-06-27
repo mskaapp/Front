@@ -1,0 +1,7 @@
+{
+  "/api/*":{
+    "target": "https://myskillaround-spring-testing.herokuapp.com",
+    "secure": false,
+    "loglevel": "debug"
+  }
+}

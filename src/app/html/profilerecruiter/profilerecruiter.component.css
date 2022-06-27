@@ -1,9 +1,5 @@
 body {
-    background-image: url("https://39975211.servicio-online.net/wp-content/uploads/2022/05/register_background.png")
-}
-
-html {
-    background-color: pink;
+    background-image: url("https://39975211.servicio-online.net/wp-content/uploads/2022/05/register_background.png");
 }
 
 
@@ -20,10 +16,11 @@ html {
 /* Botón de la cámara de fotos para cambiar la foto de perfil */
 
 .camara {
-    width: 100px;
+    width: 50px;
     float: right;
-    position: relative;
-    margin-top: -110px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -40px;
 }
 
 
@@ -32,20 +29,35 @@ html {
 #imgProfileRImagesrc {
     width: 800px;
     position: inherit;
-    z-index: -9999;
+    z-index: 9;
     margin-left: -300px;
+    margin-top: -5%;
+}
+
+.btnCohete {
+    width: 110px;
+    margin-right: -40px;
+    margin-top: -80px;
+}
+
+.btnAstronauta {
+    width: 120px;
+    padding-top: -60px;
+}
+
+.columnaCentral {
+    margin-left: -140px;
+    color: whitesmoke;
 }
 
 
 /* Botón website */
 
 #btnProfileRExp {
-    margin-top: -90%;
+    margin-top: -500px;
 }
 
-
-/* Desplegable tipo de reclutador */
-
-#dplProfileRKind {
-    /* margin-top: -900px; */
+#botonesEspecificos {
+    padding-top: 20px;
+    margin-left: 50px;
 }

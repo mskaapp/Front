@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 //Components
 import { AppRoutingModule } from './app-routing.module';
@@ -28,8 +29,12 @@ import { WorkCardComponent } from './html/works/work-card/work-card.component';
 import { WorkComponent } from './html/work/work.component';
 import { InterviewsComponent } from './interviews/interviews.component';
 
-//Externals
+//EXTERNALS
 //import { NgxPaginationModule } from 'ngx-pagination';
+//
+import { BackButtonDisableModule } from 'angular-disable-browser-back-button';
+import { HttpClientModule } from '@angular/common/http';
+import { PostCardComponent } from './html/main/post-card/post-card.component';
 
 @NgModule({
   declarations: [
@@ -54,13 +59,19 @@ import { InterviewsComponent } from './interviews/interviews.component';
     WorkComponent,
     WorkCardComponent,
     InterviewsComponent,
+    PostCardComponent,
 
    ],
   imports: [
+    NgbModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     FullCalendarModule,
+    HttpClientModule,
+    BackButtonDisableModule.forRoot({
+      preserveScrollPosition: true
+    })
     //NgxPaginationModule
   ],
   providers: [],

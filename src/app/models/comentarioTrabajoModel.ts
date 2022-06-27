@@ -1,9 +1,9 @@
 export class comentarioTrabajoModel{
-  private id: number;
-  private comentario: string;
-  private fecha_comentario: Date;
-  private fk_id_usuario: number;
-  private fk_id_trabajo: number;
+  public id: number;
+  public comentario: string;
+  public fecha_comentario: Date;
+  public fk_id_usuario: number;
+  public fk_id_trabajo: number;
 
   constructor(id: number, comentario: string, fecha_comentario: Date, fk_id_usuario: number, fk_id_trabajo: number){
     this.id = id;

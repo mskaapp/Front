@@ -1,18 +1,29 @@
+body {
+    background-image: url("https://39975211.servicio-online.net/wp-content/uploads/2022/05/register_background.png");
+}
+
+.texto {
+    text-shadow: 0 1px 0 rgba(248, 244, 244, 0.568);
+}
+
+
 /* Imagen de perfil */
 
 .imgRedonda {
     margin-top: 10%;
     margin-left: 5%;
     width: 300px;
-    height: 300px;
+    /* height: 300px; */
     border-radius: 150px;
     border: 10px solid #666;
 }
 
 .camara {
-    width: 100px;
-    margin-left: -10%;
-    margin-top: 30%;
+    width: 50px;
+    float: right;
+    position: absolute;
+    margin-top: 258px;
+    margin-left: -45px;
 }
 
 
@@ -25,6 +36,52 @@
     text-decoration: none;
     background-color: rgb(236, 159, 15);
     display: block;
+    padding: 2px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 9px 0px rgb(5, 123, 219), 0px 9px 25px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0px 9px 0px rgba(5, 123, 219), 0px 9px 25px rgba(0, 0, 0, .7);
+    box-shadow: 0px 4px 0px #333, 0px 9px 25px rgba(0, 0, 0, .7);
+    width: 160px;
+    text-align: center;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+}
+
+.btnGuardar {
+    position: relative;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #36bb36;
+    padding: 2px;
+    margin-right: 15px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 9px 0px rgb(5, 123, 219), 0px 9px 25px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0px 9px 0px rgba(5, 123, 219), 0px 9px 25px rgba(0, 0, 0, .7);
+    box-shadow: 0px 4px 0px #333, 0px 9px 25px rgba(0, 0, 0, .7);
+    width: 160px;
+    text-align: center;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+}
+
+.btnCancelar {
+    position: relative;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #d4312c;
+    /* display: block; */
     padding: 2px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -55,5 +112,14 @@
 }
 
 .btnCohete {
-    margin-top: -15%;
+    margin-top: -13%;
+}
+
+.botonesEspecificos {
+    margin-left: 60px;
+}
+
+.btnAstronauta {
+    margin-top: 2%;
+    margin-left: 2%;
 }

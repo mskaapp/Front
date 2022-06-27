@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from '../../services/authentification.service';
+import { HttpClient } from '@angular/common/http';
+import { usuarioModel } from 'src/app/models/usuarioModel';
 
 @Component({
   selector: 'app-navbar',
@@ -8,8 +10,10 @@ import { AuthenticationService } from '../../services/authentification.service';
 })
 export class NavbarComponent implements OnInit {
 
+  usuario!:     usuarioModel;
+
   //Injecting authentification to navBar
-  constructor(public authenticationService: AuthenticationService) {
+  constructor(public authenticationService: AuthenticationService, private httpClient: HttpClient) {
 
   }
 
@@ -23,4 +27,14 @@ export class NavbarComponent implements OnInit {
       //this.router.navigate('')
     }
 
+    //TODO: capture photo of user id
+    getUserById(){
+      //TODO: capture the id from field html and sustitute for 1
+      this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/usuario/1').subscribe(
+        response =>{
+          console.log(response);
+          this.usuario=response;
+        }
+      );
+    }
 }

@@ -1,7 +1,7 @@
 export class obtieneTModel{
-  private id: number;
-  private fk_id_tecnico: number;
-  private fk_id_bandage_tecnico: number;
+  public id: number;
+  public fk_id_tecnico: number;
+  public fk_id_bandage_tecnico: number;
 
   constructor(id: number, fk_id_tecnico: number, fk_id_bandage_tecnico: number){
     this.id = id;
