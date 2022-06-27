@@ -22,7 +22,6 @@ export class tecnicoModel {
       this.tipo_tecnico = tipo_tecnico;
       this.id_usuario = id_usuario;
       this.id_obtieneT = id_obtieneT;
-
   }
 
   getId(): number {
