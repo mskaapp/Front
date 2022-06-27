@@ -5,6 +5,7 @@ import { SignInData } from '../../models/signInData';
 import { HttpClient } from '@angular/common/http';
 import { response } from 'express';
 import { usuarioModel } from 'src/app/models/usuarioModel';
+import { postUsuarioModel } from 'src/app/models/postUsuarioModel';
 
 @Component({
   selector: 'app-login',
@@ -19,11 +20,13 @@ export class LoginComponent implements OnInit {
   tfUser!:          string;
   tfPassword!:      string;
   usuario!:         usuarioModel;
+  post!:            postUsuarioModel;
 
   constructor(private authenticationService: AuthenticationService, private httpClient: HttpClient) { }
 
   ngOnInit() {
     this.getUserById();
+    this.getPostbyid();
     //LocalStorage cant storage booleans, the string must be parsed
     if(localStorage.getItem('checked')=='true'){
       //Setting checkbox checked and values from localStorage
@@ -74,6 +77,15 @@ export class LoginComponent implements OnInit {
       response =>{
         console.log(response);
         this.usuario=response;
+      }
+    );
+  }
+  getPostbyid(){
+    //TODO: capture the id from field html and sustitute for 1
+    this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/postusuario/1').subscribe(
+      response =>{
+        console.log(response);
+        this.post=response;
       }
     );
   }

@@ -77,7 +77,13 @@
             </ul>
         </nav>
         <!-- <pagination-controls (pageChange)="pageActual = $event"></pagination-controls> -->
-
+        <table>
+          <tr *ngFor="let item of post">
+            <td>
+                    {{item}}
+          </td>
+            </tr>
+        </table>
     </aside>
 
     <!-- <app-modal></app-modal> -->
