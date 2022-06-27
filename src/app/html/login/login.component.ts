@@ -26,8 +26,8 @@ export class LoginComponent implements OnInit {
   constructor(private authenticationService: AuthenticationService, private httpClient: HttpClient) { }
 
   ngOnInit() {
-    //this.getUserById();
-    //this.getPostbyid();
+    this.getUserById();
+    this.getPostbyid();
     this.getTest();
     //LocalStorage cant storage booleans, the string must be parsed
     if(localStorage.getItem('checked')=='true'){
@@ -96,7 +96,7 @@ export class LoginComponent implements OnInit {
   getTest(){
     console.log("-____________TESTING________________")
     //TODO: capture the id from field html and sustitute for 1
-    this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/usuario').subscribe(
+    this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/reclutador').subscribe(
     //this.httpClient.get<any>('/api/postusuario/1').subscribe(
 
       response =>{
