@@ -82,7 +82,8 @@ export class LoginComponent implements OnInit {
   }
   getPostbyid(){
     //TODO: capture the id from field html and sustitute for 1
-    this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/postusuario/1').subscribe(
+    //this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/postusuario/1').subscribe(
+    this.httpClient.get<any>('/api/postusuario/1').subscribe(
       response =>{
         console.log(response);
         this.post=response;
