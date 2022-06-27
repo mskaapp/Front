@@ -29,54 +29,77 @@
         <button class="btn btnPost btn-warning" id="btnPost">Post</button>
         <br><br>
 
+        <table>
+            <tr>
+                <td (click)="sortTable('getId')">
+                    ID
+                </td>
+                <td (click)="sortTable('getRetweet')">
+                    Retweet
+                </td>
+                <td (click)="sortTable('getLikes')">
+                    Likes
+                </td>
+                <td (click)="sortTable('getFecha_post')">
+                    Fecha Post
+                </td>
+                <td (click)="sortTable('getLink')">
+                    Descripción
+                </td>
+            </tr>
+
+        </table>
+        <ul *ngFor="let item of post">
+            <li>{{item.getId}}</li>
+            <li>{{item.getRetweet}}</li>
+            <li>{{item.getLikes}}</li>
+            <li>{{item.getFecha_post}}</li>
+            <li>{{item.getLink}}</li>
+        </ul>
+        <ngb-pagination *ngIf="showPagination " [collectionSize]="totalItems " [(page)]="page " (pageChange)="loadPage($event) "></ngb-pagination>
+
+        <br><br><br><br><br><br><br><br><br><br>
+
         <!-- Tabla de prueba, para ver la paginación -->
-        <table class="table table-hover w-25">
+        <table class="table table-hover w-25 ">
             <thead>
                 <tr>
-                    <th scope="col">Las Mariposas</th>
+                    <th scope="col ">Las Mariposas</th>
                 </tr>
             </thead>
             <tbody>
                 <!-- Aquí habría que llamar a la base de datos, pero como no hay, dejo comentado el ejemplo  -->
-                <!-- <tr *ngFor="let book of books; index as i | paginate: {itemsPerPage: 7, currentPage: pageActual}">
-                        <th scope="row">{{i+1}}</th>
-                        <td> {{book.titulo}} </td>
-                        <td> {{book.autor}} </td>
-                        <td> {{book.idioma}} </td> -->
 
+
+                <!-- <td> -->
+                <!-- <button class="btn btn-primary " (click)="onPreUpdateBook(book) " data-toggle="modal " data-target="#modalBook ">Update</button> -->
+                <!-- </td> -->
+                <!-- <td> -->
+                <!-- <a href="/admin/list-books " class="btn btn-danger " (click)="onDeleteBook(book.id) ">Delete</a> -->
+                <!-- </td> -->
+                <!-- </tr> -->
                 <tr>
-                    <td>Las mariposas de colores... Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores earum ex accusamus mollitia quis provident tempore? Cum commodi a qui? Ratione, ab consequuntur! Laborum consectetur optio, tenetur nobis
-                        corporis at.
-                    </td>
-                    <!-- <td> -->
-                    <!-- <button class="btn btn-primary " (click)="onPreUpdateBook(book) " data-toggle="modal " data-target="#modalBook ">Update</button> -->
-                    <!-- </td> -->
-                    <!-- <td> -->
-                    <!-- <a href="/admin/list-books " class="btn btn-danger " (click)="onDeleteBook(book.id) ">Delete</a> -->
-                    <!-- </td> -->
-                </tr>
-                <tr>
-                    <button class="btn btnSeguirLeyendo btn-warning w-100">Seguir leyendo...</button>
+                    <button class="btn btnSeguirLeyendo btn-warning w-100 ">Seguir leyendo...</button>
                 </tr>
             </tbody>
         </table>
 
-        <nav aria-label="...">
-            <ul class="pagination">
-                <li class="page-item disabled">
-                    <span class="page-link">Previous</span>
+        <nav aria-label="... ">
+            <ul class="pagination ">
+                <li class="page-item disabled ">
+                    <span class="page-link ">Previous</span>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active" aria-current="page">
-                    <span class="page-link">2</span>
+                <li class="page-item "><a class="page-link " href="# ">1</a></li>
+                <li class="page-item active " aria-current="page ">
+                    <span class="page-link ">2</span>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
+                <li class="page-item "><a class="page-link " href="# ">3</a></li>
+                <li class="page-item ">
+                    <a class="page-link " href="# ">Next</a>
                 </li>
             </ul>
         </nav>
-        <!-- <pagination-controls (pageChange)="pageActual = $event"></pagination-controls> -->
+        <!-- <pagination-controls (pageChange)="pageActual=$ event "></pagination-controls> -->
 
     </aside>
 
