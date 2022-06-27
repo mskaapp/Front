@@ -29,83 +29,16 @@
         <button class="btn btnPost btn-warning" id="btnPost">Post</button>
         <br><br>
 
-        <table>
-            <tr>
-                <td (click)="sortTable('getId')">
-                    ID
-                </td>
-                <td (click)="sortTable('getRetweet')">
-                    Retweet
-                </td>
-                <td (click)="sortTable('getLikes')">
-                    Likes
-                </td>
-                <td (click)="sortTable('getFecha_post')">
-                    Fecha Post
-                </td>
-                <td (click)="sortTable('getLink')">
-                    Descripción
-                </td>
-            </tr>
-
-        </table>
-        <ul *ngFor="let item of arrayPost">
-            <li>{{item.getId}}</li>
-            <li>{{item.getRetweet}}</li>
-            <li>{{item.getLikes}}</li>
-            <li>{{item.getFecha_post}}</li>
-            <li>{{item.getLink}}</li>
-        </ul>
         <ngb-pagination *ngIf="showPagination " [collectionSize]="totalItems " [(page)]="page " (pageChange)="loadPage($event) "></ngb-pagination>
 
-        <br><br><br><br><br><br><br><br><br><br>
 
-        <!-- Tabla de prueba, para ver la paginación -->
-        <table class="table table-hover w-25 ">
-            <thead>
-                <tr>
-                    <th scope="col ">Las Mariposas</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Aquí habría que llamar a la base de datos, pero como no hay, dejo comentado el ejemplo  -->
-
-
-                <!-- <td> -->
-                <!-- <button class="btn btn-primary " (click)="onPreUpdateBook(book) " data-toggle="modal " data-target="#modalBook ">Update</button> -->
-                <!-- </td> -->
-                <!-- <td> -->
-                <!-- <a href="/admin/list-books " class="btn btn-danger " (click)="onDeleteBook(book.id) ">Delete</a> -->
-                <!-- </td> -->
-                <!-- </tr> -->
-                <tr>
-                    <button class="btn btnSeguirLeyendo btn-warning w-100 ">Seguir leyendo...</button>
-                </tr>
-            </tbody>
-        </table>
-
-        <nav aria-label="... ">
-            <ul class="pagination ">
-                <li class="page-item disabled ">
-                    <span class="page-link ">Previous</span>
-                </li>
-                <li class="page-item "><a class="page-link " href="# ">1</a></li>
-                <li class="page-item active " aria-current="page ">
-                    <span class="page-link ">2</span>
-                </li>
-                <li class="page-item "><a class="page-link " href="# ">3</a></li>
-                <li class="page-item ">
-                    <a class="page-link " href="# ">Next</a>
-                </li>
-            </ul>
-        </nav>
 
         <!-- <pagination-controls (pageChange)="pageActual = $event"></pagination-controls> -->
         <table>
-          <tr *ngFor="let item of arrayPost">
-            <td>
+            <tr *ngFor="let item of arrayPost">
+                <td>
                     {{item}}
-          </td>
+                </td>
             </tr>
         </table>
 
@@ -113,16 +46,52 @@
 
     <!-- <app-modal></app-modal> -->
 
-  <!--Show Results-->
-  <p>lenght: {{arrayPost.length}}</p>
-  <div class="row">
-    <div class="col" *ngFor="let item of arrayPost" >
-      <app-post-card [postCard]="item"></app-post-card>
-      <p>_________________</p>
-      <p>{{item.id}} {{item.likes}}</p>
-      <p>_________________</p>
+    <!--Show Results-->
+    <p class="length">Lenght: {{arrayPost.length}}</p>
+
+    <div class="card postCards" style="width: 20rem;" *ngFor="let item of arrayPost">
+
+        <h5 class="card-title pl-3 pt-3">Post {{item.id}}</h5>
+        <p class="fechaPost">{{item.fecha_post}}</p>
+        <hr>
+        <div class="card-body">
+
+            <app-post-card [postCard]="item"></app-post-card>
+
+            <p class="card-text ml-4 mr-4">{{item.link}} Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod possimus sapiente vitae voluptatum accusantium</p>
+            <p class="likes ml-4"><i><u>Likes</u>: {{item.likes}}</i> | <i><u>RT</u>: {{item.retweet}}</i> </p>
+        </div>
+
+        <!-- <aside class="col-2 socialIconCol align-items-center" id="colIcons">
+            <aside class="row">
+                <a class="socialIcon" target="_blank"><i class="fa fa-github"></i></a>
+            </aside>
+
+            <aside class="row">
+                <a class="link iconB" target="_blank"><i class="fa fa-pinterest "></i></a>
+            </aside>
+
+        </aside> -->
+        <aside class="asideBoton">
+            <a href="#"><button class="btnSeguirLeyendo btn btn-warning">Seguir Leyendo</button></a>
+        </aside>
     </div>
-  </div>
+    <br><br>
+    <nav aria-label="... " class="paginate">
+        <ul class="pagination ">
+            <li class="page-item disabled ">
+                <span class="page-link ">Previous</span>
+            </li>
+            <li class="page-item "><a class="page-link " href="# ">1</a></li>
+            <li class="page-item active " aria-current="page ">
+                <span class="page-link ">2</span>
+            </li>
+            <li class="page-item "><a class="page-link " href="# ">3</a></li>
+            <li class="page-item ">
+                <a class="page-link " href="# ">Next</a>
+            </li>
+        </ul>
+    </nav>
 
 </body>
 
