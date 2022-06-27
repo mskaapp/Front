@@ -15,16 +15,14 @@
   </div>
   <!--Show Results-->
   <div class="row">
-    <p>Resultado de la búsqueda</p>
-    <p>resultado: {{arrayUserSearchTecnic.length}}</p>
-    <div class="col" *ngFor="let card of arrayUserSearchTecnic">
-
+    <div class="col">
+      <p>Resultado de la búsqueda</p>
       <!--Adding card to View-->
       <!--<app-user-card
       [txtUserCardUserName]="txtUserCardUserName"
       ></app-user-card>-->
-        <app-user-card [userCardTecnic]="userSearchTecnic"></app-user-card>
+      <app-user-card [userCardTecnic]="userSearchTecnic"></app-user-card>
+      <a routerLink="../user-public-profile"><button>Usuario Test</button></a>
     </div>
-    <a routerLink="../user-public-profile"><button>Usuario Test</button></a>
   </div>
 </div>
