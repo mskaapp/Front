@@ -16,15 +16,15 @@
     </div>
     <!--Show Results-->
     <div class="row ml-1">
-        <p>Resultado de la búsqueda:<i> {{arrayUserSearchTecnic.length}} coincidencias</i></p>
+        <!--<p>Resultado de la búsqueda:<i> {{arrayUserSearchUser.length}} coincidencias</i></p>-->
     </div>
-    <div class="row usuarios" *ngFor="let card of arrayUserSearchTecnic">
+    <div class="row usuarios" *ngFor="let card of arrayUserSearchUser">
 
         <!--Adding card to View-->
         <!--<app-user-card
       [txtUserCardUserName]="txtUserCardUserName"
       ></app-user-card>-->
-        <app-user-card [userCardTecnic]="userSearchTecnic"></app-user-card>
+        <app-user-card [userCardUsuario]="card"></app-user-card>
     </div>
     <a routerLink="../user-public-profile"></a>
 </div>

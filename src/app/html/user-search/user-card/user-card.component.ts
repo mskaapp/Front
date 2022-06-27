@@ -10,13 +10,14 @@ import { usuarioModel } from 'src/app/models/usuarioModel';
 export class UserCardComponent implements OnInit {
   //Retrieving info from Parent
   @Input() userCardTecnic:  tecnicoModel;
+  @Input() userCardUsuario:  usuarioModel;
 
 
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.userCardTecnic)
+
   }
 
 }

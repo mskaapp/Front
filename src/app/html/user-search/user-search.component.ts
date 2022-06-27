@@ -22,16 +22,27 @@ export class UserSearchComponent implements OnInit {
   linkTest: string='https:www.google.com';
   constructor(private httpClient: HttpClient) { }
   ngOnInit(): void {
-    this.getTecnics()
+    this.getUsuarios();
+    this.getTecnicos();
   }
       //TODO: capture photo of user id
-      getTecnics(){
+      getUsuarios(){
         //TODO: capture the id from field html and sustitute for 1
-        this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/tecnico/').subscribe(
+        this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/usuario/').subscribe(
           response =>{
-            console.log(response);
+            //console.log(response);
+            this.arrayUserSearchUser=response;
+          }
+        );
+      }
+      getTecnicos(){
+        //TODO: capture the id from field html and sustitute for 1
+        this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/usuario/').subscribe(
+          response =>{
+            //console.log(response);
             this.arrayUserSearchTecnic=response;
           }
         );
       }
+
 }
