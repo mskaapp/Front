@@ -22,7 +22,7 @@ export class UserSearchComponent implements OnInit {
   linkTest: string='https:www.google.com';
   constructor(private httpClient: HttpClient) { }
   ngOnInit(): void {
-
+    this.getTecnics()
   }
       //TODO: capture photo of user id
       getTecnics(){
@@ -30,7 +30,7 @@ export class UserSearchComponent implements OnInit {
         this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/tecnico/').subscribe(
           response =>{
             console.log(response);
-            this.arrayUserSearchUser=response;
+            this.arrayUserSearchTecnic=response;
           }
         );
       }
