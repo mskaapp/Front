@@ -32,7 +32,7 @@
         </aside>
         <div class="usuarios col-4" *ngFor="let card of arrayUserSearchUser">
             <div class="card-deck">
-                <div style="width: 20rem">
+                <div style="width: 50rem">
                     <!-- Carta -->
                     <div class="card text-center rounded m-2">
                         <div class="text-center">
@@ -41,15 +41,15 @@
                         </div>
                         <div>
                             <!--Imagen {{user.image}}-->
-                            <img src="{https://es.marketscreener.com/mods_a/graph/resize.php?w=250&h=150&f=/images/barons/jose-oriol_bosch-par.jpg}" class="card-img-top" alt="User Photo">
+                            <img src="https://es.marketscreener.com/mods_a/graph/resize.php?w=250&h=150&f=/images/barons/jose-oriol_bosch-par.jpg" class="card-img-top" alt="User Photo">
                             <!-- <img src="{{card.url_foto}}" class="card-img-top" alt="User Photo"> -->
                         </div>
 
                         <div class="infoUser">
-                            <p>ID: {{card.id}}</p>
-                            <p>Nombre: {{card.nombre}}</p>
-                            <p>Apellidos: {{card.apellidos}}</p>
-                            <p>E-mail: {{card.email}}</p>
+                            <p><u>ID:</u> {{card.id}}</p>
+                            <p><u>Nombre:</u> {{card.nombre}}</p>
+                            <p><u>Apellidos:</u> {{card.apellidos}}</p>
+                            <p><u>E-mail:</u> {{card.email}}</p>
                         </div>
 
                         <div class="col-md-12 text-center">
@@ -66,6 +66,8 @@
     [txtUserCardUserName]="txtUserCardUserName"
     ></app-user-card>-->
         <app-user-card [userCardTecnic]="userSearchTecnic"></app-user-card>
+
+
         <a routerLink="../user-public-profile"></a>
         <br>
         <button class="btn btn-primary btnUsuarioTest">Usuario Test</button>

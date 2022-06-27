@@ -1,27 +1,41 @@
-<aside class="container mt-3">
-    <!--Form Search-->
-    <aside class="row">
-        <aside class="col">
-            <aside class="form-group">
-                <form>
-                    <aside class="form-group">
-                        <label for="Buscar"><b><u>Buscar Trabajos</u></b></label>
-                        <input type="text" class="w-25 form-control" id="tfBuscarNombre" placeholder="Trabajo">
-                    </aside>
-                    <button type="submit" class="btn btn-primary">Buscar</button>
-                </form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <aside class="container mt-3">
+        <!--Form Search-->
+        <aside class="row">
+            <aside class="col">
+                <aside class="form-group">
+                    <form>
+                        <aside class="form-group">
+                            <label for="Buscar" class="text-light"><b><u>Buscar Trabajos</u></b></label>
+                            <input type="text" class="w-25 form-control" id="tfBuscarNombre" placeholder="Trabajo">
+                        </aside>
+                        <button type="submit" class="btnBuscar btn btn-primary">Buscar</button>
+                    </form>
+                </aside>
             </aside>
         </aside>
-    </aside>
-    <!--Show Results-->
-    <aside class="row">
-      <p>Resultado de la búsqueda</p>
-      <p>Lenght: {{arrayWorksTrabajos.length}}</p>
-        <aside class="col" *ngFor="let card of arrayWorksTrabajos">
+        <!--Show Results-->
+        <aside>
+            <p class="resultado text-light">Resultado de la búsqueda: <i>{{arrayWorksTrabajos.length}} coincidencias</i></p>
+            <aside class="col" *ngFor="let card of arrayWorksTrabajos">
 
-            <app-work-card [workCardWork]="card"></app-work-card>
+                <app-work-card [workCardWork]="card"></app-work-card>
+            </aside>
         </aside>
+        <br>
+        <a routerLink="../work"><button class="btn btn-primary">Trabajo Test</button></a>
     </aside>
-    <br>
-    <a routerLink="../work"><button class="btn btn-primary">Trabajo Test</button></a>
-</aside>
+
+</body>
+
+</html>
