@@ -1,7 +1,21 @@
+body {
+    background-image: url("https://39975211.servicio-online.net/wp-content/uploads/2022/05/register_background.png");
+    height: 980px;
+    background-repeat: no-repeat;
+    margin-top: -16px;
+    padding-top: 14px;
+}
+
 .usuarios {
     display: inline-block;
 }
 
 .btnUsuarioTest {
     margin-left: 9%;
+}
+
+.infoUser {
+    margin-top: 6%;
+    margin-left: 15%;
+    text-align: justify;
 }

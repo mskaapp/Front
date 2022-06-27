@@ -1,32 +1,77 @@
-<aside class="container mt-3">
-    <!--Form Search-->
-    <aside class="row">
-        <aside class="col">
-            <aside class="form-group">
-                <form>
-                    <aside class="form-group">
-                        <label for="Buscar"><b><u>Buscar Usuarios</u></b></label>
-                        <input type="text" class="w-25 form-control" id="tfBuscarNombre" placeholder="Usuario">
-                        <br>
-                        <button type="submit" class="btn btn-primary">Buscar</button>
-                    </aside>
-                </form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <aside class="container mt-3">
+        <!--Form Search-->
+        <aside class="row">
+            <aside class="col">
+                <aside class="form-group">
+                    <form>
+                        <aside class="form-group">
+                            <label for="Buscar" class="text-light"><b><u>Buscar Usuarios</u></b></label>
+                            <input type="text" class="w-25 form-control" id="tfBuscarNombre" placeholder="Usuario">
+                            <br>
+                            <button type="submit" class="btn btn-primary">Buscar</button>
+                        </aside>
+                    </form>
+                </aside>
             </aside>
         </aside>
-    </aside>
-    <!--Show Results-->
-    <aside class="row ml-1">
-        <p>Resultado de la búsqueda:<i> {{arrayUserSearchTecnic.length}} coincidencias</i></p>
-    </aside>
-    <aside class="row usuarios" *ngFor="let card of arrayUserSearchTecnic">
+        <!--Show Results-->
+        <aside class="row ml-1">
+            <p class="text-light">Resultado de la búsqueda:<i> {{arrayUserSearchUser.length}} coincidencias</i></p>
+        </aside>
+        <div class="usuarios col-4" *ngFor="let card of arrayUserSearchUser">
+            <div class="card-deck">
+                <div style="width: 20rem">
+                    <!-- Carta -->
+                    <div class="card text-center rounded m-2">
+                        <div class="text-center">
+                            <!--Nombre {{user.name}}-->
+                            <h5 class="card-title mt-2">{{card.nombre_usuario}}</h5>
+                        </div>
+                        <div>
+                            <!--Imagen {{user.image}}-->
+                            <img src="{https://es.marketscreener.com/mods_a/graph/resize.php?w=250&h=150&f=/images/barons/jose-oriol_bosch-par.jpg}" class="card-img-top" alt="User Photo">
+                            <!-- <img src="{{card.url_foto}}" class="card-img-top" alt="User Photo"> -->
+                        </div>
+
+                        <div class="infoUser">
+                            <p>ID: {{card.id}}</p>
+                            <p>Nombre: {{card.nombre}}</p>
+                            <p>Apellidos: {{card.apellidos}}</p>
+                            <p>E-mail: {{card.email}}</p>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                            <!--Boton-->
+                            <a href="#" class="btn btn-warning m-2 col-10">PERFIL</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--Adding card to View-->
         <!--<app-user-card
-      [txtUserCardUserName]="txtUserCardUserName"
-      ></app-user-card>-->
+    [txtUserCardUserName]="txtUserCardUserName"
+    ></app-user-card>-->
         <app-user-card [userCardTecnic]="userSearchTecnic"></app-user-card>
+
+
+        <a routerLink="../user-public-profile"></a>
+        <br>
+        <button class="btn btn-primary btnUsuarioTest">Usuario Test</button>
     </aside>
-    <a routerLink="../user-public-profile"></a>
-</aside>
-<br>
-<button class="btn btn-primary btnUsuarioTest">Usuario Test</button>
+</body>
+
+</html>
