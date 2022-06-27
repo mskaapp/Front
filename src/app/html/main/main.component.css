@@ -4,10 +4,14 @@ body {
     background-repeat: no-repeat;
 }
 
+.container {
+    margin-bottom: -4%;
+}
+
 .inputInspirate {
     width: 220px;
     height: 35px;
-    margin-left: 15px;
+    margin-left: -12px;
     border-radius: 5px;
 }
 
@@ -22,16 +26,11 @@ body {
     overflow: hidden;
 }
 
-.btnSeguirLeyendo {
-    width: 290px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
 .btn:hover {
     background-color: rgb(70, 124, 224);
     border: solid 3px #333;
     color: white;
+    z-index: 99999;
 }
 
 
@@ -48,12 +47,43 @@ body {
     display: block;
 }
 
-.pagination {
-    margin-left: 3%;
+.paginate {
+    margin-left: 8%;
 }
 
 .table {
     margin-left: 2%;
     border-radius: 5px;
     background-color: white;
+}
+
+.postCards {
+    display: inline-block;
+    height: 300px;
+    margin: 2% 2% 0 8%;
+}
+
+.btnSeguirLeyendo {
+    margin-left: 0;
+    margin-top: 4%;
+    width: 100%;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 0;
+    z-index: -9999;
+}
+
+.asideBoton {
+    z-index: 1000;
+}
+
+.length {
+    color: transparent;
+}
+
+.fechaPost,
+.likes {
+    color: rgb(134, 126, 126);
 }
