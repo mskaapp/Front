@@ -20,6 +20,7 @@ import { WorkCardComponent }            from './html/works/work-card/work-card.c
 import { WorkComponent }                from './html/work/work.component';
 import { UserPublicProfileComponent }   from './html/user-public-profile/user-public-profile.component';
 import { InterviewsComponent }          from './interviews/interviews.component';
+import { PostCardComponent }            from './post-card/post-card.component';
 
 //Security
 import { AuthGuard }                    from './guards/auth.guard';
@@ -42,6 +43,7 @@ const routes: Routes = [
   {path: 'register-tecnic',     component: RegisterTecnicComponent,     canActivate : [AuthGuard]},
   {path: 'works',               component: WorksComponent,              canActivate : [AuthGuard]},
   {path: 'work-card',           component: WorkCardComponent,           canActivate : [AuthGuard]},
+  {path: 'post-card',           component: PostCardComponent,           canActivate : [AuthGuard]},
   {path: 'work',                component: WorkComponent,               canActivate : [AuthGuard]},
   {path: 'user-search',         component: UserSearchComponent,         canActivate : [AuthGuard]},
   {path: 'user-card',           component: UserCardComponent,           canActivate : [AuthGuard]},

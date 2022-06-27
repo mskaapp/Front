@@ -11,9 +11,12 @@ export class UserCardComponent implements OnInit {
   //Retrieving info from Parent
   @Input() userCardTecnic:  tecnicoModel;
 
+
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.userCardTecnic)
   }
 
 }
