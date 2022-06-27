@@ -34,5 +34,4 @@ export class UserSearchComponent implements OnInit {
           }
         );
       }
-      get
 }

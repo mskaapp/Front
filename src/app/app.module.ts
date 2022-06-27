@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 //Components
 import { AppRoutingModule } from './app-routing.module';
@@ -33,6 +34,7 @@ import { InterviewsComponent } from './interviews/interviews.component';
 //
 import { BackButtonDisableModule } from 'angular-disable-browser-back-button';
 import { HttpClientModule } from '@angular/common/http';
+import { PostCardComponent } from './html/main/post-card/post-card.component';
 
 @NgModule({
   declarations: [
@@ -57,9 +59,11 @@ import { HttpClientModule } from '@angular/common/http';
     WorkComponent,
     WorkCardComponent,
     InterviewsComponent,
+    PostCardComponent,
 
    ],
   imports: [
+    NgbModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
