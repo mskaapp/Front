@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { usuarioModel } from 'src/app/models/usuarioModel';
 import { postUsuarioModel } from 'src/app/models/postUsuarioModel';
+import { PostCardComponent } from './post-card/post-card.component';
 
 import {NgbPaginationConfig} from '@ng-bootstrap/ng-bootstrap';
 
@@ -26,7 +27,8 @@ export class MainComponent implements OnInit {
   screenWidth       = screen.width;
   screenHeight      = screen.height;
   usuario!:         usuarioModel;
-  post!:            postUsuarioModel[];
+  postModel!:       postUsuarioModel;
+  arrayPost!:       postUsuarioModel[];
   totalItems: number;
   page: number;
   previousPage: number;
@@ -61,7 +63,7 @@ export class MainComponent implements OnInit {
   this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/postusuario/').subscribe(
     response =>{
       console.log(response);
-      this.post=response;
+      this.arrayPost=response;
     }
   );
   }
@@ -78,12 +80,12 @@ export class MainComponent implements OnInit {
 
 		  data => {
 			if ((!data && !data.result) || (data && data.result && data.result.length ==0)) {
-			  this.post = [];
+			  this.arrayPost = [];
 			  this.showPagination = false;
-        this.post = data;
+        this.arrayPost = data;
 			}
 			else {
-			  this.post = data.result;
+			  this.arrayPost = data.result;
 			  this.totalItems = data.totalAmount;
 			  this.showPagination = true;
 			}

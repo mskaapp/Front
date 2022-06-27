@@ -34,6 +34,7 @@ import { InterviewsComponent } from './interviews/interviews.component';
 //
 import { BackButtonDisableModule } from 'angular-disable-browser-back-button';
 import { HttpClientModule } from '@angular/common/http';
+import { PostCardComponent } from './html/main/post-card/post-card.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { HttpClientModule } from '@angular/common/http';
     WorkComponent,
     WorkCardComponent,
     InterviewsComponent,
+    PostCardComponent,
 
    ],
   imports: [

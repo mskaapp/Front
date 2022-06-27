@@ -49,7 +49,7 @@
             </tr>
 
         </table>
-        <ul *ngFor="let item of post">
+        <ul *ngFor="let item of arrayPost">
             <li>{{item.getId}}</li>
             <li>{{item.getRetweet}}</li>
             <li>{{item.getLikes}}</li>
@@ -102,15 +102,27 @@
 
         <!-- <pagination-controls (pageChange)="pageActual = $event"></pagination-controls> -->
         <table>
-          <tr *ngFor="let item of post">
+          <tr *ngFor="let item of arrayPost">
             <td>
                     {{item}}
           </td>
             </tr>
         </table>
+
     </aside>
 
     <!-- <app-modal></app-modal> -->
+
+  <!--Show Results-->
+  <p>lenght: {{arrayPost.length}}</p>
+  <div class="row">
+    <div class="col" *ngFor="let item of arrayPost" >
+      <app-post-card [postCard]="item"></app-post-card>
+      <p>_________________</p>
+      <p>{{item.id}} {{item.likes}}</p>
+      <p>_________________</p>
+    </div>
+  </div>
 
 </body>
 
