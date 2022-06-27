@@ -1,32 +1,32 @@
-<div class="container mt-3">
+<aside class="container mt-3">
     <!--Form Search-->
-    <div class="row">
-        <div class="col">
-            <div class="form-group">
+    <aside class="row">
+        <aside class="col">
+            <aside class="form-group">
                 <form>
-                    <div class="form-group">
+                    <aside class="form-group">
                         <label for="Buscar"><b><u>Buscar Usuarios</u></b></label>
                         <input type="text" class="w-25 form-control" id="tfBuscarNombre" placeholder="Usuario">
                         <br>
                         <button type="submit" class="btn btn-primary">Buscar</button>
-                    </div>
+                    </aside>
                 </form>
-            </div>
-        </div>
-    </div>
+            </aside>
+        </aside>
+    </aside>
     <!--Show Results-->
-    <div class="row ml-1">
+    <aside class="row ml-1">
         <p>Resultado de la búsqueda:<i> {{arrayUserSearchTecnic.length}} coincidencias</i></p>
-    </div>
-    <div class="row usuarios" *ngFor="let card of arrayUserSearchTecnic">
+    </aside>
+    <aside class="row usuarios" *ngFor="let card of arrayUserSearchTecnic">
 
         <!--Adding card to View-->
         <!--<app-user-card
       [txtUserCardUserName]="txtUserCardUserName"
       ></app-user-card>-->
         <app-user-card [userCardTecnic]="userSearchTecnic"></app-user-card>
-    </div>
+    </aside>
     <a routerLink="../user-public-profile"></a>
-</div>
+</aside>
 <br>
 <button class="btn btn-primary btnUsuarioTest">Usuario Test</button>

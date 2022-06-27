@@ -1,25 +1,27 @@
-<div class="container mt-3">
-  <!--Form Search-->
-  <div class="row">
-    <div class="col">
-      <div class="form-group">
-        <form>
-          <div class="form-group">
-            <label for="Buscar">Buscar Trabajos</label>
-            <input type="text" class="form-control" id="tfBuscarNombre" placeholder="nombre">
-          </div>
-          <button type="submit" class="btn btn-primary">Buscar</button>
-        </form>
-      </div>
-    </div>
-  </div>
-  <!--Show Results-->
-  <div class="row">
-    <div class="col">
-      <p>Resultado de la búsqueda</p>
-      <!--Adding card to View-->
-      <app-work-card [workCardWork]="worksWork"></app-work-card>
-      <a routerLink="../work"><button>Trabajo Test</button></a>
-    </div>
-  </div>
-</div>
+<aside class="container mt-3">
+    <!--Form Search-->
+    <aside class="row">
+        <aside class="col">
+            <aside class="form-group">
+                <form>
+                    <aside class="form-group">
+                        <label for="Buscar"><b><u>Buscar Trabajos</u></b></label>
+                        <input type="text" class="w-25 form-control" id="tfBuscarNombre" placeholder="Trabajo">
+                    </aside>
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                </form>
+            </aside>
+        </aside>
+    </aside>
+    <!--Show Results-->
+    <aside class="row">
+        <aside class="col">
+            <p>Resultado de la búsqueda</p>
+            <!--Adding card to View-->
+            <app-work-card [workCardWork]="worksWork"></app-work-card>
+
+        </aside>
+    </aside>
+    <br>
+    <a routerLink="../work"><button class="btn btn-primary">Trabajo Test</button></a>
+</aside>
