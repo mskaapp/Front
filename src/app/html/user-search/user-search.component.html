@@ -1,30 +1,32 @@
 <div class="container mt-3">
-  <!--Form Search-->
-  <div class="row">
-    <div class="col">
-      <div class="form-group">
-        <form>
-          <div class="form-group">
-            <label for="Buscar">Buscar Usuarios</label>
-            <input type="text" class="form-control" id="tfBuscarNombre" placeholder="nombre">
-          </div>
-          <button type="submit" class="btn btn-primary">Buscar</button>
-        </form>
-      </div>
+    <!--Form Search-->
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <form>
+                    <div class="form-group">
+                        <label for="Buscar"><b><u>Buscar Usuarios</u></b></label>
+                        <input type="text" class="w-25 form-control" id="tfBuscarNombre" placeholder="Usuario">
+                        <br>
+                        <button type="submit" class="btn btn-primary">Buscar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-  </div>
-  <!--Show Results-->
-  <div class="row">
-    <p>Resultado de la búsqueda</p>
-    <p>resultado: {{arrayUserSearchTecnic.length}}</p>
-    <div class="col" *ngFor="let card of arrayUserSearchTecnic">
+    <!--Show Results-->
+    <div class="row ml-1">
+        <p>Resultado de la búsqueda:<i> {{arrayUserSearchTecnic.length}} coincidencias</i></p>
+    </div>
+    <div class="row usuarios" *ngFor="let card of arrayUserSearchTecnic">
 
-      <!--Adding card to View-->
-      <!--<app-user-card
+        <!--Adding card to View-->
+        <!--<app-user-card
       [txtUserCardUserName]="txtUserCardUserName"
       ></app-user-card>-->
         <app-user-card [userCardTecnic]="userSearchTecnic"></app-user-card>
     </div>
-    <a routerLink="../user-public-profile"><button>Usuario Test</button></a>
-  </div>
+    <a routerLink="../user-public-profile"></a>
 </div>
+<br>
+<button class="btn btn-primary btnUsuarioTest">Usuario Test</button>
