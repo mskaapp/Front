@@ -15,11 +15,11 @@
     </aside>
     <!--Show Results-->
     <aside class="row">
-        <aside class="col">
-            <p>Resultado de la búsqueda</p>
-            <!--Adding card to View-->
-            <app-work-card [workCardWork]="worksWork"></app-work-card>
+      <p>Resultado de la búsqueda</p>
+      <p>Lenght: {{arrayWorksTrabajos.length}}</p>
+        <aside class="col" *ngFor="let card of arrayWorksTrabajos">
 
+            <app-work-card [workCardWork]="card"></app-work-card>
         </aside>
     </aside>
     <br>
