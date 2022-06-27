@@ -22,7 +22,8 @@ export class UserSearchComponent implements OnInit {
   linkTest: string='https:www.google.com';
   constructor(private httpClient: HttpClient) { }
   ngOnInit(): void {
-    this.getTecnics()
+    this.getTecnics();
+    this.getUsers();
   }
       //TODO: capture photo of user id
       getTecnics(){
@@ -31,6 +32,16 @@ export class UserSearchComponent implements OnInit {
           response =>{
             console.log(response);
             this.arrayUserSearchTecnic=response;
+          }
+        );
+      }
+      //TODO: capture photo of user id
+      getUsers(){
+        //TODO: capture the id from field html and sustitute for 1
+        this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/usuario/').subscribe(
+          response =>{
+            console.log(response);
+            this.arrayUserSearchUser=response;
           }
         );
       }
