@@ -1,35 +1,36 @@
-<div class ="container mt-3">
-  <div class ="row">
-    <div class ="col">
-      <h1>NOMBRE TRABAJO</h1>
-      <hr>
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <h1>NOMBRE TRABAJO</h1>
+            <hr>
+        </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-6">
-      <h3>id</h3>
-      <h4>{{workTrabajo.id}}</h4>
-      <h3>Fecha inicio</h3>
-      <h4>{{workTrabajo.fecha_ini  | date: 'dd-MM-yyyy'}}</h4>
-      <h3>Fecha fin</h3>
-      <h4>{{workTrabajo.fecha_fin  | date: 'dd-MM-yyyy'}}</h4>
-      <h3>Presupuesto</h3>
-      <h4>{{workTrabajo.presupuesto}}</h4>
-      <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_off.png" class="starIcon" alt="User Photo">
-      <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_off.png" class="starIcon" alt="User Photo">
-      <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_off.png" class="starIcon" alt="User Photo">
-      <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_off.png" class="starIcon" alt="User Photo">
-      <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_off.png" class="starIcon" alt="User Photo">
-      <!--Star On https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_on.png-->
-      <h3>Descripcion</h3>
-      <h4>{{workTrabajo.descripcion}}</h4>
-    </div>
-    <div class="col-3 text-center">
-      <!--TODO: get photo of recruiter from this workrecruiterid-->
-      <img src="https://es.marketscreener.com/mods_a/graph/resize.php?w=250&h=150&f=/images/barons/jose-oriol_bosch-par.jpg" class="card-img-top" alt="User Photo">
-      <!--TODO: get name of recruiter and link to profile from this workrecruiterID-->
-      <h6>Recruiter name</h6>
+    <div class="row">
+        <div class="col-6">
+            <h3>id</h3>
+            <h4>{{workTrabajo.id}}</h4>
+            <h3>Fecha inicio</h3>
+            <h4>{{workTrabajo.fecha_ini | date: 'dd-MM-yyyy'}}</h4>
+            <h3>Fecha fin</h3>
+            <h4>{{workTrabajo.fecha_fin | date: 'dd-MM-yyyy'}}</h4>
+            <h3>Presupuesto</h3>
+            <h4>{{workTrabajo.presupuesto}}</h4>
+            <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_off.png" class="starIcon" alt="User Photo">
+            <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_off.png" class="starIcon" alt="User Photo">
+            <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_off.png" class="starIcon" alt="User Photo">
+            <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_off.png" class="starIcon" alt="User Photo">
+            <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_off.png" class="starIcon" alt="User Photo">
+            <!--Star On https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_on.png-->
+            <h3>Descripcion</h3>
+            <h4>{{workTrabajo.descripcion}}</h4>
+        </div>
+        <div class="col-3 text-center">
+            <!--TODO: get photo of recruiter from this workrecruiterid-->
+            <img src="https://es.marketscreener.com/mods_a/graph/resize.php?w=250&h=150&f=/images/barons/jose-oriol_bosch-par.jpg" class="card-img-top" alt="User Photo">
+            <!--TODO: get name of recruiter and link to profile from this workrecruiterID-->
+            <h6>Recruiter name</h6>
 
+        </div>
     </div>
-  </div>
+    <a routerLink="../works" class="btn btn-danger mt-3">Volver</a>
 </div>
