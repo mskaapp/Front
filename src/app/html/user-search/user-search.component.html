@@ -32,18 +32,19 @@
             <p class="text-light">Resultado de la búsqueda:<i> {{arrayUserSearchUser.length}} coincidencias</i></p>
         </aside>
         <div class="usuarios col-4" *ngFor="let card of arrayUserSearchUser | paginate: { itemsPerPage: 3, currentPage: page }">
+          <!--<app-user-card [userCardUsuario]="card"></app-user-card>-->
             <div class="card-deck">
                 <div style="width: 50rem">
-                    <!-- Carta -->
+
                     <div class="card text-center rounded m-2">
                         <div class="text-center">
-                            <!--Nombre {{user.name}}-->
+
                             <h5 class="card-title mt-2">{{card.username}}</h5>
                         </div>
                         <div>
-                            <!--Imagen {{user.image}}-->
+
                             <img src="https://es.marketscreener.com/mods_a/graph/resize.php?w=250&h=150&f=/images/barons/jose-oriol_bosch-par.jpg" class="card-img-top" alt="User Photo">
-                            <!-- <img src="{{card.url_foto}}" class="card-img-top" alt="User Photo"> -->
+
                         </div>
 
                         <div class="infoUser">
@@ -53,8 +54,7 @@
                         </div>
 
                         <div class="col-md-12 text-center">
-                            <!--Boton-->
-                            <a href="#" class="btn btn-warning m-2 col-10">PERFIL</a>
+                            <a (click)="setUserTo(card.id)" routerLink="../user-public-profile"  href="#" class="btn btn-warning m-2 col-10">PERFIL</a>
                         </div>
                     </div>
                 </div>
@@ -74,3 +74,4 @@
 </body>
 
 </html>
+
