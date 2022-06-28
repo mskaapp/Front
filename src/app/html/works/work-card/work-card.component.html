@@ -1,33 +1,40 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet" type="text/css">
-<div class= "row d-inline-flex ml-1 fullCard">
-  <!--Columna 1 foto, botones etc... #cardBody-->
-  <div class ="col-6">
-    <div class="card-deck">
-      <div style="width: 60rem">
-          <!-- Carta -->
-        <div class="card text-center rounded m-2 box" >
+<link rel="stylesheet" href="work-card.component.css">
+<div class="row d-inline-flex ml-1 fullCard">
+    <!--Columna 1 foto, botones etc... #cardBody-->
+
+
+    <div class="contenedorCartas">
+        <!-- Carta -->
+        <div class="w-100 card text-center rounded m-2 box">
             <div>
-              <a class="¡" href="https://www.linkedin.com/in/oriollopezbosch/">
-                <!--User Profile-->
-                <img src="https://es.marketscreener.com/mods_a/graph/resize.php?w=250&h=150&f=/images/barons/jose-oriol_bosch-par.jpg" class="card-img-top" alt="User Photo">
-              </a>
+                <a class="¡" href="https://www.linkedin.com/in/oriollopezbosch/">
+                    <!--User Profile-->
+                    <img src="https://es.marketscreener.com/mods_a/graph/resize.php?w=250&h=150&f=/images/barons/jose-oriol_bosch-par.jpg" class="card-img-top" alt="User Photo">
+                </a>
             </div>
             <div class="text-center">
-              <h5 class="card-title">{{workCardWork.getId}}</h5>
+                <h5 class="card-title">{{workCardWork.descripcion}}</h5>
+                <hr>
             </div>
-            <div class="">
-              <h6 class="card-title">{{workCardWork.getFecha_ini}}</h6>
+            <div class="card-center">
+                <b>Presupuesto: </b>{{workCardWork.presupuesto}}€
             </div>
-            <div class="">
-              <h6 class="card-title">{{workCardWork.getFecha_fin}}</h6>
+            <div>
+                <b>Valoración: </b>{{workCardWork.estrellas}}/5
             </div>
+            <div>
+                <b>Inicio: </b>{{workCardWork.fecha_ini | date: 'dd-MM-yyyy'}}
+            </div>
+            <div>
+                <b>Fin: </b>{{workCardWork.fecha_fin | date: 'dd-MM-yyyy'}}
+            </div>
+
             <div class="col-md-12 text-center">
-              <!--Boton-->
-              <a href="#" class="btn btn-warning m-2 col-10">VER TRABAJO</a>
+                <!--Boton-->
+                <a (click)="sendToWorkComponent()"routerLink="../work" class="btn btn-warning m-2 col-10">VER TRABAJO</a>
             </div>
-          </div>
         </div>
     </div>
-  </div>
-  </div>
+</div>

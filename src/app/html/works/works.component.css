@@ -1,0 +1,20 @@
+    body {
+        background-image: url("https://39975211.servicio-online.net/wp-content/uploads/2022/05/register_background.png");
+        height: 980px;
+        background-repeat: no-repeat;
+        margin-top: -16px;
+        padding-top: 14px;
+    }
+
+    .form-group,
+    .btnBuscar {
+        margin-left: 7px;
+    }
+
+    .resultado {
+        margin-left: 17px;
+    }
+
+    .btnTrabajoTest {
+        margin-left: 8%;
+    }

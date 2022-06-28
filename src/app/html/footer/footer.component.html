@@ -14,11 +14,12 @@
 <body>
 
 </body>
-<footer class="bg-dark text-center text-white fixed-bottom">
-    Achievements<br>
-    <img class="img bandage" id="bandage1" src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/mska_logo_main.png">
-    <img class="img bandage" id="bandage2" src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/reclutador.png">
-    <img class="img bandage" id="bandage3" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/camara.png">
+<footer class="bg-dark text-center text-white fixed-bottom pt-2 pb-2" *ngIf="authenticationService.isAuthenticated">
+    <a class="nav-item hovertext" data-hover="Looser"><img class="img bandage looser" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_ruc.png"></a>
+    <a class="nav-item hovertext" data-hover="Cum Laude"><img class="img bandage cumLaude" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_spamer.png"></a>
+    <a class="nav-item hovertext" data-hover="Next!"><img class="img bandage next" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/pollo1.png "></a>
+    <a class="nav-item hovertext" data-hover="Crítico Exquisito"><img class="img bandage criticoExquisito" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_primerPost.png"></a>
+
 </footer>
 
 </html>

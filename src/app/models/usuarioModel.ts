@@ -3,29 +3,29 @@ export class usuarioModel {
   public nombre: string;
   public apellidos: string;
   public email: string;
-  public nombre_usuario: any;
-  public contraseña: any;
+  public username: any;
+  public password: any;
   public poblacion: string;
   public pais: string;
   public cp: number;
-  public fecha_registro: Date;
-  public fecha_nacimiento: Date;
+  public fechaRegistro: Date;
+  public fechaNacimiento: Date;
   public movil: number;
   public instagram: any;
   public linkedin: any;
-  public num_entrevista: number;
-  public num_mensajes: number;
-  public num_trabajos: number;
-  public num_valoraciones: number;
-  public url_foto: any;
-  public fk_id_tecnico: number;
-  public fk_id_reclutador:number;
-  public id_mensaje: number;
+  public numEntrevista: number;
+  public numMensajes: number;
+  public numTrabajos: number;
+  public numValoraciones: number;
+  public uriFoto: any;
+  //public tecnico: number;
+  //public reclutador:number;
+  /*public id_mensaje: number;
   public id_entrevista: number;
   public id_trabajo: number;
   public id_comentarioTrabajo: number;
   public id_postUsuario: number;
-  public id_valoracion: number;
+  public id_valoracion: number;*/
 
   /*constructor(id: number, nombre: string, apellidos: string, email: string, nombre_usuario: any, contraseña: any, poblacion: string, pais: string, cp: number,
     fecha_registro: Date, fecha_nacimiento: Date, movil: number, instagram: any, linkedin: any, num_entrevista: number, num_mensajes: number,
@@ -60,7 +60,7 @@ export class usuarioModel {
       this.id_valoracion = id_valoracion;
   }*/
 
-  getId(): number {
+  /*getId(): number {
       return this.id;
   }
 
@@ -77,7 +77,7 @@ export class usuarioModel {
   }
 
   getNombre_usuario(): any {
-    return this.nombre_usuario;
+    return this.username;
   }
 
   getContraseña(): any {
@@ -125,7 +125,7 @@ export class usuarioModel {
   }
 
   getNum_trabajos(): number {
-    return this.num_trabajos;
+    return this.numTrabajos;
   }
 
   getNum_valoraciones(): number {
@@ -166,5 +166,5 @@ export class usuarioModel {
 
   getId_valoracion(): number {
     return this.id_valoracion;
-  }
+  }*/
 }

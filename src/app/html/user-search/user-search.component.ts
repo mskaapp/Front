@@ -16,14 +16,20 @@ export class UserSearchComponent implements OnInit {
   arrayUserSearchUser!:     usuarioModel[];
   arrayUserSearchTecnic!:   tecnicoModel[];
 
+  page:number;
+
   //TODO: borrar down
   txtUserCardUserName:         string='uri';
+
   //Example who to pass a link
   linkTest: string='https:www.google.com';
+
   constructor(private httpClient: HttpClient) { }
+
   ngOnInit(): void {
-    this.getUsuarios();
-    this.getTecnicos();
+    this.getTecnics();
+    this.getUsers();
+
   }
       //TODO: capture photo of user id
       getUsuarios(){
@@ -35,7 +41,7 @@ export class UserSearchComponent implements OnInit {
           }
         );
       }
-      getTecnicos(){
+      getTecnics(){
         //TODO: capture the id from field html and sustitute for 1
         this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/usuario/').subscribe(
           response =>{
@@ -45,4 +51,14 @@ export class UserSearchComponent implements OnInit {
         );
       }
 
+      //TODO: capture photo of user id
+      getUsers(){
+        //TODO: capture the id from field html and sustitute for 1
+        this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/usuario/').subscribe(
+          response =>{
+            console.log(response);
+            this.arrayUserSearchUser=response;
+          }
+        );
+      }
 }

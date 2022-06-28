@@ -1,25 +1,42 @@
-<div class="container mt-3">
-  <!--Form Search-->
-  <div class="row">
-    <div class="col">
-      <div class="form-group">
-        <form>
-          <div class="form-group">
-            <label for="Buscar">Buscar Trabajos</label>
-            <input type="text" class="form-control" id="tfBuscarNombre" placeholder="nombre">
-          </div>
-          <button type="submit" class="btn btn-primary">Buscar</button>
-        </form>
-      </div>
-    </div>
-  </div>
-  <!--Show Results-->
-  <div class="row">
-    <div class="col">
-      <p>Resultado de la búsqueda</p>
-      <!--Adding card to View-->
-      <app-work-card [workCardWork]="worksWork"></app-work-card>
-      <a routerLink="../work"><button>Trabajo Test</button></a>
-    </div>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <aside class="container mt-3">
+        <!--Form Search-->
+        <aside class="row">
+            <aside class="col">
+                <aside class="form-group">
+                    <form>
+                        <aside class="form-group">
+                            <label for="Buscar" class="text-light"><b><u>Buscar Trabajos</u></b></label>
+                            <input type="text" class="w-25 form-control" id="tfBuscarNombre" placeholder="Trabajo">
+                        </aside>
+                        <button type="submit" class="btnBuscar btn btn-primary">Buscar</button>
+                        <!--<a routerLink="../work"><button class="btnTrabajoTest btn btn-primary">Trabajo Test</button></a>-->
+
+                    </form>
+                </aside>
+            </aside>
+        </aside>
+        <!--Show Results-->
+        <aside>
+            <p *ngIf="arrayWorksTrabajos" class="resultado text-dark">Resultado de la búsqueda: <i>{{arrayWorksTrabajos.length}} coincidencias</i></p>
+            <aside class="col" *ngFor="let card of arrayWorksTrabajos">
+
+                <app-work-card [workCardWork]="card"></app-work-card>
+            </aside>
+        </aside>
+        <br>
+    </aside>
+
+</body>
+
+</html>

@@ -17,31 +17,32 @@
             <aside class="col">
                 <h1 class="texto mt-4">PERFIL</h1>
                 <hr>
-                <label class="texto text-light" for="nombre" class="text-light">Nombre</label>
+
+                <label class="texto text-light" for="nombre" class="text-light" *ngIf="ProfileUser">Nombre</label>
 
                 <!--<input type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="ProfileUser.nombre" ngModel>-->
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
+                <input *ngIf="ProfileUser" [(ngModel)]="ProfileUser.nombre" [readonly]=inputsReadOnly type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
                 <br>
                 <label class="texto text-light" for="apellidos">Apellidos</label>
                 <!--<input type="text" class="form-control" placeholder="Apellidos" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="ProfileUser.apellidos" ngModel>-->
-                <input type="text" class="form-control" placeholder="Apellidos" aria-label="Username" aria-describedby="basic-addon1">
+                <input *ngIf="ProfileUser" [(ngModel)]="ProfileUser.apellidos" [readonly]=inputsReadOnly type="text" class="form-control" placeholder="Apellidos" aria-label="Username" aria-describedby="basic-addon1">
 
                 <br>
-                <label class="texto text-light" for="fechaDeNacimiento">Fecha de nacimiento</label>
-                <!--<h3>{{ProfileUser.getFecha_nacimiento}}"</h3>-->
-                <h3 class="text">13/12/1980</h3>
+                <!--<label class="texto text-light" for="fechaDeNacimiento">Fecha de nacimiento</label>
+                <h3>{{ProfileUser.getFecha_nacimiento}}"</h3>-->
+                <!--<h3 class="text" *ngIf="ProfileUser">{{ProfileUser.fecha_nacimiento}}</h3>
                 <br>
                 <input class="texto" type="date" name="fechaDeNacimiento" id="fechaDeNacimiento" disabled>
                 <br>
-                <br>
-                <label for="userName">Nombre de Usuario</label>
+                <br>-->
+                <label class="texto text-light" for="userName">Email</label>
 
                 <!--<input type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="ProfileUser.nombre_usuario" ngModel>-->
-                <input type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
+                <input *ngIf="ProfileUser" [(ngModel)]="ProfileUser.email" [readonly]=inputsReadOnly type="text" class="form-control" placeholder="email" aria-label="Email" aria-describedby="basic-addon1">
                 <br><br>
                 <!--TODO: Funcion de editar-->
                 <button *ngIf="bolBtnEditar == true" class="boton" (click)="showGuardarCancelar()">Editar</button>
-                <button *ngIf="bolBtnGuadar == true" class="btnGuardar" (click)="hideGuardarCancelar()">Guardar</button>
+                <button *ngIf="bolBtnGuadar == true" class="btnGuardar" (click)="updateUser2()">Guardar</button>
                 <button *ngIf="bolBtnCancelar == true" class="btnCancelar" (click)="hideGuardarCancelar()">Cancelar</button>
 
                 <br><br>
@@ -69,8 +70,9 @@
                     <!-- Tecnic -->
                     <!--TODO: if profile not exist register, do funtion-->
                     <a routerLink="../calendar" href="#" class="disabled"><img class="img btnCohete w-25 " src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/tecnico.png" alt="Cohete " /></a>
-                    <a routerLink="../register-tecnic" href="#"><button class="boton">Crear Tecnico provisional</button></a>
-                    <a routerLink="../register-recruiter" href="#"><button class="boton">Crear Recruiter provisional</button></a>
+                    <!--<a *ngIf="ProfileUser.tecnico" routerLink="../register-tecnic" href="#"><button class="boton">Crear Tecnico provisional</button></a>
+                    <a *ngIf="ProfileUser.reclutador" routerLink="../register-recruiter" href="#"><button class="boton">Crear Recruiter provisional</button></a>-->
+
                 </aside>
             </aside>
         </aside>
