@@ -18,8 +18,8 @@ export class usuarioModel {
   public numTrabajos: number;
   public numValoraciones: number;
   public uriFoto: any;
-  //public tecnico: number;
-  //public reclutador:number;
+  public tecnico: number;
+  public reclutador:number;
   /*public id_mensaje: number;
   public id_entrevista: number;
   public id_trabajo: number;

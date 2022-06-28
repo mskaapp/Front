@@ -60,5 +60,8 @@ export class UserSearchComponent implements OnInit {
             this.arrayUserSearchUser=response;
           }
         );
+      }fddd
+      setUserTo(id:number){
+        localStorage.setItem('user', String(id));
       }
 }
