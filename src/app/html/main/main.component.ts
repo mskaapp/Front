@@ -35,15 +35,17 @@ export class MainComponent implements OnInit {
   showPagination: boolean;
   path: any;
   order: any;
+  lenght:   number;
 
   // pageActual: number = 1;
   screenSize() {
-    console.log(this.screenHeight);
+    //console.log(this.screenHeight);
   }
 
   ngOnInit(): void {
     this.screenSize();
     this.getPosts();
+    this.lenght=this.arrayPost.length;
     this.page =1;
     this.previousPage =1;
     this.fillPosts(1);
@@ -53,7 +55,7 @@ export class MainComponent implements OnInit {
     //TODO: capture the id from field html and sustitute for 1
     this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/usuario/1').subscribe(
       response =>{
-        console.log(response);
+        //console.log(response);
         this.usuario=response;
       }
     );
@@ -62,7 +64,7 @@ export class MainComponent implements OnInit {
   //TODO: capture the id from field html and sustitute for user id
   this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/postusuario/').subscribe(
     response =>{
-      console.log(response);
+      //console.log(response);
       this.arrayPost=response;
     }
   );
