@@ -18,7 +18,7 @@ export class reclutadorModel {
 
   }
 
-  getId(): number {
+  /*getId(): number {
     return this.id;
   }
 
@@ -44,5 +44,5 @@ export class reclutadorModel {
 
   getId_obtieneR(): number {
     return this.id_obtieneR;
-  }
+  }*/
 }
