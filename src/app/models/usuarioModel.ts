@@ -1,3 +1,6 @@
+import { reclutadorModel } from "./reclutadorModel";
+import { tecnicoModel } from "./tecnicoModel";
+
 export class usuarioModel {
   public id: number;
   public nombre: string;
@@ -18,6 +21,30 @@ export class usuarioModel {
   public numTrabajos: number;
   public numValoraciones: number;
   public uriFoto: any;
+  public tecnico: tecnicoModel;
+  public reclutador:reclutadorModel;
+  /* OLD
+    export class usuarioModel {
+  public id: number;
+  public nombre: string;
+  public apellidos: string;
+  public email: string;
+  public username: any;
+  public password: any;
+  public poblacion: string;
+  public pais: string;
+  public cp: number;
+  public fechaRegistro: Date;
+  public fechaNacimiento: Date;
+  public movil: number;
+  public instagram: any;
+  public linkedin: any;
+  public numEntrevista: number;
+  public numMensajes: number;
+  public numTrabajos: number;
+  public numValoraciones: number;
+  public uriFoto: any;
+  */
   //public tecnico: number;
   //public reclutador:number;
   /*public id_mensaje: number;
