@@ -83,6 +83,8 @@ export class ProfileComponent implements OnInit {
       this.bolBtnCancelar = false;
       //UnEnable inputs
       this.inputsReadOnly = true;
+      console.log("___________USUARIO A ACTUALIZAR");
+      console.log(this.ProfileUser);
     //Update Api
       this.httpClient.put<usuarioModel>(
         'https://myskillaround-spring-testing.herokuapp.com/api/usuario/1',
@@ -93,4 +95,21 @@ export class ProfileComponent implements OnInit {
           console.log(result, "Data updated");
         })
     }
+    updateUser3(){
+      //Visual Part
+        this.bolBtnEditar   = true;
+        this.bolBtnGuadar   = false;
+        this.bolBtnCancelar = false;
+        //UnEnable inputs
+        this.inputsReadOnly = true;
+        console.log("___________USUARIO A ACTUALIZAR");
+        console.log(this.ProfileUser);
+      //Update Api
+        this.httpClient.put<usuarioModel>
+        ('https://myskillaround-spring-testing.herokuapp.com/api/usuario/1', this.ProfileUser).subscribe(
+          (result)=>{
+            console.log(result, "Data updated");
+          }
+        );
+      }
 }
