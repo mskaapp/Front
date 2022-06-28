@@ -13,6 +13,7 @@ import {NgbPaginationConfig} from '@ng-bootstrap/ng-bootstrap';
   providers: [NgbPaginationConfig]
 })
 export class MainComponent implements OnInit {
+
   constructor(
     private httpClient: HttpClient,
     // private route: ActivatedRoute,

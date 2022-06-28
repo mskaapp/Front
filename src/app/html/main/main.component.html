@@ -29,41 +29,28 @@
         <button class="btn btnPost btn-warning" id="btnPost">Post</button>
         <br><br>
 
-        <ngb-pagination *ngIf="showPagination " [collectionSize]="totalItems " [(page)]="page " (pageChange)="loadPage($event) "></ngb-pagination>
+        <!-- <app-modal></app-modal> -->
+
+        <!--Show Results-->
+        <p class="length">Lenght: {{lenght}}</p>
+
+        <aside class="card postCards" style="width: 20rem;" *ngFor="let item of arrayPost | paginate: { itemsPerPage: 2, currentPage: page }">
+            <div>
+
+                <h5 class="card-title pl-3 pt-3">Post {{item.id}}</h5>
+                <p class="fechaPost">{{item.fecha_post}}</p>
+                <hr>
+                <div class="card-body">
+
+                    <app-post-card [postCard]="item"></app-post-card>
+
+                    <p class="card-text ml-4 mr-4">{{item.link}} Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod possimus sapiente vitae voluptatum accusantium</p>
+                    <p class="likes ml-4"><i><u>Likes</u>: {{item.likes}}</i> | <i><u>RT</u>: {{item.retweet}}</i> </p>
+                </div>
 
 
 
-        <!-- <pagination-controls (pageChange)="pageActual = $event"></pagination-controls> -->
-        <!--<table>
-            <tr *ngFor="let item of arrayPost">
-                <td>
-                    {{item}}
-                </td>
-            </tr>
-        </table>-->
-
-    </aside>
-
-    <!-- <app-modal></app-modal> -->
-
-    <!--Show Results-->
-    <p class="length">Lenght: {{lenght}}</p>
-
-    <aside class="card postCards" style="width: 20rem;" *ngFor="let item of arrayPost">
-        <div>
-
-            <h5 class="card-title pl-3 pt-3">Post {{item.id}}</h5>
-            <p class="fechaPost">{{item.fecha_post}}</p>
-            <hr>
-            <div class="card-body">
-
-                <app-post-card [postCard]="item"></app-post-card>
-
-                <p class="card-text ml-4 mr-4">{{item.link}} Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod possimus sapiente vitae voluptatum accusantium</p>
-                <p class="likes ml-4"><i><u>Likes</u>: {{item.likes}}</i> | <i><u>RT</u>: {{item.retweet}}</i> </p>
-            </div>
-
-            <!-- <aside class="col-2 socialIconCol align-items-center" id="colIcons">
+                <!-- <aside class="col-2 socialIconCol align-items-center" id="colIcons">
             <aside class="row">
                 <a class="socialIcon" target="_blank"><i class="fa fa-github"></i></a>
             </aside>
@@ -74,35 +61,19 @@
 
         </aside> -->
 
-        </div>
-        <aside class="asideBoton">
-            <a href="#"><button class="btnSeguirLeyendo btn btn-warning">Seguir Leyendo</button></a>
-            <a href="#"><button class="btnSeguirLeyendo btn btn-danger" ng-click="updateData(item.link)">Editar</button></a>
+            </div>
+            <aside class="asideBoton">
+                <a href="#"><button class="btnSeguirLeyendo btn btn-warning">Seguir Leyendo</button></a>
+                <a href="#"><button class="btnSeguirLeyendo btn btn-danger" ng-click="updateData(item.link)">Editar</button></a>
 
+            </aside>
+        </aside>
+
+        <aside class="paginationControls mt-3 ml-5">
+            <pagination-controls (pageChange)="page = $event" previousLabel="Anterior" nextLabel="Siguiente">
+            </pagination-controls>
         </aside>
     </aside>
-
-
-    <br><br>
-    <nav aria-label="... " class="paginate">
-        <ul class="pagination ">
-            <li class="page-item disabled ">
-                <span class="page-link ">Previous</span>
-            </li>
-            <li class="page-item "><a class="page-link " href="# ">1</a></li>
-            <li class="page-item active " aria-current="page ">
-                <span class="page-link ">2</span>
-            </li>
-            <li class="page-item "><a class="page-link " href="# ">3</a></li>
-            <li class="page-item ">
-                <a class="page-link " href="# ">Next</a>
-            </li>
-        </ul>
-    </nav>
-
-    <script>
-    </script>
-
 </body>
 
 </html>
