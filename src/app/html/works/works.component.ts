@@ -11,8 +11,11 @@ export class WorksComponent implements OnInit {
 
   //TODO: controlar la discriminacion de busqueda de trabajos
   worksWork!:            trabajoModel;
+
   //Array of UserWorks
   arrayWorksTrabajos!:  trabajoModel[];
+
+  page:number;
 
   constructor(private httpClient: HttpClient) { }
 
