@@ -14,6 +14,7 @@ export class WorkComponent implements OnInit {
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
+    this.getWorks();
   }
 
   getWorks(){

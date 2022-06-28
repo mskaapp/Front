@@ -49,20 +49,21 @@
     <!--Show Results-->
     <p class="length">Lenght: {{lenght}}</p>
 
-    <div class="card postCards" style="width: 20rem;" *ngFor="let item of arrayPost">
+    <aside class="card postCards" style="width: 20rem;" *ngFor="let item of arrayPost">
+        <div>
 
-        <h5 class="card-title pl-3 pt-3">Post {{item.id}}</h5>
-        <p class="fechaPost">{{item.fecha_post}}</p>
-        <hr>
-        <div class="card-body">
+            <h5 class="card-title pl-3 pt-3">Post {{item.id}}</h5>
+            <p class="fechaPost">{{item.fecha_post}}</p>
+            <hr>
+            <div class="card-body">
 
-            <app-post-card [postCard]="item"></app-post-card>
+                <app-post-card [postCard]="item"></app-post-card>
 
-            <p class="card-text ml-4 mr-4">{{item.link}} Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod possimus sapiente vitae voluptatum accusantium</p>
-            <p class="likes ml-4"><i><u>Likes</u>: {{item.likes}}</i> | <i><u>RT</u>: {{item.retweet}}</i> </p>
-        </div>
+                <p class="card-text ml-4 mr-4">{{item.link}} Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod possimus sapiente vitae voluptatum accusantium</p>
+                <p class="likes ml-4"><i><u>Likes</u>: {{item.likes}}</i> | <i><u>RT</u>: {{item.retweet}}</i> </p>
+            </div>
 
-        <!-- <aside class="col-2 socialIconCol align-items-center" id="colIcons">
+            <!-- <aside class="col-2 socialIconCol align-items-center" id="colIcons">
             <aside class="row">
                 <a class="socialIcon" target="_blank"><i class="fa fa-github"></i></a>
             </aside>
@@ -72,12 +73,16 @@
             </aside>
 
         </aside> -->
+
+        </div>
         <aside class="asideBoton">
             <a href="#"><button class="btnSeguirLeyendo btn btn-warning">Seguir Leyendo</button></a>
             <a href="#"><button class="btnSeguirLeyendo btn btn-danger" ng-click="updateData(item.link)">Editar</button></a>
 
         </aside>
-    </div>
+    </aside>
+
+
     <br><br>
     <nav aria-label="... " class="paginate">
         <ul class="pagination ">
