@@ -5,12 +5,12 @@ export class trabajoModel{
   public fecha_fin: Date;
   public estrellas: number;
   public presupuesto: number;
-  public fk_id_asignador: number;
+  public usuarioAsignador: number;
   public fk_id_asignado: number;
   public id_comentarioTrabajo: number;
   public id_posee: number;
 
-  constructor(id: number, descripcion: string, fecha_ini: Date, fecha_fin: Date, estrellas: number, presupuesto: number, fk_id_asignador: number,
+  constructor(id: number, descripcion: string, fecha_ini: Date, fecha_fin: Date, estrellas: number, presupuesto: number, usuarioAsignador: number,
     fk_id_asignado: number, id_comentarioTrabajo: number, id_posee: number){
       this.id = id;
       this.descripcion = descripcion;
@@ -18,7 +18,7 @@ export class trabajoModel{
       this.fecha_fin = fecha_fin;
       this.estrellas = estrellas;
       this.presupuesto = presupuesto;
-      this.fk_id_asignador = fk_id_asignador;
+      this.usuarioAsignador = usuarioAsignador;
       this.fk_id_asignado = fk_id_asignado;
       this.id_comentarioTrabajo = id_comentarioTrabajo;
       this.id_posee = id_posee;
@@ -50,7 +50,7 @@ export class trabajoModel{
   }
 
   getFk_id_asignador(): number{
-    return this.fk_id_asignador;
+    return this.usuarioAsignador;
   }
 
   getFk_id_asignado(): number{
