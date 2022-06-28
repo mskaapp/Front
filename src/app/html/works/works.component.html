@@ -13,12 +13,15 @@
         <!--Form Search-->
         <aside class="row">
             <aside class="col">
-                <aside class="form-group">
+                <aside class="form-group ml-4">
                     <form>
+                        <label for="Buscar" class="text-light ml-2"><b><u>Buscar Trabajos</u></b></label>
                         <aside class="form-group">
-                            <label for="Buscar" class="text-light"><b><u>Buscar Trabajos</u></b></label>
-                            <input type="text" class="w-25 form-control" id="tfBuscarNombre" placeholder="Trabajo">
+                            <input type="text" class="tfBuscarNombre form-control mr-2" placeholder="Trabajo">
+                            <button type="submit" class="btnBuscar btn btn-primary">Buscar</button>
+                            <a routerLink="../work"><button class="btnTrabajoTest btn btn-primary">Trabajo Test</button></a>
                         </aside>
+
                         <button type="submit" class="btnBuscar btn btn-primary">Buscar</button>
                         <!--<a routerLink="../work"><button class="btnTrabajoTest btn btn-primary">Trabajo Test</button></a>-->
 
@@ -29,12 +32,14 @@
         <!--Show Results-->
         <aside>
             <p *ngIf="arrayWorksTrabajos" class="resultado text-dark">Resultado de la búsqueda: <i>{{arrayWorksTrabajos.length}} coincidencias</i></p>
-            <aside class="col" *ngFor="let card of arrayWorksTrabajos">
+            <aside class="works col" *ngFor="let card of arrayWorksTrabajos | paginate: { itemsPerPage: 1, currentPage: page }">
 
                 <app-work-card [workCardWork]="card"></app-work-card>
             </aside>
         </aside>
         <br>
+        <pagination-controls (pageChange)="page = $event" previousLabel="Anterior" nextLabel="Siguiente">
+        </pagination-controls>
     </aside>
 
 </body>

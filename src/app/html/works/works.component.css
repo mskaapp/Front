@@ -6,15 +6,29 @@
         padding-top: 14px;
     }
 
-    .form-group,
-    .btnBuscar {
+    .form-group {
         margin-left: 7px;
+        display: flex;
     }
 
     .resultado {
-        margin-left: 17px;
+        margin-left: 34px;
+    }
+
+    .btnBuscar,
+    .btnTrabajoTest {
+        height: 39px;
     }
 
     .btnTrabajoTest {
         margin-left: 8%;
+        width: 110px;
+    }
+
+    .works {
+        display: inline-block;
+    }
+
+    .tfBuscarNombre {
+        width: 260px;
     }
