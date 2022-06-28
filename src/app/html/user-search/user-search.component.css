@@ -19,3 +19,7 @@ body {
     margin-left: 15%;
     text-align: justify;
 }
+
+.form-group {
+    margin-left: 5px;
+}
