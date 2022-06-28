@@ -7,6 +7,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './html/navbar/navbar.component';
+import { FooterComponent } from './html/footer/footer.component';
 import { LoginComponent } from './html/login/login.component';
 import { MainComponent } from './html/main/main.component';
 import { RegisterComponent } from './html/register/register.component';
@@ -40,6 +41,7 @@ import { PostCardComponent } from './html/main/post-card/post-card.component';
   declarations: [
     AppComponent,
     NavbarComponent,
+    FooterComponent,
     LoginComponent,
     MainComponent,
     RegisterComponent,
