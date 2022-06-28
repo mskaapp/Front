@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { usuarioModel } from 'src/app/models/usuarioModel';
 import { HttpClient } from '@angular/common/http';
 
@@ -14,6 +14,7 @@ export class UserPublicProfileComponent implements OnInit {
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
+    this.getUserById();
   }
 
       //TODO: capture photo of user id

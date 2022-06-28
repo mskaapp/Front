@@ -3,7 +3,7 @@ export class usuarioModel {
   public nombre: string;
   public apellidos: string;
   public email: string;
-  public nombre_usuario: any;
+  public username: any;
   public contraseña: any;
   public poblacion: string;
   public pais: string;
@@ -15,7 +15,7 @@ export class usuarioModel {
   public linkedin: any;
   public num_entrevista: number;
   public num_mensajes: number;
-  public num_trabajos: number;
+  public numTrabajos: number;
   public num_valoraciones: number;
   public url_foto: any;
   public fk_id_tecnico: number;
@@ -77,7 +77,7 @@ export class usuarioModel {
   }
 
   getNombre_usuario(): any {
-    return this.nombre_usuario;
+    return this.username;
   }
 
   getContraseña(): any {
@@ -125,7 +125,7 @@ export class usuarioModel {
   }
 
   getNum_trabajos(): number {
-    return this.num_trabajos;
+    return this.numTrabajos;
   }
 
   getNum_valoraciones(): number {
