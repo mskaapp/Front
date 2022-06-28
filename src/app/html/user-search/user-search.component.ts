@@ -16,11 +16,16 @@ export class UserSearchComponent implements OnInit {
   arrayUserSearchUser!:     usuarioModel[];
   arrayUserSearchTecnic!:   tecnicoModel[];
 
+  page:number;
+
   //TODO: borrar down
   txtUserCardUserName:         string='uri';
+
   //Example who to pass a link
   linkTest: string='https:www.google.com';
+
   constructor(private httpClient: HttpClient) { }
+
   ngOnInit(): void {
     this.getTecnics();
     this.getUsers();

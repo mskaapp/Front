@@ -52,3 +52,7 @@ body {
     position: relative;
     top: 6px;
 }
+
+.btnVolver {
+    margin-left: 22%;
+}
