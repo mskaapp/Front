@@ -26,7 +26,7 @@
         </aside>
         <!--Show Results-->
         <aside>
-            <p class="resultado text-light">Resultado de la búsqueda: <i>{{arrayWorksTrabajos.length}} coincidencias</i></p>
+            <p *ngIf="arrayWorksTrabajos" class="resultado text-dark">Resultado de la búsqueda: <i>{{arrayWorksTrabajos.length}} coincidencias</i></p>
             <aside class="col" *ngFor="let card of arrayWorksTrabajos">
 
                 <app-work-card [workCardWork]="card"></app-work-card>
