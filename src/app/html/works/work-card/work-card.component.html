@@ -7,7 +7,7 @@
 
     <div class="contenedorCartas">
         <!-- Carta -->
-        <div class="w-75 card text-center rounded m-2 box">
+        <div class="w-100 card text-center rounded m-2 box">
             <div>
                 <a class="¡" href="https://www.linkedin.com/in/oriollopezbosch/">
                     <!--User Profile-->
@@ -15,14 +15,21 @@
                 </a>
             </div>
             <div class="text-center">
-                <h5 class="card-title">{{workCardWork.id}}</h5>
+                <h5 class="card-title">{{workCardWork.descripcion}}</h5>
             </div>
             <div class="">
-                <h6 class="card-title">{{workCardWork.fecha_ini}}</h6>
+                <h6 class="card-title">Presupuesto: {{workCardWork.presupuesto}}€</h6>
+            </div>
+            <div class="text-center">
+                <h6 class="card-title">Valoración: {{workCardWork.estrellas}}</h6>
             </div>
             <div class="">
-                <h6 class="card-title">{{workCardWork.fecha_fin}}</h6>
+                <h6 class="card-title">Inicio: {{workCardWork.fecha_ini | date: 'dd-MM-yyyy'}}</h6>
             </div>
+            <div class="text-center">
+                <h6 class="card-title">Fin: {{workCardWork.fecha_fin | date: 'dd-MM-yyyy'}}</h6>
+            </div>
+
             <div class="col-md-12 text-center">
                 <!--Boton-->
                 <a href="#" class="btn btn-warning m-2 col-10">VER TRABAJO</a>
