@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { AuthenticationService } from '../../services/authentification.service';
 import { SignInData } from '../../models/signInData';
+import { HttpClient } from '@angular/common/http';
+import { response } from 'express';
+import { usuarioModel } from 'src/app/models/usuarioModel';
+import { postUsuarioModel } from 'src/app/models/postUsuarioModel';
 
 @Component({
   selector: 'app-login',
@@ -12,15 +16,19 @@ export class LoginComponent implements OnInit {
 
   isFormValid = false;
   areCredentialsInvalid = false;
-  chRememberMe!:  boolean;
-  tfUser!:        string;
-  tfPassword!:     string;
+  chRememberMe!:    boolean;
+  tfUser!:          string;
+  tfPassword!:      string;
+  usuario!:         usuarioModel;
+  post!:            postUsuarioModel;
 
-  constructor(private authenticationService: AuthenticationService) { }
+
+  constructor(private authenticationService: AuthenticationService, private httpClient: HttpClient) { }
 
   ngOnInit() {
-    console.log("Estatus check local"+localStorage.getItem('checked'));
-    console.log("Estatus check"+localStorage.getItem('checked'));
+    //this.getUserById();
+    //this.getPostbyid();
+    //this.getTest();
     //LocalStorage cant storage booleans, the string must be parsed
     if(localStorage.getItem('checked')=='true'){
       //Setting checkbox checked and values from localStorage
@@ -34,7 +42,7 @@ export class LoginComponent implements OnInit {
     }
   }
 
-
+  //TODO: Save user id on sessionStorage to use during all session
   onSubmit(signInForm: NgForm) {
     if (!signInForm.valid) {
       this.isFormValid = true;
@@ -64,6 +72,38 @@ export class LoginComponent implements OnInit {
       localStorage.setItem('user', '' );
       localStorage.setItem('password', '');
     }
-    console.log("changed");
   }
+  getUserById(){
+    //TODO: capture the id from field html and sustitute for 1
+    //console.log("_____________________LLAMADA DE USER_________________________________________")
+    this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/usuario/1').subscribe(
+      response =>{
+        console.log(response);
+        this.usuario=response;
+      }
+    );
+  }
+  getPostbyid(){
+    //TODO: capture the id from field html and sustitute for 1
+    this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/postusuario/1').subscribe(
+    //this.httpClient.get<any>('/api/postusuario/1').subscribe(
+      response =>{
+        console.log(response);
+        this.post=response;
+      }
+    );
+  }
+  getTest(){
+    console.log("-____________TESTING________________")
+    //TODO: capture the id from field html and sustitute for 1
+    this.httpClient.get<any>('https://myskillaround-spring-testing.herokuapp.com/api/reclutador').subscribe(
+    //this.httpClient.get<any>('/api/postusuario/1').subscribe(
+
+      response =>{
+        console.log(response);
+        //this.post=response;
+      }
+    );
+  }
+
 }

@@ -19,9 +19,8 @@ import { WorksComponent }               from './html/works/works.component';
 import { WorkCardComponent }            from './html/works/work-card/work-card.component';
 import { WorkComponent }                from './html/work/work.component';
 import { UserPublicProfileComponent }   from './html/user-public-profile/user-public-profile.component';
-
-
-
+import { InterviewsComponent }          from './interviews/interviews.component';
+import { PostCardComponent }            from './post-card/post-card.component';
 
 //Security
 import { AuthGuard }                    from './guards/auth.guard';
@@ -40,16 +39,18 @@ const routes: Routes = [
   {path: 'calendar',            component: CalendarComponent,           canActivate : [AuthGuard]},
   {path: 'profile',             component: ProfileComponent,            canActivate : [AuthGuard]},
   {path: 'profilerecruiter',    component: ProfilerecruiterComponent,   canActivate : [AuthGuard]},
-  {path: 'register-recruiter',   component: RegisterRecruiterComponent,  canActivate : [AuthGuard]},
-  {path: 'register-tecnic',      component: RegisterTecnicComponent,     canActivate : [AuthGuard]},
+  {path: 'register-recruiter',  component: RegisterRecruiterComponent,  canActivate : [AuthGuard]},
+  {path: 'register-tecnic',     component: RegisterTecnicComponent,     canActivate : [AuthGuard]},
   {path: 'works',               component: WorksComponent,              canActivate : [AuthGuard]},
   {path: 'work-card',           component: WorkCardComponent,           canActivate : [AuthGuard]},
+  {path: 'post-card',           component: PostCardComponent,           canActivate : [AuthGuard]},
   {path: 'work',                component: WorkComponent,               canActivate : [AuthGuard]},
   {path: 'user-search',         component: UserSearchComponent,         canActivate : [AuthGuard]},
   {path: 'user-card',           component: UserCardComponent,           canActivate : [AuthGuard]},
   {path: 'profileRecruiter',    component: ProfileRecruiterComponent,   canActivate : [AuthGuard]},
   {path: 'profileTecnic',       component: ProfileTecnicComponent,      canActivate : [AuthGuard]},
   {path: 'user-public-profile', component: UserPublicProfileComponent,  canActivate : [AuthGuard]},
+  {path: 'interviews',          component: InterviewsComponent,         canActivate : [AuthGuard]},
 ];
 
 @NgModule({

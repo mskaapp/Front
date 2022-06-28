@@ -1,8 +1,8 @@
 export class usuarioSecurityModel{
-  private id: number;
-  private username: any;
-  private password: any;
-  private rol: any;
+  public id: number;
+  public username: any;
+  public password: any;
+  public rol: any;
 
   constructor(id: number, username: any, password: any, rol: any){
     this.id = id;

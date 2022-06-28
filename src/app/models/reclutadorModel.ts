@@ -1,24 +1,24 @@
 export class reclutadorModel {
-  private id: number;
-  private experiencia: number;
-  private nivel: number;
-  private web: string;
-  private tipo_reclutador: string;
-  private id_usuario: number;
-  private id_obtieneR: number;
+  public id: number;
+  public experiencia: number;
+  public nivel: number;
+  public web: string;
+  public tipoReclutador: string;
+  /*public id_usuario: number;
+  public id_obtieneR: number;*/
 
   constructor(id: number, experiencia: number, nivel: number, web: string, tipo_reclutador: string, id_usuario: number, id_obtieneR: number){
       this.id = id;
       this.experiencia = experiencia;
       this.nivel = nivel;
       this.web = web;
-      this.tipo_reclutador = tipo_reclutador;
+      /*this.tipo_reclutador = tipo_reclutador;
       this.id_usuario = id_usuario;
-      this.id_obtieneR = id_obtieneR;
+      this.id_obtieneR = id_obtieneR;*/
 
   }
 
-  getId(): number {
+  /*getId(): number {
     return this.id;
   }
 
@@ -44,5 +44,5 @@ export class reclutadorModel {
 
   getId_obtieneR(): number {
     return this.id_obtieneR;
-  }
+  }*/
 }

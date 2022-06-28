@@ -1,42 +1,63 @@
+body {
+    background-image: url("https://39975211.servicio-online.net/wp-content/uploads/2022/05/register_background.png");
+}
+
+
 /* Imagen de perfil */
 
 .imgRedonda {
-  width: 300px;
-  height: 300px;
-  border-radius: 150px;
-  border: 10px solid #666;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    border: 10px solid #666;
 }
 
 
 /* Botón de la cámara de fotos para cambiar la foto de perfil */
 
 .camara {
-  width: 100px;
-  float: right;
-  position: relative;
-  margin-top: -110px;
+    width: 50px;
+    float: right;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -40px;
 }
 
 
 /* Imagen del astronauta de la izquierda de todo */
 
 #imgProfileRImagesrc {
-  width: 800px;
-  position: inherit;
-  z-index: -9999;
-  margin-left: -300px;
+    width: 800px;
+    position: inherit;
+    z-index: 9;
+    margin-left: -300px;
+    margin-top: -5%;
+}
+
+.btnCohete {
+    width: 110px;
+    margin-right: -40px;
+    margin-top: -80px;
+}
+
+.btnAstronauta {
+    width: 120px;
+    padding-top: -60px;
+}
+
+.columnaCentral {
+    margin-left: -140px;
+    color: whitesmoke;
 }
 
 
 /* Botón website */
 
 #btnProfileRExp {
-  margin-top: -90%;
+    margin-top: -500px;
 }
 
-
-/* Desplegable tipo de reclutador */
-
-#dplProfileRKind {
-  margin-top: -900px;
+#botonesEspecificos {
+    padding-top: 20px;
+    margin-left: 50px;
 }

@@ -12,45 +12,39 @@
             <a class="navbar-brand mt-2 mt-lg-0" href="#">
                 <div class="dropdown">
                     <a routerLink="../profile" class="d-flex align-items-center" id="NavBarPhoto" aria-expanded="false">
-                        <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/user_nophoto.png" class="rounded-circle" height="60" alt="User photo" />
+                        <img src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/david.png" class="rounded-circle" height="60" alt="User photo" />
                     </a>
                 </div>
             </a>
             <!-- Right Elements -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <!-- Search input -->
-                <li class="nav-item">
-                    <a class="nav-link">
-                        <li class="nav-item"><input type="text" class="form-control" aria-label="Text" placeholder="Buscar"></li>
-                    </a>
+                <!-- Main -->
+                <li class="nav-item hovertext" data-hover="Página Principal">
+                    <a routerLink="../main" class="nav-link"><img height="30" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/home.png" alt="users"></a>
                 </li>
                 <!-- Users -->
-                <li class="nav-item">
+                <li class="nav-item hovertext" data-hover="Buscar Usuarios">
                     <a routerLink="../user-search" class="nav-link"><img height="30" src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/mi_red.png" alt="users"></a>
                 </li>
                 <!-- Works-->
-                <li class="nav-item">
+                <li class="nav-item hovertext" data-hover="Buscar trabajos">
                     <a routerLink="../works" class="nav-link"><img height="30" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/works.png" alt="Works"></a>
                 </li>
-                <!-- InterViews -->
-                <li class="nav-item">
-                    <a routerLink="../works" class="nav-link"><img height="30" src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/entrevistas.png" alt="Interwiews"></a>
-                </li>
                 <!--Calendario -->
-                <li class="nav-item">
-                    <a routerLink="../calendar" class="nav-link"><img height="30" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/calendar.png" alt="About us"></a>
+                <li class="nav-item hovertext" data-hover="Calendario">
+                    <a routerLink="../calendar" class="nav-link "><img height="30 " src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/calendar.png " alt="About us "></a>
                 </li>
                 <!-- Botón para about us -->
-                <li class="nav-item">
-                    <a routerLink="../about" class="nav-link"><img height="30" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/about.png" alt="About us"></a>
+                <li class="nav-item hovertext" data-hover="Sobre nosotros">
+                    <a routerLink="../about" class="nav-link "><img height="30 " src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/about-us-1.png " alt="About us "></a>
                 </li>
-                <!-- Config -->
-                <li class="nav-item">
-                    <a routerLink="../profile" class="nav-link"><img height="30" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/config.png" alt="Config"></a>
+                <!-- Botón para documentación -->
+                <li class="nav-item hovertext" data-hover="Documentacion">
+                    <a target="_blank" href="https://39975211.servicio-online.net/wp-content/uploads/2022/06/Documentacion-MSKA-My-SKill-around.pdf" class="nav-link "><img height="30 " src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_doc.png" alt="Documentacion"></a>
                 </li>
                 <!-- LogOut-->
-                <li class="nav-item">
-                    <a class="nav-link"><img (click)="logout()" height="30" src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/logout.png" alt="Logout"></a>
+                <li class="nav-item hovertext" data-hover="Cerrar Sesión">
+                    <a class="nav-link "><img (click)="logout() " height="30 " src="https://39975211.servicio-online.net/wp-content/uploads/2022/05/logout.png " alt="Logout "></a>
                 </li>
             </ul>
             <!-- Cierre del aside collapse-navbar -->

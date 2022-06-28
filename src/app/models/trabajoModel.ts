@@ -1,14 +1,14 @@
 export class trabajoModel{
-  private id: number;
-  private descripcion: string;
-  private fecha_ini: Date;
-  private fecha_fin: Date;
-  private estrellas: number;
-  private presupuesto: number;
-  private fk_id_asignador: number;
-  private fk_id_asignado: number;
-  private id_comentarioTrabajo: number;
-  private id_posee: number;
+  public id: number;
+  public descripcion: string;
+  public fecha_ini: Date;
+  public fecha_fin: Date;
+  public estrellas: number;
+  public presupuesto: number;
+  public fk_id_asignador: number;
+  public fk_id_asignado: number;
+  public id_comentarioTrabajo: number;
+  public id_posee: number;
 
   constructor(id: number, descripcion: string, fecha_ini: Date, fecha_fin: Date, estrellas: number, presupuesto: number, fk_id_asignador: number,
     fk_id_asignado: number, id_comentarioTrabajo: number, id_posee: number){
