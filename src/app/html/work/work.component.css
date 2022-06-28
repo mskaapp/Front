@@ -2,3 +2,16 @@
     width: 5%;
     margin-right: 1%;
 }
+
+.contenedorCartas {
+    width: 500px;
+}
+
+body {
+    background-image: url("https://39975211.servicio-online.net/wp-content/uploads/2022/05/register_background.png");
+    height: 980px;
+    background-repeat: no-repeat;
+    margin-top: -5%;
+    padding-top: 7%;
+    margin-bottom: 35%;
+}

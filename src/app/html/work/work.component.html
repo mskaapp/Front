@@ -1,47 +1,62 @@
-<div class="container mt-3">
-    <div class="row">
-        <div class="col">
-            <h1>{{workTrabajo.descripcion}}</h1>
-            <hr>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col">
+                <h1>{{workTrabajo.descripcion}}</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+
+                <h3>Fecha inicio</h3>
+                <h5>{{workTrabajo.fecha_ini | date: 'dd-MM-yyyy'}}</h5>
+                <br>
+                <h3>Fecha fin</h3>
+                <h5>{{workTrabajo.fecha_fin | date: 'dd-MM-yyyy'}}</h5>
+                <br>
+                <h3>Presupuesto</h3>
+                <h5>{{workTrabajo.presupuesto}}</h5>
+                <br>
+                <h3>Valoración:</h3>
+                <img *ngIf="workTrabajo.estrellas<1" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_off.png" class="starIcon" alt="Star1Off">
+                <img *ngIf="workTrabajo.estrellas>0" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_on.png" class="starIcon" alt="Star1Off">
+                <img *ngIf="workTrabajo.estrellas<2" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_off.png" class="starIcon" alt="Star2">
+                <img *ngIf="workTrabajo.estrellas>1" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_on.png" class="starIcon" alt="Star1Off">
+                <img *ngIf="workTrabajo.estrellas<3" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_off.png" class="starIcon" alt="Star3">
+                <img *ngIf="workTrabajo.estrellas>2" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_on.png" class="starIcon" alt="Star1Off">
+                <img *ngIf="workTrabajo.estrellas<4" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_off.png" class="starIcon" alt="Star4">
+                <img *ngIf="workTrabajo.estrellas>3" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_on.png" class="starIcon" alt="Star1Off">
+                <img *ngIf="workTrabajo.estrellas<5" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_off.png" class="starIcon" alt="Star5">
+                <img *ngIf="workTrabajo.estrellas>4" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_on.png" class="starIcon" alt="Star1Off">
+                <!--Star On https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_on.png-->
+                <br><br>
+                <h3>Descripcion</h3>
+                <h5>{{workTrabajo.descripcion}}</h5>
+            </div>
+
+            <div class="col-3 text-center">
+                <!--TODO: get photo of recruiter from this workrecruiterid-->
+                <img src="https://es.marketscreener.com/mods_a/graph/resize.php?w=250&h=150&f=/images/barons/jose-oriol_bosch-par.jpg" class="card-img-top" alt="User Photo">
+                <!--TODO: get name of recruiter and link to profile from this workrecruiterID-->
+                <h6>Reclutador/a: Sandra García</h6>
+                <br>
+                <a routerLink="../works" class="btn btn-danger mt-3">Volver</a>
+
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-4">
 
-            <h3>Fecha inicio</h3>
-            <h5>{{workTrabajo.fecha_ini | date: 'dd-MM-yyyy'}}</h5>
-            <br>
-            <h3>Fecha fin</h3>
-            <h5>{{workTrabajo.fecha_fin | date: 'dd-MM-yyyy'}}</h5>
-            <br>
-            <h3>Presupuesto</h3>
-            <h5>{{workTrabajo.presupuesto}}</h5>
-            <br>
-            <h3>Valoración:</h3>
-            <img *ngIf="workTrabajo.estrellas<1" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_off.png" class="starIcon" alt="Star1Off">
-            <img *ngIf="workTrabajo.estrellas>0" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_on.png" class="starIcon" alt="Star1Off">
-            <img *ngIf="workTrabajo.estrellas<2" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_off.png" class="starIcon" alt="Star2">
-            <img *ngIf="workTrabajo.estrellas>1" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_on.png" class="starIcon" alt="Star1Off">
-            <img *ngIf="workTrabajo.estrellas<3"src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_off.png" class="starIcon" alt="Star3">
-            <img *ngIf="workTrabajo.estrellas>2" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_on.png" class="starIcon" alt="Star1Off">
-            <img *ngIf="workTrabajo.estrellas<4"src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_off.png" class="starIcon" alt="Star4">
-            <img *ngIf="workTrabajo.estrellas>3" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_on.png" class="starIcon" alt="Star1Off">
-            <img *ngIf="workTrabajo.estrellas<5"src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_off.png" class="starIcon" alt="Star5">
-            <img *ngIf="workTrabajo.estrellas>4" src="https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_on.png" class="starIcon" alt="Star1Off">
-            <!--Star On https://39975211.servicio-online.net/wp-content/uploads/2022/06/icon_star_on.png-->
-            <br><br>
-            <h3>Descripcion</h3>
-            <h5>{{workTrabajo.descripcion}}</h5>
-        </div>
+</body>
 
-        <div class="col-3 text-center">
-            <!--TODO: get photo of recruiter from this workrecruiterid-->
-            <img src="https://es.marketscreener.com/mods_a/graph/resize.php?w=250&h=150&f=/images/barons/jose-oriol_bosch-par.jpg" class="card-img-top" alt="User Photo">
-            <!--TODO: get name of recruiter and link to profile from this workrecruiterID-->
-            <h6>Reclutador/a: Sandra García</h6>
-            <br>
-            <a routerLink="../works" class="btn btn-danger mt-3">Volver</a>
-
-        </div>
-    </div>
-</div>
+</html>
