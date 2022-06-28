@@ -3,18 +3,18 @@ export class reclutadorModel {
   public experiencia: number;
   public nivel: number;
   public web: string;
-  public tipo_reclutador: string;
-  public id_usuario: number;
-  public id_obtieneR: number;
+  public tipoReclutador: string;
+  /*public id_usuario: number;
+  public id_obtieneR: number;*/
 
   constructor(id: number, experiencia: number, nivel: number, web: string, tipo_reclutador: string, id_usuario: number, id_obtieneR: number){
       this.id = id;
       this.experiencia = experiencia;
       this.nivel = nivel;
       this.web = web;
-      this.tipo_reclutador = tipo_reclutador;
+      /*this.tipo_reclutador = tipo_reclutador;
       this.id_usuario = id_usuario;
-      this.id_obtieneR = id_obtieneR;
+      this.id_obtieneR = id_obtieneR;*/
 
   }
 
