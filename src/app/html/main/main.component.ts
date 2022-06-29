@@ -46,10 +46,7 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
     this.screenSize();
     this.getPosts();
-    try{
-      this.lenght=this.arrayPost.length;
-    }catch{}
-
+    this.lenght=this.arrayPost.length;
     this.page =1;
     this.previousPage =1;
     this.fillPosts(1);
