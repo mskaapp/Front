@@ -3,6 +3,7 @@ import { UsuarioService } from './services/usuario.service';
 
 import { AuthenticationService } from './services/authentification.service';
 import { Observable } from 'rxjs';
+import { ReclutadorService } from './services/reclutador.service';
 
 @Component({
   selector: 'app-root',
@@ -15,10 +16,13 @@ export class AppComponent {
 
   title = 'My Skill Around';
 
-  constructor(private usuarioService: UsuarioService) {
+  constructor(private usuarioService: UsuarioService, private reclutadorService: ReclutadorService) {
     console.log('El componente se a creado')
     //this.usuarioService.login(this.username, this.password);
     this.usuarioService.listarUsuarios().subscribe(response => console.log(response));
+    this.usuarioService.getById('1').subscribe(response => console.log(response));
+    this.reclutadorService.listarUsuarios().subscribe(response => console.log(response));
+    this.reclutadorService.getById('1').subscribe(response => console.log(response));
   }
 
 

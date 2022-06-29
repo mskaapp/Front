@@ -15,7 +15,7 @@ export class UsuarioService {
 
   /*headers = new Headers();*/
 
-  constructor(private http: HttpClient,private router: Router) {
+  constructor(private http: HttpClient) {
    /*this.headers.append("Content-Type", "application/json");
     this.headers.append("Authorization", "Bearer"+ sessionStorage.getItem("token"));*/
   }
@@ -31,6 +31,7 @@ export class UsuarioService {
 
   listarUsuarios(){
     return this.http.get('https://myskillaround-spring-testing.herokuapp.com/api/usuario');
+    console.log(sessionStorage.getItem('token'));
   }
 
   getById(id: string) {
