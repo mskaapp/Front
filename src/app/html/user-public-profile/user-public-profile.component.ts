@@ -19,7 +19,7 @@ export class UserPublicProfileComponent implements OnInit {
     //localStorage.getItem('user');
     this.getUserById();
   }
-
+//
       //TODO: capture photo of user id
       getUserById(){
         //TODO: capture the id from field html and sustitute for 1
