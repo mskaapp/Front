@@ -8,16 +8,21 @@
     padding: 0;
     margin: 0 auto;
 }
+.titulo{
+  font-family: 'Road Rage', cursive;
+    font-size: 200px;
+    color: #F92423;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 
 .card {
     margin-top: 20%;
 }
 
 .mska {
-    font-size: 50px;
     position: absolute;
-    margin-top: 5%;
-    margin-left: 15%;
+    margin-top: 0.5%;
+    margin-left: 2%;
 }
 
 
@@ -36,6 +41,13 @@
     top: 13%;
     left: 50%;
     z-index: 1;
+}
+.img_title {
+  position: absolute;
+    top: 7%;
+    left: 5%;
+    z-index: 1;
+    width: 30%;
 }
 
 .redTriangle {

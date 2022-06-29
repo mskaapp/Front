@@ -72,8 +72,8 @@ export class ProfileComponent implements OnInit {
     this.httpClient.put<usuarioModel>(
       'https://myskillaround-spring-testing.herokuapp.com/api/usuario/1',
       this.ProfileUser).subscribe((result)=>{
-        console.log("UPDATING___________________");
-        console.log(result, "Data updated");
+        //console.log("UPDATING___________________");
+        //console.log(result, "Data updated");
       })
   }
   updateUser2(){

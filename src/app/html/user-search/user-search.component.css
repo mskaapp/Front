@@ -9,7 +9,9 @@ body {
 .usuarios {
     display: inline-block;
 }
-
+.fotos {
+  width: 70%;
+}
 .btnUsuarioTest {
     margin-left: 9%;
     width: 112px;
