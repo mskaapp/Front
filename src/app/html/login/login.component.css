@@ -10,7 +10,14 @@
 }
 
 .card {
-    margin-top: 30%;
+    margin-top: 20%;
+}
+
+.mska {
+    font-size: 50px;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 15%;
 }
 
 
