@@ -33,7 +33,6 @@ import { InterviewsComponent } from './interviews/interviews.component';
 //EXTERNALS
 import { NgxPaginationModule } from 'ngx-pagination';
 
-import { BackButtonDisableModule } from 'angular-disable-browser-back-button';
 import { HttpClientModule } from '@angular/common/http';
 import { PostCardComponent } from './html/main/post-card/post-card.component';
 
@@ -62,7 +61,6 @@ import { PostCardComponent } from './html/main/post-card/post-card.component';
     WorkCardComponent,
     InterviewsComponent,
     PostCardComponent,
-
    ],
   imports: [
     NgbModule,
@@ -72,9 +70,6 @@ import { PostCardComponent } from './html/main/post-card/post-card.component';
     FormsModule,
     FullCalendarModule,
     HttpClientModule,
-    BackButtonDisableModule.forRoot({
-      preserveScrollPosition: true
-    })
   ],
   providers: [],
   bootstrap: [AppComponent]
